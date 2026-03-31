@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useI18n } from "@/i18n/context";
 
 export default function Footer() {
@@ -13,13 +14,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">J</span>
-              </div>
-              <span className="text-lg font-bold text-white">
-                Juris<span className="text-primary-400">AI</span>
-              </span>
+            <Link href="/" className="flex items-center mb-4">
+              <Image
+                src="/jurisai-logo.png"
+                alt="JurisAI"
+                width={140}
+                height={40}
+                className="h-9 w-auto"
+              />
             </Link>
             <p className="text-sm leading-relaxed">{t.footer.description}</p>
             {/* Social links */}
@@ -46,8 +48,8 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">{t.footer.product}</h4>
             <ul className="space-y-3">
-              <li><a href="#features" className="text-sm hover:text-white transition-colors">{t.nav.features}</a></li>
-              <li><a href="#pricing" className="text-sm hover:text-white transition-colors">{t.nav.pricing}</a></li>
+              <li><Link href="/#features" className="text-sm hover:text-white transition-colors">{t.nav.features}</Link></li>
+              <li><Link href="/#pricing" className="text-sm hover:text-white transition-colors">{t.nav.pricing}</Link></li>
               <li><Link href="/contact" className="text-sm hover:text-white transition-colors">{t.nav.contact}</Link></li>
             </ul>
           </div>

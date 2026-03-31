@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useI18n } from "@/i18n/context";
 
 export default function RegisterPage() {
@@ -27,11 +28,8 @@ export default function RegisterPage() {
           }}
         />
         <div className="relative z-10 flex flex-col justify-center px-12 lg:px-16">
-          <Link href="/" className="flex items-center gap-3 mb-12">
-            <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
-              <span className="text-white font-bold text-xl">J</span>
-            </div>
-            <span className="text-2xl font-bold text-white">JurisAI</span>
+          <Link href="/" className="flex items-center mb-12">
+            <Image src="/jurisai-logo.png" alt="JurisAI" width={180} height={52} className="h-12 w-auto" />
           </Link>
           <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight mb-6">
             Únete a la revolución legal en República Dominicana
@@ -62,13 +60,8 @@ export default function RegisterPage() {
       <div className="flex-1 flex items-center justify-center px-6 py-12">
         <div className="w-full max-w-md">
           <div className="lg:hidden mb-8">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary-600 to-accent-600 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">J</span>
-              </div>
-              <span className="text-xl font-bold text-gray-900">
-                Juris<span className="gradient-text">AI</span>
-              </span>
+            <Link href="/" className="flex items-center">
+              <Image src="/jurisai-logo.png" alt="JurisAI" width={160} height={46} className="h-10 w-auto" />
             </Link>
           </div>
 
