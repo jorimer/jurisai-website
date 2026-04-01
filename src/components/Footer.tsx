@@ -20,7 +20,7 @@ export default function Footer() {
                 alt="JurisAI"
                 width={140}
                 height={40}
-                className="h-9 w-auto"
+                className="h-9 w-auto brightness-0 invert"
               />
             </Link>
             <p className="text-sm leading-relaxed">{t.footer.description}</p>
@@ -49,7 +49,6 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-white mb-4">{t.footer.product}</h4>
             <ul className="space-y-3">
               <li><Link href="/modulos" className="text-sm hover:text-accent-400 transition-colors">{t.nav.modules}</Link></li>
-              <li><Link href="/inteligencia-procesal" className="text-sm hover:text-accent-400 transition-colors">{t.nav.intelligence}</Link></li>
               <li><Link href="/#pricing" className="text-sm hover:text-accent-400 transition-colors">{t.nav.pricing}</Link></li>
               <li><Link href="/contact" className="text-sm hover:text-accent-400 transition-colors">{t.nav.contact}</Link></li>
             </ul>

@@ -341,6 +341,11 @@ export const translations = {
       subtitle: "9 módulos especializados + 11 productos normativos diseñados para transformar cada área de tu práctica legal.",
       agentes: "agentes IA",
       endpoints: "endpoints",
+      tabs: {
+        core: "Módulos Core",
+        ip: "Inteligencia Procesal",
+        normativa: "Inteligencia Normativa",
+      },
       modules: [
         {
           title: "Análisis de Contratos",
@@ -811,6 +816,11 @@ export const translations = {
       subtitle: "9 specialized modules + 11 normative products designed to transform every area of your legal practice.",
       agentes: "AI agents",
       endpoints: "endpoints",
+      tabs: {
+        core: "Core Modules",
+        ip: "Procedural Intelligence",
+        normativa: "Normative Intelligence",
+      },
       modules: [
         {
           title: "Contract Analysis",

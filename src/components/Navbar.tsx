@@ -33,7 +33,7 @@ export default function Navbar() {
               alt="JurisAI"
               width={160}
               height={46}
-              className="h-9 w-auto"
+              className={`h-9 w-auto transition-all duration-300 ${scrolled ? "" : "brightness-0 invert"}`}
               priority
             />
           </Link>
@@ -45,12 +45,6 @@ export default function Navbar() {
               className={`text-sm font-medium transition-colors ${scrolled ? "text-primary-500 hover:text-primary-800" : "text-white/80 hover:text-white"}`}
             >
               {t.nav.modules}
-            </Link>
-            <Link
-              href="/inteligencia-procesal"
-              className={`text-sm font-medium transition-colors ${scrolled ? "text-primary-500 hover:text-primary-800" : "text-white/80 hover:text-white"}`}
-            >
-              {t.nav.intelligence}
             </Link>
             <Link
               href="/#pricing"
@@ -133,13 +127,6 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
             >
               {t.nav.modules}
-            </Link>
-            <Link
-              href="/inteligencia-procesal"
-              className="block px-4 py-2 text-sm font-medium text-primary-600 hover:bg-primary-50 rounded-lg"
-              onClick={() => setMobileOpen(false)}
-            >
-              {t.nav.intelligence}
             </Link>
             <Link
               href="/#pricing"

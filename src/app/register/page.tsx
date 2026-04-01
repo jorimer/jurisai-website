@@ -29,7 +29,7 @@ export default function RegisterPage() {
         />
         <div className="relative z-10 flex flex-col justify-center px-12 lg:px-16">
           <Link href="/" className="flex items-center mb-12">
-            <Image src="/jurisai-logo.png" alt="JurisAI" width={180} height={52} className="h-12 w-auto" />
+            <Image src="/jurisai-logo.png" alt="JurisAI" width={180} height={52} className="h-12 w-auto brightness-0 invert" />
           </Link>
           <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight mb-6">
             Solicita tu Demo Personalizada
