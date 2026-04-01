@@ -41,13 +41,13 @@ export default function Navbar() {
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
             <Link
-              href="/#features"
+              href="/modulos"
               className={`text-sm font-medium transition-colors ${scrolled ? "text-primary-500 hover:text-primary-800" : "text-white/80 hover:text-white"}`}
             >
               {t.nav.modules}
             </Link>
             <Link
-              href="/#ipHighlight"
+              href="/inteligencia-procesal"
               className={`text-sm font-medium transition-colors ${scrolled ? "text-primary-500 hover:text-primary-800" : "text-white/80 hover:text-white"}`}
             >
               {t.nav.intelligence}
@@ -128,14 +128,14 @@ export default function Navbar() {
         {mobileOpen && (
           <div className="md:hidden pb-4 space-y-2 animate-fade-in bg-white rounded-xl mt-2 p-4 shadow-xl border border-primary-100">
             <Link
-              href="/#features"
+              href="/modulos"
               className="block px-4 py-2 text-sm font-medium text-primary-600 hover:bg-primary-50 rounded-lg"
               onClick={() => setMobileOpen(false)}
             >
               {t.nav.modules}
             </Link>
             <Link
-              href="/#ipHighlight"
+              href="/inteligencia-procesal"
               className="block px-4 py-2 text-sm font-medium text-primary-600 hover:bg-primary-50 rounded-lg"
               onClick={() => setMobileOpen(false)}
             >

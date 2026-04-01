@@ -17,9 +17,9 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-violet-50/30 flex">
+    <div className="min-h-screen bg-gradient-to-br from-primary-50 via-accent-50/20 to-white flex">
       {/* Left panel - branding */}
-      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-primary-600 via-primary-700 to-accent-700 relative overflow-hidden">
+      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-primary-800 via-primary-900 to-primary-950 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
@@ -30,20 +30,24 @@ export default function LoginPage() {
             <Image src="/jurisai-logo.png" alt="JurisAI" width={180} height={52} className="h-12 w-auto" />
           </Link>
           <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight mb-6">
-            Potencia tu práctica legal con inteligencia artificial
+            Decisiones Legales Más Inteligentes, Hoy
           </h2>
-          <p className="text-blue-100 text-lg leading-relaxed">
-            Accede a herramientas de IA diseñadas específicamente para el ecosistema legal dominicano.
-            Revisión de contratos, investigación jurisprudencial y análisis predictivo — todo desde una sola plataforma.
+          <p className="text-primary-200 text-lg leading-relaxed">
+            Accede a 23+ módulos de IA diseñados específicamente para el ecosistema legal dominicano.
+            Contratos, litigios, compliance e inteligencia procesal — todo en una plataforma.
           </p>
-          <div className="mt-12 grid grid-cols-2 gap-6">
+          <div className="mt-12 grid grid-cols-3 gap-4">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <div className="text-2xl font-bold text-white">97.8%</div>
-              <div className="text-sm text-blue-200">Precisión IA</div>
+              <div className="text-2xl font-bold text-accent-400">97.8%</div>
+              <div className="text-sm text-primary-300">Precisión IA</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <div className="text-2xl font-bold text-white">10x</div>
-              <div className="text-sm text-blue-200">Más rápido</div>
+              <div className="text-2xl font-bold text-accent-400">50+</div>
+              <div className="text-sm text-primary-300">Agentes IA</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+              <div className="text-2xl font-bold text-accent-400">11K+</div>
+              <div className="text-sm text-primary-300">Sentencias</div>
             </div>
           </div>
         </div>
@@ -86,7 +90,7 @@ export default function LoginPage() {
               <div className="w-full border-t border-gray-200" />
             </div>
             <div className="relative flex justify-center">
-              <span className="bg-gradient-to-br from-slate-50 via-blue-50/30 to-violet-50/30 px-4 text-sm text-gray-400">
+              <span className="bg-gradient-to-br from-primary-50 via-accent-50/20 to-white px-4 text-sm text-gray-400">
                 {t.auth.orContinueWith}
               </span>
             </div>
@@ -127,7 +131,7 @@ export default function LoginPage() {
 
             <button
               type="submit"
-              className="w-full py-3 px-6 text-sm font-semibold text-white bg-gradient-to-r from-primary-600 to-accent-600 rounded-xl hover:from-primary-700 hover:to-accent-700 transition-all shadow-lg shadow-primary-500/25"
+              className="w-full py-3 px-6 text-sm font-semibold text-primary-900 bg-gradient-to-r from-accent-400 to-accent-300 rounded-xl hover:from-accent-300 hover:to-accent-200 transition-all shadow-lg shadow-accent-400/25"
             >
               {t.auth.login}
             </button>

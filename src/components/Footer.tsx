@@ -48,8 +48,8 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">{t.footer.product}</h4>
             <ul className="space-y-3">
-              <li><Link href="/#features" className="text-sm hover:text-accent-400 transition-colors">{t.nav.modules}</Link></li>
-              <li><Link href="/#ipHighlight" className="text-sm hover:text-accent-400 transition-colors">{t.nav.intelligence}</Link></li>
+              <li><Link href="/modulos" className="text-sm hover:text-accent-400 transition-colors">{t.nav.modules}</Link></li>
+              <li><Link href="/inteligencia-procesal" className="text-sm hover:text-accent-400 transition-colors">{t.nav.intelligence}</Link></li>
               <li><Link href="/#pricing" className="text-sm hover:text-accent-400 transition-colors">{t.nav.pricing}</Link></li>
               <li><Link href="/contact" className="text-sm hover:text-accent-400 transition-colors">{t.nav.contact}</Link></li>
             </ul>
@@ -59,8 +59,8 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">{t.footer.company}</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sm hover:text-accent-400 transition-colors">{t.footer.about}</a></li>
-              <li><a href="#" className="text-sm hover:text-accent-400 transition-colors">{t.footer.blog}</a></li>
+              <li><Link href="/acerca" className="text-sm hover:text-accent-400 transition-colors">{t.footer.about}</Link></li>
+              <li><Link href="/recursos" className="text-sm hover:text-accent-400 transition-colors">{t.footer.blog}</Link></li>
               <li><a href="#" className="text-sm hover:text-accent-400 transition-colors">{t.footer.careers}</a></li>
             </ul>
           </div>
