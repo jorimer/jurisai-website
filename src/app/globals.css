@@ -1,20 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a8a;
-  --color-primary-950: #172554;
-  --color-accent-400: #a78bfa;
-  --color-accent-500: #8b5cf6;
-  --color-accent-600: #7c3aed;
+  /* Navy Deep palette */
+  --color-primary-50: #E8EBF0;
+  --color-primary-100: #D1D7E1;
+  --color-primary-200: #A3AFC3;
+  --color-primary-300: #7587A5;
+  --color-primary-400: #475F87;
+  --color-primary-500: #2A3D5A;
+  --color-primary-600: #22324B;
+  --color-primary-700: #1E2B40;
+  --color-primary-800: #1A2332;
+  --color-primary-900: #141B27;
+  --color-primary-950: #0E131B;
+  /* Gold Warm palette */
+  --color-accent-50: #FBF6EC;
+  --color-accent-100: #F5EDD8;
+  --color-accent-200: #EBDAB1;
+  --color-accent-300: #E2C88A;
+  --color-accent-400: #D4B87A;
+  --color-accent-500: #C9A656;
+  --color-accent-600: #B8923D;
+  --color-accent-700: #8F7130;
+  --color-accent-800: #665122;
+  --color-accent-900: #3D3015;
 }
 
 html {
@@ -47,8 +56,8 @@ body {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.6); }
+  0%, 100% { box-shadow: 0 0 20px rgba(212, 184, 122, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(212, 184, 122, 0.6); }
 }
 
 .animate-fade-in-up {
@@ -69,7 +78,14 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(135deg, #D4B87A, #E2C88A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-navy {
+  background: linear-gradient(135deg, #1A2332, #2A3D5A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
