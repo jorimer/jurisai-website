@@ -28,8 +28,8 @@ export default function ForInstitutions() {
               <p className="mt-3.5 text-[15px] leading-relaxed text-primary-200 flex-1">
                 {item.body}
               </p>
-              <p className="mono mt-5 pt-4 border-t border-white/10 text-[11px] uppercase tracking-[0.05em] text-accent-400 leading-relaxed">
-                {item.proof}
+              <p className="mt-5 pt-4 border-t border-white/10 text-sm font-medium text-accent-400 leading-relaxed">
+                {item.gain}
               </p>
             </article>
           ))}

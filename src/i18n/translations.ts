@@ -86,20 +86,20 @@ export const translations = {
         {
           name: "Redactor legislativo",
           body:
-            "Propone la reforma de ley, el reglamento de aplicación o la norma administrativa fundada únicamente en el corpus, y entrega dos piezas: el articulado y el memo de motivación que explica por qué cada decisión está ahí. El proyecto tiene que decir qué pasa con los órganos que ya hacen ese trabajo.",
-          proof: "85 entregables en producción entre jul y ago 2026",
+            "Propone la reforma de ley, el reglamento de aplicación o la norma administrativa fundada únicamente en el corpus. Entrega dos piezas: el articulado y el memo de motivación que explica por qué cada decisión está ahí, incluida la de qué pasa con los órganos que ya hacen ese trabajo. Ochenta y cinco instrumentos entregados en producción entre julio y agosto de 2026.",
+          gain: "A la mesa llega un instrumento que ya viene motivado, no un borrador que alguien tendrá que justificar después",
         },
         {
           name: "Dictamen sobre proyectos de ley",
           body:
-            "Mapeo artículo por artículo contra el marco vigente, análisis de constitucionalidad, coherencia sistémica, proyección de impacto y tabla de concordancias, exportable como dictamen. La tabla no puede afirmar una derogación que la ley no hace.",
-          proof: "En una corrida de 73 artículos: 28 pares cotejados, cero artículos inexistentes · med. sep 2026",
+            "Mapeo artículo por artículo contra el marco vigente, constitucionalidad, coherencia sistémica, proyección de impacto y tabla de concordancias, exportable. Cada afirmación sobre el articulado se coteja contra el texto del proyecto, y la tabla no puede declarar una derogación que la ley no hace.",
+          gain: "Se presenta en comisión sin que nadie encuentre dentro un artículo que el proyecto no tiene",
         },
         {
           name: "Consultas por API",
           body:
-            "Su sistema pregunta si una norma existe, cuándo se dictó y qué alcance tuvo la búsqueda; hasta cincuenta obligaciones por llamada. La respuesta distingue «no se dictó» de «no se localizó registro», que es la diferencia entre poder afirmarlo en un informe y no poder.",
-          proof: "Credenciales de servicio emitidas desde el panel",
+            "Su sistema pregunta si una norma existe, cuándo se dictó y qué alcance tuvo la búsqueda; hasta cincuenta obligaciones por llamada, con credenciales de servicio que usted emite y revoca desde el panel.",
+          gain: "Su informe puede afirmar «no se dictó», y no solo «no lo encontramos»",
         },
       ],
       note:
@@ -686,20 +686,20 @@ export const translations = {
         {
           name: "Legislative drafter",
           body:
-            "Proposes the statutory reform, implementing regulation or administrative rule grounded solely in the corpus, and delivers two pieces: the articles and the explanatory memorandum saying why each decision is there. The bill has to state what happens to the bodies already doing that work.",
-          proof: "85 deliverables in production between Jul and Aug 2026",
+            "Proposes the statutory reform, implementing regulation or administrative rule grounded solely in the corpus. It delivers two pieces: the articles and the explanatory memorandum saying why each decision is there, including what happens to the bodies already doing that work. Eighty-five instruments delivered in production between July and August 2026.",
+          gain: "What reaches the table is an instrument that already carries its reasoning, not a draft someone will have to justify later",
         },
         {
           name: "Bill opinions",
           body:
-            "Article-by-article mapping against the framework in force, constitutionality analysis, systemic coherence, impact projection and a concordance table, exportable as an opinion. The table cannot assert a repeal the statute does not make.",
-          proof: "On a 73-article run: 28 pairs checked, zero non-existent articles · meas. Sep 2026",
+            "Article-by-article mapping against the framework in force, constitutionality, systemic coherence, impact projection and a concordance table, exportable. Every assertion about the articles is checked against the bill's own text, and the table cannot declare a repeal the statute does not make.",
+          gain: "It goes to committee without anyone finding an article inside it that the bill does not have",
         },
         {
           name: "API queries",
           body:
-            "Your system asks whether a rule exists, when it was issued and what the search actually covered; up to fifty obligations per call. The response distinguishes \"was not issued\" from \"no record located\", which is the difference between being able to assert it in a report and not.",
-          proof: "Service credentials issued from the admin panel",
+            "Your system asks whether a rule exists, when it was issued and what the search actually covered; up to fifty obligations per call, with service credentials you issue and revoke from the admin panel.",
+          gain: "Your report can state \"it was not issued\", not merely \"we could not find it\"",
         },
       ],
       note:
