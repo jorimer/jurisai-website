@@ -18,80 +18,96 @@ export const translations = {
       title: "Decisiones Legales Más Inteligentes,",
       titleHighlight: "Hoy",
       subtitle:
-        "130.906 sentencias dominicanas con texto íntegro y el 100 % del corpus normativo embebido. JurisAI investiga, redacta y dictamina sobre derecho dominicano, y coteja cada cita contra el texto original: cuando una cita no se sostiene, el documento lo dice.",
+        "Su firma investiga, redacta y opina sobre derecho dominicano con la jurisprudencia y la normativa completas detrás. Y antes de que un documento salga de la oficina, JurisAI le dice qué citas no pudo sostener contra el texto original.",
       cta: "Solicitar Demo Personalizada",
       ctaSecondary: "Ver Cómo Funciona",
       trustedBy: "Desarrollado sobre jurisprudencia dominicana",
     },
-    socialProof: {
-      stats: [
-        { value: "130.906", label: "Sentencias con texto íntegro", date: "med. ago 2026" },
-        { value: "202.444", label: "Componentes normativos embebidos, el 100 %", date: "med. ago 2026" },
-        { value: "22.146", label: "Relaciones en el grafo normativo", date: "med. ago 2026" },
-        { value: "25", label: "Módulos vivos en la plataforma", date: "med. ago 2026" },
-      ],
-    },
-    problem: {
-      sectionTitle: "El Problema",
-      title: "El Mercado Legal Dominicano Necesita Evolucionar",
-      subtitle: "Investigar, verificar y redactar consume el grueso de las horas de una firma",
+    coverage: {
+      title: "Qué cubre",
       items: [
         {
-          title: "Investigación Manual",
-          description: "Horas en búsqueda de jurisprudencia en sistemas desactualizados y fragmentados.",
-          icon: "Search",
+          claim: "Toda la jurisprudencia publicada de la Suprema Corte, el Tribunal Constitucional y el Tribunal Superior Administrativo, con el texto íntegro de cada sentencia.",
+          proof: "130.906 sentencias · med. ago 2026",
         },
         {
-          title: "Sin Datos de Jueces",
-          description: "Decisiones estratégicas sin acceso a patrones históricos de comportamiento judicial.",
-          icon: "Brain",
+          claim: "La ley que regía el día de los hechos, no la de hoy. Puede consultar el estado de una norma en cualquier fecha pasada.",
+          proof: "Motor de vigencia point-in-time · en producción desde ago 2026",
         },
         {
-          title: "Riesgo No Cuantificado",
-          description: "Evaluación subjetiva sin modelos predictivos ni marcos estandarizados.",
-          icon: "AlertTriangle",
+          claim: "Qué norma derogó a cuál, y qué anuló el Tribunal Constitucional. No es lo mismo y tiene consecuencias distintas para su caso.",
+          proof: "Ocho estados de vigencia sobre el grafo normativo",
         },
         {
-          title: "Análisis Inconsistente",
-          description: "Calidad variable en memorándums y opiniones entre abogados de la firma.",
-          icon: "FileWarning",
+          claim: "Las leyes de 2010 a 2025 cotejadas una a una contra el portal oficial, para que lo que usted cite exista tal como lo cita.",
+          proof: "99,5 % reconciliado · med. ago 2026",
+        },
+      ],
+      cta: "Ver el detalle de cada cifra",
+    },
+    forFirms: {
+      sectionTitle: "Para su firma",
+      title: "Cuatro momentos en los que esto le cambia el día",
+      subtitle:
+        "No vendemos horas ahorradas: cuántas sean depende de su volumen y no lo hemos medido. Vendemos lo que el sistema hace, exactamente, en los cuatro momentos donde una firma se juega algo.",
+      items: [
+        {
+          moment: "La opinión que usted firma",
+          body:
+            "Un memo que atribuye a una sentencia algo que la sentencia no dice es un problema suyo, no del modelo. JurisAI coteja cada cita contra el texto de esa sentencia, retira del documento lo que no se sostiene y deja constancia de qué retiró y por qué.",
+          gain: "Sale de su oficina lo que se puede defender",
         },
         {
-          title: "Normativa Dispersa",
-          description: "Miles de leyes, decretos y resoluciones sin versionamiento temporal ni relaciones mapeadas.",
-          icon: "Layers",
+          moment: "El contrato que hay que devolver hoy",
+          body:
+            "Análisis de cláusulas de riesgo contra el playbook de su firma, redlines propuestos y la versión lista para revisar. Ningún documento que produzca la IA se emite sin la aprobación de un socio: el sign-off es parte del flujo, no una promesa.",
+          gain: "Revisión con criterio de la casa, no genérica",
         },
         {
-          title: "Procesos Manuales",
-          description: "Generación de documentos, due diligence y compliance sin automatización inteligente.",
-          icon: "Clock",
+          moment: "La audiencia que se prepara el viernes",
+          body:
+            "Cómo ha resuelto ese tribunal en esa materia, cuánto tarda, en qué fundamentos se apoya y qué tipo de prueba pesa más en sus decisiones. Todo calculado sobre sentencias publicadas, no sobre impresiones de pasillo.",
+          gain: "Entra sabiendo lo que hasta ahora se intuía",
+        },
+        {
+          moment: "El plazo que no se puede pasar",
+          body:
+            "Plazos calculados con días francos y feriados según la Ley 139-97, un solo recordatorio por plazo al día, y el acto procesal generado desde la misma ficha del asunto. Once tipos de asunto, siete de ellos litigiosos, con sus fases y sus instancias.",
+          gain: "El calendario deja de vivir en la cabeza de alguien",
         },
       ],
     },
-    howItWorks: {
-      sectionTitle: "Cómo Funciona",
-      title: "De la Complejidad a la Claridad en 3 Pasos",
-      steps: [
+    forInstitutions: {
+      sectionTitle: "Para instituciones",
+      title: "Si su trabajo es producir norma, no aplicarla",
+      subtitle:
+        "Ministerios, congreso y direcciones jurídicas de grandes corporativos usan una parte distinta de la plataforma: la que redacta, dictamina y responde consultas a otro sistema.",
+      items: [
         {
-          number: "01",
-          title: "Sube tu Caso",
-          description: "Carga contratos, documentos legales o describe tu consulta. JurisAI acepta PDF, DOCX y texto libre.",
+          name: "Redactor legislativo",
+          body:
+            "Propone la reforma de ley, el reglamento de aplicación o la norma administrativa fundada únicamente en el corpus, y entrega dos piezas: el articulado y el memo de motivación que explica por qué cada decisión está ahí. El proyecto tiene que decir qué pasa con los órganos que ya hacen ese trabajo.",
+          proof: "85 entregables en producción entre jul y ago 2026",
         },
         {
-          number: "02",
-          title: "IA Analiza con CREAC",
-          description: "Agentes especializados procesan tu caso con el framework CREAC: Conclusión, Regla, Explicación, Aplicación y Conclusión Estratégica. El texto de cada norma citada lo inserta el sistema desde el corpus.",
+          name: "Dictamen sobre proyectos de ley",
+          body:
+            "Mapeo artículo por artículo contra el marco vigente, análisis de constitucionalidad, coherencia sistémica, proyección de impacto y tabla de concordancias, exportable como dictamen. La tabla no puede afirmar una derogación que la ley no hace.",
+          proof: "Coste real de un dictamen de 73 artículos: US$ 1,90",
         },
         {
-          number: "03",
-          title: "Decide con Confianza",
-          description: "Recibe el análisis con la jurisprudencia citada y cotejada contra su texto original, y con lo que no se pudo verificar declarado en el propio documento.",
+          name: "Consultas por API",
+          body:
+            "Su sistema pregunta si una norma existe, cuándo se dictó y qué alcance tuvo la búsqueda; hasta cincuenta obligaciones por llamada. La respuesta distingue «no se dictó» de «no se localizó registro», que es la diferencia entre poder afirmarlo en un informe y no poder.",
+          proof: "Credenciales de servicio emitidas desde el panel",
         },
       ],
+      note:
+        "Alcance declarado de la v1 del dictamen: la sección de constitucionalidad se emite sin fundamentación por precedentes y queda en lo verificable contra texto. Preferimos un dictamen más corto a uno que atribuya doctrina a la sentencia equivocada.",
     },
     features: {
-      sectionTitle: "Módulos",
-      title: "Ecosistema Completo de Inteligencia Legal",
+      sectionTitle: "La plataforma",
+      title: "Los módulos que su firma abrirá cada día",
       subtitle: "25 módulos vivos en cuatro familias: la práctica diaria, la inteligencia normativa, el trabajo legislativo y la inteligencia procesal.",
       items: [
         {
@@ -173,68 +189,64 @@ export const translations = {
     },
     ipHighlight: {
       sectionTitle: "Diferenciador Único",
-      title: "Inteligencia Procesal",
-      subtitle: "Perfiles de jueces y abogados construidos sobre las 130.906 sentencias del corpus, con el umbral de fiabilidad declarado",
+      title: "Entre a la audiencia sabiendo cómo resuelve ese tribunal",
+      subtitle: "Cómo ha fallado en esa materia, cuánto tarda y en qué se apoya. Calculado sobre sentencias publicadas, no sobre impresiones de pasillo.",
       metrics: [
-        { value: "n ≥ 30", label: "Muestra mínima para publicar un perfil", color: "green" },
-        { value: "±18%", label: "Intervalo al 95 % en esa muestra", color: "gold" },
-        { value: "n ≥ 200", label: "Casos etiquetados antes de entrenar el modelo", color: "gold" },
+        { value: "30", label: "sentencias mínimas antes de mostrarle el perfil de un magistrado", color: "green" },
+        { value: "0", label: "tasas de acierto publicadas: no hemos medido ninguna y no la vamos a inventar", color: "gold" },
+        { value: "6 meses", label: "ventana móvil con la que se calcula su tendencia", color: "gold" },
       ],
       features: [
-        "Tasas favorable, parcial y desfavorable por juez y materia",
-        "Días promedio de resolución por tipo de caso",
-        "Índice de especialización Herfindahl-Hirschman",
-        "Tendencia en ventanas móviles de seis meses",
-        "Fundamentos más citados y preferencia probatoria",
-        "Alertas de deriva sobre el patrón reciente",
+        "Cómo resuelve por materia: favorable, parcial y desfavorable",
+        "Cuánto tarda en resolver, en días, por tipo de caso",
+        "En qué fundamentos legales se apoya con más frecuencia",
+        "Qué tipo de prueba pesa más en sus decisiones",
+        "Si su patrón reciente se aparta de su histórico",
+        "El historial de su firma contra ese abogado y esa contraparte",
       ],
-      tech: "130.906 sentencias | perfil fiable desde n = 30 | predicción heurística bajo 200 casos etiquetados",
+      tech: "Sobre las 130.906 sentencias publicadas del corpus · med. ago 2026",
       cta: "Conocer Más",
-      disclaimer: "Herramienta de apoyo al criterio profesional, no un sustituto. Escrita contra el marco de la Opinión Formal 512 de la ABA.",
+      disclaimer: "No predice el resultado de su caso: describe cómo ha resuelto un tribunal. Es apoyo al criterio profesional, no un sustituto.",
     },
     transparency: {
-      sectionTitle: "Transparencia",
-      title: "Los Tres Límites que Declaramos",
+      sectionTitle: "Límites declarados",
+      title: "Dónde no debe confiar en nosotros",
       subtitle:
-        "Antes de vender verificación de vigencia hay que decir qué no cubre. Hay responsabilidad profesional en juego, así que esto va en el sitio y no en un anexo del contrato.",
+        "Antes de comprometer su criterio profesional con una herramienta conviene saber dónde no llega. Esto no está en un anexo del contrato: está aquí, y también dentro del producto cuando le toca.",
       items: [
         {
-          value: "179",
-          title: "normas figuran derogadas sin respaldo",
+          value: "Antes de 2012",
+          title: "Decretos que no tenemos",
           description:
-            "Sin fecha, sin norma derogante y sin pasaje que lo sostenga. La consulta programática las devuelve marcadas como no confiables y la búsqueda del producto las filtra. Cerrarlas exige fuentes de 1960–2010 que están fuera del corpus.",
-        },
-        {
-          value: "1885–2011",
-          title: "decretos: cobertura cero",
-          description:
-            "La cobertura registral de decretos empieza en 2012. Hay documentos fundacionales desde 1844, así que «de 1844 hasta hoy» sería cierto en los extremos y engañoso en el medio. Preferimos nombrar el tramo hueco.",
+            "La cobertura de decretos empieza en 2012. Si su caso depende de uno anterior, vaya a la Gaceta. Se lo decimos aquí y se lo decimos en la búsqueda, no cuando ya esté en audiencia.",
         },
         {
           value: "52",
-          title: "anulaciones parciales identificadas, aún sin cargar",
+          title: "Anulaciones parciales del TC sin cargar",
           description:
-            "Hoy el motor no responde si un artículo concreto fue anulado por el Tribunal Constitucional: opera a nivel de norma entera. La infraestructura de datos existe; la carga no se ha hecho.",
+            "El motor responde sobre la norma entera, no sobre el artículo. Si lo que decide su caso es si un artículo concreto quedó anulado, esa verificación sigue siendo suya.",
+        },
+        {
+          value: "179",
+          title: "Normas derogadas sin evidencia",
+          description:
+            "Constan derogadas sin fecha ni norma derogante. En vez de mostrárselas como buenas, las filtramos de la búsqueda y las declaramos en público.",
+        },
+        {
+          value: "Sin perfil",
+          title: "Magistrados con pocas sentencias publicadas",
+          description:
+            "No le mostramos un perfil que la muestra no sostiene. Preferimos decirle que no sabemos a que usted entre a audiencia con una estadística inventada.",
         },
       ],
-      footerTitle: "Cada cifra lleva su fecha de medición",
+      footerTitle: "La misma disciplina que aplicamos a lo que le entregamos",
       footerText:
-        "Publicamos el estado de la plataforma con la fecha de cada dato: corpus, reconciliación contra la fuente oficial, calidad de las pruebas y lo que sigue abierto. Si un dato lleva más de treinta días sin medirse, lo decimos en vez de citarlo.",
+        "El estado completo de la plataforma —corpus, reconciliación contra la fuente oficial, calidad y lo que sigue abierto— es público y va fechado dato por dato. Si algo lleva más de treinta días sin medirse, lo decimos en vez de citarlo.",
       cta: "Ver el estado de la plataforma",
     },
-    impact: {
-      sectionTitle: "Lo Que Está Medido",
-      title: "Cifras con su Fecha de Medición",
-      stats: [
-        { value: "99,5%", label: "de las leyes 2010–2025 reconciliadas contra el portal oficial", date: "med. ago 2026" },
-        { value: "100%", label: "del corpus normativo embebido: 202.444 componentes", date: "med. ago 2026" },
-        { value: "7.395", label: "pruebas de backend en verde, cero fallos", date: "med. sep 2026" },
-        { value: "85", label: "entregables del redactor legislativo en producción", date: "med. ago 2026" },
-      ],
-    },
     trust: {
-      sectionTitle: "Seguridad y Confianza",
-      title: "Protección de Nivel Enterprise",
+      sectionTitle: "Sus datos",
+      title: "Qué pasa con los datos de sus clientes",
       items: [
         { title: "Multi-Tenant Aislado", description: "Company → Firma → Departamento → Usuario. Datos completamente aislados por firma.", icon: "Lock" },
         { title: "Encriptación JWT + AES", description: "Autenticación robusta con tokens JWT y encriptación AES para datos en reposo y tránsito.", icon: "Key" },
@@ -246,7 +258,7 @@ export const translations = {
     },
     pricing: {
       sectionTitle: "Precios",
-      title: "Planes que Escalan con tu Firma",
+      title: "Qué incluye cada plan",
       subtitle: "Lo que cambia entre planes es la profundidad del insight: el dato, su contexto, la implicación para tu caso y la acción recomendada.",
       monthly: "Mensual",
       annual: "Anual",
@@ -602,80 +614,96 @@ export const translations = {
       title: "Smarter Legal Decisions,",
       titleHighlight: "Today",
       subtitle:
-        "130,906 Dominican rulings with full text and 100% of the normative corpus embedded. JurisAI researches, drafts and issues opinions on Dominican law, and checks every citation against the original text: when a citation does not hold, the document says so.",
+        "Your firm researches, drafts and advises on Dominican law with the full body of case law and regulation behind it. And before a document leaves the office, JurisAI tells you which citations it could not sustain against the original text.",
       cta: "Request Personalized Demo",
       ctaSecondary: "See How It Works",
       trustedBy: "Built on Dominican case law",
     },
-    socialProof: {
-      stats: [
-        { value: "130,906", label: "Rulings with full text", date: "meas. Aug 2026" },
-        { value: "202,444", label: "Normative components embedded, 100%", date: "meas. Aug 2026" },
-        { value: "22,146", label: "Relations in the normative graph", date: "meas. Aug 2026" },
-        { value: "25", label: "Live modules on the platform", date: "meas. Aug 2026" },
-      ],
-    },
-    problem: {
-      sectionTitle: "The Problem",
-      title: "The Dominican Legal Market Needs to Evolve",
-      subtitle: "Research, verification and drafting consume the bulk of a firm's hours",
+    coverage: {
+      title: "What it covers",
       items: [
         {
-          title: "Manual Research",
-          description: "Hours searching for case law in outdated and fragmented systems.",
-          icon: "Search",
+          claim: "Every published ruling of the Supreme Court, the Constitutional Court and the Superior Administrative Court, with the full text of each one.",
+          proof: "130,906 rulings · meas. Aug 2026",
         },
         {
-          title: "No Judge Data",
-          description: "Strategic decisions without access to historical judicial behavior patterns.",
-          icon: "Brain",
+          claim: "The law in force on the day of the events, not today's. You can check a rule's status on any past date.",
+          proof: "Point-in-time engine · in production since Aug 2026",
         },
         {
-          title: "Unquantified Risk",
-          description: "Subjective evaluation without predictive models or standardized frameworks.",
-          icon: "AlertTriangle",
+          claim: "Which rule repealed which, and what the Constitutional Court annulled. They are not the same, and they carry different consequences for your case.",
+          proof: "Eight status states over the normative graph",
         },
         {
-          title: "Inconsistent Analysis",
-          description: "Variable quality in memos and opinions across attorneys in the firm.",
-          icon: "FileWarning",
+          claim: "Statutes from 2010 to 2025 reconciled one by one against the official portal, so what you cite exists exactly as you cite it.",
+          proof: "99.5% reconciled · meas. Aug 2026",
+        },
+      ],
+      cta: "See the figure behind each claim",
+    },
+    forFirms: {
+      sectionTitle: "For your firm",
+      title: "Four moments where this changes your day",
+      subtitle:
+        "We do not sell hours saved: how many depends on your volume and we have not measured it. We sell exactly what the system does at the four moments where a firm has something at stake.",
+      items: [
+        {
+          moment: "The opinion you sign",
+          body:
+            "A memo that attributes to a ruling something the ruling does not say is your problem, not the model's. JurisAI checks every citation against the text of that ruling, removes from the document whatever does not hold, and records what it removed and why.",
+          gain: "What leaves your office is defensible",
         },
         {
-          title: "Scattered Regulations",
-          description: "Thousands of laws, decrees, and resolutions without temporal versioning or mapped relationships.",
-          icon: "Layers",
+          moment: "The contract due back today",
+          body:
+            "Risk-clause analysis against your firm's playbook, proposed redlines and a version ready for review. No document the AI produces is issued without partner approval: sign-off is part of the flow, not a promise.",
+          gain: "Review with the house standard, not a generic one",
         },
         {
-          title: "Manual Processes",
-          description: "Document generation, due diligence, and compliance without intelligent automation.",
-          icon: "Clock",
+          moment: "The hearing you prepare on Friday",
+          body:
+            "How that court has ruled on that subject matter, how long it takes, which grounds it leans on, and what kind of evidence weighs most in its decisions. All computed on published rulings, not on hallway impressions.",
+          gain: "You walk in knowing what used to be a hunch",
+        },
+        {
+          moment: "The deadline you cannot miss",
+          body:
+            "Deadlines computed with clear days and holidays under Law 139-97, one reminder per deadline per day, and the procedural filing generated from the matter record itself. Eleven matter types, seven of them litigation, with their phases and instances.",
+          gain: "The calendar stops living in someone's head",
         },
       ],
     },
-    howItWorks: {
-      sectionTitle: "How It Works",
-      title: "From Complexity to Clarity in 3 Steps",
-      steps: [
+    forInstitutions: {
+      sectionTitle: "For institutions",
+      title: "If your job is producing rules, not applying them",
+      subtitle:
+        "Ministries, congress and legal departments of large corporates use a different part of the platform: the one that drafts, issues opinions, and answers queries from another system.",
+      items: [
         {
-          number: "01",
-          title: "Upload Your Case",
-          description: "Upload contracts, legal documents, or describe your query. JurisAI accepts PDF, DOCX, and free text.",
+          name: "Legislative drafter",
+          body:
+            "Proposes the statutory reform, implementing regulation or administrative rule grounded solely in the corpus, and delivers two pieces: the articles and the explanatory memorandum saying why each decision is there. The bill has to state what happens to the bodies already doing that work.",
+          proof: "85 deliverables in production between Jul and Aug 2026",
         },
         {
-          number: "02",
-          title: "AI Analyzes with CREAC",
-          description: "Specialized agents process your case using the CREAC framework: Conclusion, Rule, Explanation, Application, and Strategic Conclusion. The text of every statute cited is inserted by the system from the corpus, not by the model.",
+          name: "Bill opinions",
+          body:
+            "Article-by-article mapping against the framework in force, constitutionality analysis, systemic coherence, impact projection and a concordance table, exportable as an opinion. The table cannot assert a repeal the statute does not make.",
+          proof: "Real cost of a 73-article opinion: US$ 1.90",
         },
         {
-          number: "03",
-          title: "Decide with Confidence",
-          description: "Get the analysis with case law cited and checked against its original text, and with whatever could not be verified declared in the document itself.",
+          name: "API queries",
+          body:
+            "Your system asks whether a rule exists, when it was issued and what the search actually covered; up to fifty obligations per call. The response distinguishes \"was not issued\" from \"no record located\", which is the difference between being able to assert it in a report and not.",
+          proof: "Service credentials issued from the admin panel",
         },
       ],
+      note:
+        "Declared scope of the opinion v1: the constitutionality section ships without precedent-based grounding and stays within what is verifiable against text. We prefer a shorter opinion to one that attributes doctrine to the wrong ruling.",
     },
     features: {
-      sectionTitle: "Modules",
-      title: "Complete Legal Intelligence Ecosystem",
+      sectionTitle: "The platform",
+      title: "The modules your firm will open every day",
       subtitle: "25 live modules across four families: daily practice, normative intelligence, legislative work, and procedural intelligence.",
       items: [
         {
@@ -757,68 +785,64 @@ export const translations = {
     },
     ipHighlight: {
       sectionTitle: "Unique Differentiator",
-      title: "Procedural Intelligence",
-      subtitle: "Judge and attorney profiles built on the 130,906 rulings in the corpus, with the reliability threshold declared",
+      title: "Walk into the hearing knowing how that court rules",
+      subtitle: "How it has ruled on that subject matter, how long it takes and what it leans on. Computed on published rulings, not on hallway impressions.",
       metrics: [
-        { value: "n ≥ 30", label: "Minimum sample to publish a profile", color: "green" },
-        { value: "±18%", label: "Interval at 95% on that sample", color: "gold" },
-        { value: "n ≥ 200", label: "Labeled cases before the model trains", color: "gold" },
+        { value: "30", label: "minimum rulings before we show you a judge's profile", color: "green" },
+        { value: "0", label: "accuracy rates published: we have measured none and will not invent one", color: "gold" },
+        { value: "6 months", label: "rolling window used to compute the trend", color: "gold" },
       ],
       features: [
-        "Favorable, partial and unfavorable rates by judge and subject",
-        "Average resolution days by case type",
-        "Herfindahl-Hirschman specialization index",
-        "Trend across six-month rolling windows",
-        "Most-cited legal grounds and evidentiary preference",
-        "Drift alerts on recent decision patterns",
+        "How it rules by subject: favorable, partial and unfavorable",
+        "How long it takes to resolve, in days, by case type",
+        "Which legal grounds it leans on most often",
+        "What kind of evidence weighs most in its decisions",
+        "Whether its recent pattern departs from its own history",
+        "Your firm's record against that attorney and that opposing party",
       ],
-      tech: "130,906 rulings | reliable profile from n = 30 | heuristic prediction below 200 labeled cases",
+      tech: "Over the 130,906 published rulings in the corpus · meas. Aug 2026",
       cta: "Learn More",
-      disclaimer: "A support tool for professional judgment, not a substitute. Written against the framework of ABA Formal Opinion 512.",
+      disclaimer: "It does not predict your case's outcome: it describes how a court has ruled. Support for professional judgment, not a substitute.",
     },
     transparency: {
-      sectionTitle: "Transparency",
-      title: "The Three Limits We Declare",
+      sectionTitle: "Declared limits",
+      title: "Where you should not rely on us",
       subtitle:
-        "Before selling force-of-law verification you have to say what it does not cover. There is real professional liability at stake, so this goes on the site, not in a contract annex.",
+        "Before you commit your professional judgment to a tool, you should know where it stops. This is not in a contract annex: it is here, and it is inside the product when it matters.",
       items: [
         {
-          value: "179",
-          title: "rules recorded as repealed without support",
+          value: "Before 2012",
+          title: "Decrees we do not have",
           description:
-            "No date, no repealing rule, and no passage to back it. The programmatic query returns them flagged as unreliable and the product search filters them out. Closing them requires 1960–2010 sources outside the corpus.",
-        },
-        {
-          value: "1885–2011",
-          title: "decrees: zero coverage",
-          description:
-            "Registry coverage for decrees starts in 2012. We hold founding documents from 1844, so \"from 1844 to today\" would be true at the edges and misleading in the middle. We prefer to name the gap.",
+            "Decree coverage starts in 2012. If your case depends on an earlier one, go to the Gaceta. We tell you here and we tell you in the search, not once you are already in the hearing.",
         },
         {
           value: "52",
-          title: "partial annulments identified, not yet loaded",
+          title: "Partial annulments not yet loaded",
           description:
-            "Today the engine cannot answer whether a specific article was annulled by the Constitutional Court: it operates at whole-rule level. The data infrastructure exists; the load has not been done.",
+            "The engine answers at whole-rule level, not per article. If what decides your case is whether a specific article was annulled, that check is still yours.",
+        },
+        {
+          value: "179",
+          title: "Rules repealed without evidence",
+          description:
+            "They are recorded as repealed with no date and no repealing rule. Rather than show them to you as sound, we filter them out of search and declare them publicly.",
+        },
+        {
+          value: "No profile",
+          title: "Judges with few published rulings",
+          description:
+            "We do not show a profile the sample cannot support. We would rather tell you we do not know than have you walk into a hearing with an invented statistic.",
         },
       ],
-      footerTitle: "Every figure carries its measurement date",
+      footerTitle: "The same discipline we apply to what we hand you",
       footerText:
-        "We publish the platform status with a date on every figure: corpus, reconciliation against the official source, test quality, and what remains open. If a figure has gone more than thirty days without being measured, we say so instead of quoting it.",
+        "The full platform status —corpus, reconciliation against the official source, quality and what remains open— is public and dated figure by figure. If something has gone more than thirty days without being measured, we say so instead of quoting it.",
       cta: "See the platform status",
     },
-    impact: {
-      sectionTitle: "What Is Measured",
-      title: "Figures with Their Measurement Date",
-      stats: [
-        { value: "99.5%", label: "of 2010–2025 statutes reconciled against the official portal", date: "meas. Aug 2026" },
-        { value: "100%", label: "of the normative corpus embedded: 202,444 components", date: "meas. Aug 2026" },
-        { value: "7,395", label: "backend tests green, zero failures", date: "meas. Sep 2026" },
-        { value: "85", label: "legislative drafter deliverables in production", date: "meas. Aug 2026" },
-      ],
-    },
     trust: {
-      sectionTitle: "Security and Trust",
-      title: "Enterprise-Grade Protection",
+      sectionTitle: "Your data",
+      title: "What happens to your clients' data",
       items: [
         { title: "Isolated Multi-Tenant", description: "Company → Firm → Department → User. Data completely isolated per firm.", icon: "Lock" },
         { title: "JWT + AES Encryption", description: "Robust authentication with JWT tokens and AES encryption for data at rest and in transit.", icon: "Key" },
@@ -830,7 +854,7 @@ export const translations = {
     },
     pricing: {
       sectionTitle: "Pricing",
-      title: "Plans That Scale with Your Firm",
+      title: "What each plan includes",
       subtitle: "What changes between plans is insight depth: the fact, its context, the implication for your case, and the recommended action.",
       monthly: "Monthly",
       annual: "Annual",

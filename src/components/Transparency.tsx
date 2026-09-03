@@ -18,7 +18,7 @@ export default function Transparency() {
           className="mb-12"
         />
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {t.transparency.items.map((item, i) => (
             <div key={i} className="border-t-2 border-accent-600 pt-5">
               <span className="figure-value block text-4xl lg:text-[2.6rem] text-accent-600">

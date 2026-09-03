@@ -2,13 +2,12 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import SocialProof from "@/components/SocialProof";
-import Problem from "@/components/Problem";
-import HowItWorks from "@/components/HowItWorks";
+import Coverage from "@/components/Coverage";
+import ForFirms from "@/components/ForFirms";
 import Features from "@/components/Features";
 import IPHighlight from "@/components/IPHighlight";
+import ForInstitutions from "@/components/ForInstitutions";
 import Transparency from "@/components/Transparency";
-import Impact from "@/components/Impact";
 import Trust from "@/components/Trust";
 import Pricing from "@/components/Pricing";
 import CTA from "@/components/CTA";
@@ -19,13 +18,12 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <SocialProof />
-      <Problem />
-      <HowItWorks />
+      <Coverage />
+      <ForFirms />
       <Features />
       <IPHighlight />
+      <ForInstitutions />
       <Transparency />
-      <Impact />
       <Trust />
       <Pricing />
       <CTA />
