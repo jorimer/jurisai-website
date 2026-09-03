@@ -35,7 +35,7 @@ export default function EstadoPage() {
           </span>
           <div className="flex flex-col lg:flex-row lg:items-end gap-8">
             <div className="flex-1">
-              <h1 className="text-4xl sm:text-5xl font-bold text-white tracking-tight">
+              <h1 className="text-4xl sm:text-5xl text-white tracking-tight">
                 {t.estadoPage.title}
               </h1>
               <p className="mt-6 text-lg text-primary-200 leading-relaxed max-w-3xl">
@@ -60,14 +60,14 @@ export default function EstadoPage() {
           <div className="grid gap-14">
             {t.estadoPage.sections.map((section, si) => (
               <div key={si}>
-                <h2 className="text-2xl font-bold text-primary-800 pb-3 border-b-2 border-primary-800">
+                <h2 className="text-2xl text-primary-800 pb-3 border-b-2 border-primary-800">
                   {section.title}
                 </h2>
                 <div>
                   {section.rows.map((row, ri) => (
                     <div
                       key={ri}
-                      className={`flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6 px-2 py-3.5 border-b border-gray-100 ${rowTint[row.tone]}`}
+                      className={`flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6 px-2 py-3.5 border-b border-rule ${rowTint[row.tone]}`}
                     >
                       <span
                         className={`flex-1 text-sm sm:text-base ${
@@ -82,7 +82,7 @@ export default function EstadoPage() {
                       >
                         {row.value}
                       </span>
-                      <span className="text-xs text-gray-400 tabular-nums sm:w-24 sm:text-right">
+                      <span className="text-xs text-muted tabular-nums sm:w-24 sm:text-right">
                         {row.date}
                       </span>
                     </div>
@@ -100,9 +100,9 @@ export default function EstadoPage() {
       {/* Abiertos */}
       <section className="pb-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-gradient-to-br from-primary-800 to-primary-900 p-8 sm:p-10">
+          <div className="rounded-edge bg-gradient-to-br from-primary-800 to-primary-900 p-8 sm:p-10">
             <div className="flex flex-wrap items-baseline gap-x-5 gap-y-2 pb-5 border-b border-white/10">
-              <h2 className="text-2xl font-bold text-white">{t.estadoPage.openTitle}</h2>
+              <h2 className="text-2xl text-white">{t.estadoPage.openTitle}</h2>
               <span className="text-base text-primary-300">
                 {t.estadoPage.openSubtitle}
               </span>
@@ -110,7 +110,7 @@ export default function EstadoPage() {
             <div className="mt-8 grid md:grid-cols-3 gap-8">
               {t.estadoPage.openItems.map((item, i) => (
                 <div key={i}>
-                  <h3 className="text-base font-semibold text-accent-400 leading-snug">
+                  <h3 className="text-base text-accent-400 leading-snug">
                     {item.title}
                   </h3>
                   <p className="mt-3 text-sm text-primary-200 leading-relaxed">

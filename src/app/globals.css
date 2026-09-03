@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Navy Deep palette */
+  /* ── Navy Deep ── */
   --color-primary-50: #E8EBF0;
   --color-primary-100: #D1D7E1;
   --color-primary-200: #A3AFC3;
@@ -13,7 +13,8 @@
   --color-primary-800: #1A2332;
   --color-primary-900: #141B27;
   --color-primary-950: #0E131B;
-  /* Gold Warm palette */
+
+  /* ── Gold Warm ── */
   --color-accent-50: #FBF6EC;
   --color-accent-100: #F5EDD8;
   --color-accent-200: #EBDAB1;
@@ -24,6 +25,39 @@
   --color-accent-700: #8F7130;
   --color-accent-800: #665122;
   --color-accent-900: #3D3015;
+
+  /* ── Papel y filetes ── */
+  --color-paper: #F7F5F1;
+  --color-paper-warm: #EDE7DA;
+  --color-paper-edge: #DFD4BC;
+  --color-rule: #E7E3DA;
+  --color-rule-strong: #D8D2C6;
+  --color-muted: #9B958A;
+
+  /* ── Veredictos: semánticos, nunca decorativos ── */
+  --color-verdict-ok: #2E7D5B;
+  --color-verdict-ok-ink: #1F5C43;
+  --color-verdict-ok-bg: #F3F7F4;
+  --color-verdict-ok-edge: #CFE3D6;
+  --color-verdict-alert: #B4462F;
+  --color-verdict-alert-ink: #96331F;
+  --color-verdict-alert-bg: #FCF4F2;
+  --color-verdict-alert-edge: #EDD3CB;
+  --color-verdict-void: #7A3E8F;
+  --color-verdict-void-bg: #F8F3FA;
+  --color-verdict-void-edge: #E4D5EA;
+  --color-verdict-none: #6E6A5F;
+  --color-verdict-none-ink: #55514A;
+  --color-verdict-none-bg: #F5F4F1;
+  --color-verdict-none-edge: #DCD8CE;
+
+  /* ── Tipografía ── */
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ── Radio: el borde casi recto separa el registro documental del SaaS ── */
+  --radius-edge: 2px;
 }
 
 html {
@@ -31,18 +65,46 @@ html {
 }
 
 body {
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans);
+  background: var(--color-paper);
+  color: var(--color-primary-800);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Display serif en toda la jerarquía. El peso vive en el tamaño, no en el trazo. */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+
+/* Etiqueta de sección: mono, versalita, muy espaciada. */
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Identificadores jurídicos, fechas de medición y respuestas de API. */
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Cifra fechada: el dispositivo de marca. */
+.figure-value {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 @keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fade-in {
@@ -50,56 +112,17 @@ body {
   to { opacity: 1; }
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(212, 184, 122, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(212, 184, 122, 0.6); }
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
-}
-
-.animate-fade-in {
-  animation: fade-in 0.8s ease-out forwards;
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
+.animate-fade-in-up { animation: fade-in-up 0.6s ease-out forwards; }
+.animate-fade-in { animation: fade-in 0.8s ease-out forwards; }
 .animation-delay-200 { animation-delay: 200ms; }
 .animation-delay-400 { animation-delay: 400ms; }
 .animation-delay-600 { animation-delay: 600ms; }
 
-/* Gradient text */
-.gradient-text {
-  background: linear-gradient(135deg, #D4B87A, #E2C88A);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.gradient-text-navy {
-  background: linear-gradient(135deg, #1A2332, #2A3D5A);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Glass morphism */
-.glass {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.glass-dark {
-  background: rgba(15, 23, 42, 0.8);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up,
+  .animate-fade-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }

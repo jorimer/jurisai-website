@@ -25,10 +25,10 @@ export const translations = {
     },
     socialProof: {
       stats: [
-        { value: "130.906", label: "Sentencias con texto íntegro · ago 2026" },
-        { value: "202.444", label: "Componentes normativos embebidos · ago 2026" },
-        { value: "22.146", label: "Relaciones en el grafo normativo · ago 2026" },
-        { value: "25", label: "Módulos vivos en la plataforma · ago 2026" },
+        { value: "130.906", label: "Sentencias con texto íntegro", date: "med. ago 2026" },
+        { value: "202.444", label: "Componentes normativos embebidos, el 100 %", date: "med. ago 2026" },
+        { value: "22.146", label: "Relaciones en el grafo normativo", date: "med. ago 2026" },
+        { value: "25", label: "Módulos vivos en la plataforma", date: "med. ago 2026" },
       ],
     },
     problem: {
@@ -226,10 +226,10 @@ export const translations = {
       sectionTitle: "Lo Que Está Medido",
       title: "Cifras con su Fecha de Medición",
       stats: [
-        { value: "99,5%", label: "de las leyes 2010–2025 reconciliadas contra el portal oficial · ago 2026" },
-        { value: "100%", label: "del corpus normativo embebido: 202.444 componentes · ago 2026" },
-        { value: "7.395", label: "pruebas de backend en verde, cero fallos · sep 2026" },
-        { value: "85", label: "entregables del redactor legislativo en producción · ago 2026" },
+        { value: "99,5%", label: "de las leyes 2010–2025 reconciliadas contra el portal oficial", date: "med. ago 2026" },
+        { value: "100%", label: "del corpus normativo embebido: 202.444 componentes", date: "med. ago 2026" },
+        { value: "7.395", label: "pruebas de backend en verde, cero fallos", date: "med. sep 2026" },
+        { value: "85", label: "entregables del redactor legislativo en producción", date: "med. ago 2026" },
       ],
     },
     trust: {
@@ -609,10 +609,10 @@ export const translations = {
     },
     socialProof: {
       stats: [
-        { value: "130,906", label: "Rulings with full text · Aug 2026" },
-        { value: "202,444", label: "Normative components embedded · Aug 2026" },
-        { value: "22,146", label: "Relations in the normative graph · Aug 2026" },
-        { value: "25", label: "Live modules on the platform · Aug 2026" },
+        { value: "130,906", label: "Rulings with full text", date: "meas. Aug 2026" },
+        { value: "202,444", label: "Normative components embedded, 100%", date: "meas. Aug 2026" },
+        { value: "22,146", label: "Relations in the normative graph", date: "meas. Aug 2026" },
+        { value: "25", label: "Live modules on the platform", date: "meas. Aug 2026" },
       ],
     },
     problem: {
@@ -810,10 +810,10 @@ export const translations = {
       sectionTitle: "What Is Measured",
       title: "Figures with Their Measurement Date",
       stats: [
-        { value: "99.5%", label: "of 2010–2025 statutes reconciled against the official portal · Aug 2026" },
-        { value: "100%", label: "of the normative corpus embedded: 202,444 components · Aug 2026" },
-        { value: "7,395", label: "backend tests green, zero failures · Sep 2026" },
-        { value: "85", label: "legislative drafter deliverables in production · Aug 2026" },
+        { value: "99.5%", label: "of 2010–2025 statutes reconciled against the official portal", date: "meas. Aug 2026" },
+        { value: "100%", label: "of the normative corpus embedded: 202,444 components", date: "meas. Aug 2026" },
+        { value: "7,395", label: "backend tests green, zero failures", date: "meas. Sep 2026" },
+        { value: "85", label: "legislative drafter deliverables in production", date: "meas. Aug 2026" },
       ],
     },
     trust: {

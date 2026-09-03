@@ -1,176 +1,119 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useI18n } from "@/i18n/context";
 
 export default function Navbar() {
   const { t, locale, toggleLocale } = useI18n();
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const links = [
+    { href: "/modulos", label: t.nav.modules },
+    { href: "/inteligencia-procesal", label: t.nav.intelligence },
+    { href: "/#pricing", label: t.nav.pricing },
+    { href: "/contact", label: t.nav.contact },
+  ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/90 backdrop-blur-lg shadow-lg shadow-black/5 border-b border-primary-100"
-          : "bg-transparent"
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary-900 border-b border-accent-400/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
+        <div className="flex items-center justify-between h-16 lg:h-19">
           <Link href="/" className="flex items-center">
             <Image
               src="/jurisai-logo.png"
               alt="JurisAI"
               width={160}
               height={46}
-              className={`h-9 w-auto transition-all duration-300 ${scrolled ? "" : "brightness-0 invert"}`}
+              className="h-9 w-auto brightness-0 invert"
               priority
             />
           </Link>
 
-          {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-8">
-            <Link
-              href="/modulos"
-              className={`text-sm font-medium transition-colors ${scrolled ? "text-primary-500 hover:text-primary-800" : "text-white/80 hover:text-white"}`}
-            >
-              {t.nav.modules}
-            </Link>
+          <div className="hidden lg:flex items-center gap-7">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm text-primary-100 hover:text-white transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
             <Link
               href="/estado"
-              className={`text-sm font-medium transition-colors ${scrolled ? "text-primary-500 hover:text-primary-800" : "text-white/80 hover:text-white"}`}
+              className="text-sm text-accent-400 border-b border-accent-400/50 pb-0.5 hover:text-accent-300 hover:border-accent-300 transition-colors"
             >
-              {t.nav.status}
-            </Link>
-            <Link
-              href="/#pricing"
-              className={`text-sm font-medium transition-colors ${scrolled ? "text-primary-500 hover:text-primary-800" : "text-white/80 hover:text-white"}`}
-            >
-              {t.nav.pricing}
-            </Link>
-            <Link
-              href="/contact"
-              className={`text-sm font-medium transition-colors ${scrolled ? "text-primary-500 hover:text-primary-800" : "text-white/80 hover:text-white"}`}
-            >
-              {t.nav.contact}
+              {t.footer.status}
             </Link>
           </div>
 
-          {/* Right side */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-4">
             <button
               onClick={toggleLocale}
-              className={`px-3 py-1.5 text-xs font-semibold rounded-full border transition-all ${
-                scrolled
-                  ? "border-primary-200 text-primary-500 hover:border-accent-400 hover:text-accent-600"
-                  : "border-white/30 text-white/80 hover:border-accent-400 hover:text-accent-400"
-              }`}
+              className="mono px-2.5 py-1 text-xs text-primary-200 border border-white/20 rounded-edge hover:border-accent-400 hover:text-accent-400 transition-colors"
+              aria-label={locale === "es" ? "Switch to English" : "Cambiar a español"}
             >
               {locale === "es" ? "EN" : "ES"}
             </button>
-            <Link
-              href="/login"
-              className={`text-sm font-medium transition-colors px-4 py-2 ${
-                scrolled ? "text-primary-600 hover:text-primary-800" : "text-white/90 hover:text-white"
-              }`}
-            >
+            <Link href="/login" className="text-sm text-primary-200 hover:text-white transition-colors">
               {t.nav.login}
             </Link>
             <Link
               href="/register"
-              className="text-sm font-medium text-primary-900 bg-gradient-to-r from-accent-400 to-accent-300 hover:from-accent-300 hover:to-accent-200 px-5 py-2.5 rounded-full transition-all shadow-lg shadow-accent-400/25 hover:shadow-accent-400/40"
+              className="text-sm font-semibold text-primary-900 bg-accent-400 hover:bg-accent-300 px-5 py-2.5 rounded-edge transition-colors"
             >
               {t.nav.register}
             </Link>
           </div>
 
-          {/* Mobile hamburger */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-3"
             onClick={() => setMobileOpen(!mobileOpen)}
+            aria-expanded={mobileOpen}
+            aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
           >
-            <svg
-              className={`w-6 h-6 ${scrolled ? "text-primary-700" : "text-white"}`}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
+                <path strokeLinecap="round" strokeWidth={1.6} d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                <path strokeLinecap="round" strokeWidth={1.6} d="M4 7h16M4 12h16M4 17h16" />
               )}
             </svg>
           </button>
         </div>
 
-        {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden pb-4 space-y-2 animate-fade-in bg-white rounded-xl mt-2 p-4 shadow-xl border border-primary-100">
-            <Link
-              href="/modulos"
-              className="block px-4 py-2 text-sm font-medium text-primary-600 hover:bg-primary-50 rounded-lg"
-              onClick={() => setMobileOpen(false)}
-            >
-              {t.nav.modules}
-            </Link>
-            <Link
-              href="/estado"
-              className="block px-4 py-2 text-sm font-medium text-primary-600 hover:bg-primary-50 rounded-lg"
-              onClick={() => setMobileOpen(false)}
-            >
-              {t.nav.status}
-            </Link>
-            <Link
-              href="/#pricing"
-              className="block px-4 py-2 text-sm font-medium text-primary-600 hover:bg-primary-50 rounded-lg"
-              onClick={() => setMobileOpen(false)}
-            >
-              {t.nav.pricing}
-            </Link>
-            <Link
-              href="/contact"
-              className="block px-4 py-2 text-sm font-medium text-primary-600 hover:bg-primary-50 rounded-lg"
-              onClick={() => setMobileOpen(false)}
-            >
-              {t.nav.contact}
-            </Link>
-            <div className="flex items-center gap-2 px-4 pt-2 border-t border-primary-100">
+          <div className="lg:hidden pb-5 pt-2 animate-fade-in border-t border-white/10">
+            {[...links, { href: "/estado", label: t.footer.status }].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="block px-2 py-3 text-base text-primary-100 hover:text-accent-400 border-b border-white/5"
+                onClick={() => setMobileOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <div className="flex items-center gap-3 pt-4">
               <button
                 onClick={toggleLocale}
-                className="px-3 py-1.5 text-xs font-semibold rounded-full border border-primary-200 text-primary-500"
+                className="mono px-3 py-2.5 text-xs text-primary-200 border border-white/20 rounded-edge"
               >
                 {locale === "es" ? "EN" : "ES"}
               </button>
               <Link
                 href="/login"
-                className="text-sm font-medium text-primary-600 px-4 py-2"
+                className="flex-1 text-center text-sm text-primary-100 border border-white/20 px-4 py-3 rounded-edge"
+                onClick={() => setMobileOpen(false)}
               >
                 {t.nav.login}
               </Link>
               <Link
                 href="/register"
-                className="text-sm font-medium text-primary-900 bg-accent-400 px-4 py-2 rounded-full"
+                className="flex-1 text-center text-sm font-semibold text-primary-900 bg-accent-400 px-4 py-3 rounded-edge"
+                onClick={() => setMobileOpen(false)}
               >
                 {t.nav.register}
               </Link>

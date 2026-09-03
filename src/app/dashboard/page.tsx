@@ -35,9 +35,9 @@ export default function DashboardPage() {
   const { t, locale, toggleLocale } = useI18n();
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-paper">
       {/* Top bar */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-40">
+      <header className="bg-white border-b border-rule sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center">
@@ -45,14 +45,14 @@ export default function DashboardPage() {
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <a href="#" className="text-sm font-medium text-primary-600">{t.dashboard.overview}</a>
-              <a href="#" className="text-sm font-medium text-gray-500 hover:text-gray-700">{t.dashboard.modules}</a>
-              <a href="#" className="text-sm font-medium text-gray-500 hover:text-gray-700">{t.dashboard.settings}</a>
+              <a href="#" className="text-sm font-medium text-primary-400 hover:text-primary-600">{t.dashboard.modules}</a>
+              <a href="#" className="text-sm font-medium text-primary-400 hover:text-primary-600">{t.dashboard.settings}</a>
             </nav>
           </div>
           <div className="flex items-center gap-3">
             <button
               onClick={toggleLocale}
-              className="px-3 py-1.5 text-xs font-semibold rounded-full border border-gray-200 text-gray-600 hover:border-primary-300"
+              className="px-3 py-1.5 text-xs font-semibold rounded-full border border-rule text-primary-600 hover:border-primary-300"
             >
               {locale === "es" ? "EN" : "ES"}
             </button>
@@ -67,14 +67,14 @@ export default function DashboardPage() {
         {/* Welcome */}
         <div className="mb-8">
           <div className="flex items-center gap-3">
-            <h1 className="text-2xl font-bold text-gray-900">
+            <h1 className="text-2xl text-primary-800">
               {t.dashboard.welcome}, Ricardo
             </h1>
             <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-accent-50 text-accent-700 border border-accent-200">
               {locale === "es" ? "Vista de demostración" : "Demo view"}
             </span>
           </div>
-          <p className="text-gray-500 text-sm mt-1">
+          <p className="text-primary-400 text-sm mt-1">
             {locale === "es"
               ? "Las cifras del corpus son reales y llevan su fecha de medición. Los conteos por módulo y la actividad reciente son datos de ejemplo."
               : "The corpus figures are real and carry their measurement date. Per-module counts and recent activity are sample data."}
@@ -89,10 +89,10 @@ export default function DashboardPage() {
             { label: locale === "es" ? "Relaciones en el grafo" : "Relations in the graph", value: locale === "es" ? "22.146" : "22,146", change: locale === "es" ? "med. ago 2026" : "meas. Aug 2026" },
             { label: locale === "es" ? "Módulos disponibles" : "Available modules", value: "25", change: locale === "es" ? "med. ago 2026" : "meas. Aug 2026" },
           ].map((stat, i) => (
-            <div key={i} className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
-              <div className="text-sm text-gray-500 mb-1">{stat.label}</div>
-              <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
-              <div className="text-xs text-gray-400 mt-1">{stat.change}</div>
+            <div key={i} className="bg-white rounded-edge p-5 border border-rule shadow-sm">
+              <div className="text-sm text-primary-400 mb-1">{stat.label}</div>
+              <div className="text-2xl font-bold text-primary-800">{stat.value}</div>
+              <div className="text-xs text-muted mt-1">{stat.change}</div>
             </div>
           ))}
         </div>
@@ -100,12 +100,12 @@ export default function DashboardPage() {
         <div className="grid lg:grid-cols-3 gap-6">
           {/* Modules grid */}
           <div className="lg:col-span-2">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">{t.dashboard.modules}</h2>
+            <h2 className="text-lg text-primary-800 mb-4">{t.dashboard.modules}</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {modules.map((mod, i) => (
                 <button
                   key={i}
-                  className={`p-4 rounded-xl border ${colorMap[mod.color]} hover:shadow-md transition-all text-left`}
+                  className={`p-4 rounded-edge border ${colorMap[mod.color]} hover:shadow-md transition-all text-left`}
                 >
                   <div className="text-sm font-semibold mb-1">
                     {locale === "es" ? mod.name : mod.nameEn}
@@ -116,34 +116,34 @@ export default function DashboardPage() {
             </div>
 
             {/* Quick actions */}
-            <h2 className="text-lg font-semibold text-gray-900 mb-4 mt-8">{t.dashboard.quickActions}</h2>
+            <h2 className="text-lg text-primary-800 mb-4 mt-8">{t.dashboard.quickActions}</h2>
             <div className="grid sm:grid-cols-2 gap-4">
-              <button className="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:border-primary-200 hover:shadow-sm transition-all">
-                <div className="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center">
+              <button className="flex items-center gap-3 p-4 bg-white rounded-edge border border-rule hover:border-primary-200 hover:shadow-sm transition-all">
+                <div className="w-10 h-10 rounded-edge bg-primary-100 flex items-center justify-center">
                   <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                   </svg>
                 </div>
                 <div className="text-left">
-                  <div className="text-sm font-medium text-gray-900">
+                  <div className="text-sm font-medium text-primary-800">
                     {locale === "es" ? "Nuevo Análisis" : "New Analysis"}
                   </div>
-                  <div className="text-xs text-gray-500">
+                  <div className="text-xs text-primary-400">
                     {locale === "es" ? "Subir documento para análisis" : "Upload document for analysis"}
                   </div>
                 </div>
               </button>
-              <button className="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:border-primary-200 hover:shadow-sm transition-all">
-                <div className="w-10 h-10 rounded-lg bg-violet-100 flex items-center justify-center">
+              <button className="flex items-center gap-3 p-4 bg-white rounded-edge border border-rule hover:border-primary-200 hover:shadow-sm transition-all">
+                <div className="w-10 h-10 rounded-edge bg-violet-100 flex items-center justify-center">
                   <svg className="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </div>
                 <div className="text-left">
-                  <div className="text-sm font-medium text-gray-900">
+                  <div className="text-sm font-medium text-primary-800">
                     {locale === "es" ? "Buscar Jurisprudencia" : "Search Jurisprudence"}
                   </div>
-                  <div className="text-xs text-gray-500">
+                  <div className="text-xs text-primary-400">
                     {locale === "es" ? "TSA, TSE, TC, Suprema Corte" : "TSA, TSE, TC, Supreme Court"}
                   </div>
                 </div>
@@ -153,8 +153,8 @@ export default function DashboardPage() {
 
           {/* Recent activity */}
           <div>
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">{t.dashboard.recentActivity}</h2>
-            <div className="bg-white rounded-xl border border-gray-100 divide-y divide-gray-50">
+            <h2 className="text-lg text-primary-800 mb-4">{t.dashboard.recentActivity}</h2>
+            <div className="bg-white rounded-edge border border-rule divide-y divide-gray-50">
               {recentActivity.map((item, i) => (
                 <div key={i} className="p-4 flex items-start gap-3">
                   <div
@@ -163,8 +163,8 @@ export default function DashboardPage() {
                     }`}
                   />
                   <div>
-                    <div className="text-sm text-gray-900">{item.action}</div>
-                    <div className="text-xs text-gray-400 mt-0.5">{item.time}</div>
+                    <div className="text-sm text-primary-800">{item.action}</div>
+                    <div className="text-xs text-muted mt-0.5">{item.time}</div>
                   </div>
                 </div>
               ))}
@@ -173,18 +173,18 @@ export default function DashboardPage() {
         </div>
 
         {/* Webapp integration note */}
-        <div className="mt-8 p-6 bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl border border-primary-100">
+        <div className="mt-8 p-6 bg-gradient-to-r from-primary-50 to-accent-50 rounded-edge border border-primary-100">
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 rounded-edge bg-primary-100 flex items-center justify-center flex-shrink-0">
               <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-1">
+              <h3 className="text-sm text-primary-800 mb-1">
                 {locale === "es" ? "Zona de Integración Webapp" : "Webapp Integration Zone"}
               </h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-primary-600">
                 {locale === "es"
                   ? "Este dashboard es el shell donde se integra tu webapp Vite/React existente. Conecta tu aplicación FastAPI como backend y embebe los componentes React aquí."
                   : "This dashboard is the shell where your existing Vite/React webapp integrates. Connect your FastAPI application as backend and embed React components here."}

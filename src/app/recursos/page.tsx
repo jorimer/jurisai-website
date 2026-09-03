@@ -37,7 +37,7 @@ export default function ResourcesPage() {
       {/* Hero */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl text-white mb-6">
             {t.resourcesPage.title}
           </h1>
           <p className="text-xl text-primary-200 max-w-3xl mx-auto">
@@ -53,14 +53,14 @@ export default function ResourcesPage() {
             {t.resourcesPage.categories.map((category, index) => (
               <div
                 key={index}
-                className="rounded-xl bg-gradient-to-br from-primary-900 to-primary-950 p-8 text-center hover:shadow-xl transition-all duration-300 group"
+                className="rounded-edge bg-gradient-to-br from-primary-900 to-primary-950 p-8 text-center hover:shadow-xl transition-all duration-300 group"
               >
                 <div className="flex justify-center mb-4">
-                  <div className="p-3 bg-accent-400 rounded-lg group-hover:scale-110 transition-transform text-primary-900">
+                  <div className="p-3 bg-accent-400 rounded-edge group-hover:scale-110 transition-transform text-primary-900">
                     {categoryIcons[index]}
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-white">{category}</h3>
+                <h3 className="text-lg text-white">{category}</h3>
               </div>
             ))}
           </div>
@@ -70,8 +70,8 @@ export default function ResourcesPage() {
       {/* Coming Soon */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-primary-50/50 to-white">
         <div className="max-w-3xl mx-auto">
-          <div className="bg-white rounded-2xl border border-primary-100 p-12 shadow-lg">
-            <h2 className="text-4xl font-bold text-primary-800 text-center mb-4">
+          <div className="bg-white rounded-edge border border-primary-100 p-12 shadow-lg">
+            <h2 className="text-4xl text-primary-800 text-center mb-4">
               {t.resourcesPage.comingSoon}
             </h2>
             <p className="text-lg text-primary-400 text-center mb-10">
@@ -83,20 +83,20 @@ export default function ResourcesPage() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-6 py-3 border border-primary-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-accent-400 focus:border-transparent text-primary-800 placeholder-primary-300"
+                className="flex-1 px-6 py-3 border border-primary-200 rounded-edge focus:outline-none focus:ring-2 focus:ring-accent-400 focus:border-transparent text-primary-800 placeholder-primary-300"
                 placeholder={t.resourcesPage.emailPlaceholder}
                 required
               />
               <button
                 type="submit"
-                className="px-8 py-3 bg-gradient-to-r from-accent-400 to-accent-300 text-primary-900 font-bold rounded-xl hover:from-accent-300 hover:to-accent-200 transition-all shadow-lg hover:shadow-xl whitespace-nowrap"
+                className="px-8 py-3 bg-gradient-to-r from-accent-400 to-accent-300 text-primary-900 font-bold rounded-edge hover:from-accent-300 hover:to-accent-200 transition-all shadow-lg hover:shadow-xl whitespace-nowrap"
               >
                 {t.resourcesPage.subscribe}
               </button>
             </form>
 
             {subscribed && (
-              <div className="mt-6 p-4 bg-green-50 border border-green-200 rounded-xl text-center">
+              <div className="mt-6 p-4 bg-green-50 border border-green-200 rounded-edge text-center">
                 <p className="text-green-800 font-semibold">
                   ¡Suscripción completada!
                 </p>

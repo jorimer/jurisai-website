@@ -29,7 +29,7 @@ export default function LoginPage() {
           <Link href="/" className="flex items-center mb-12">
             <Image src="/jurisai-logo.png" alt="JurisAI" width={180} height={52} className="h-12 w-auto brightness-0 invert" />
           </Link>
-          <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight mb-6">
+          <h2 className="text-3xl lg:text-4xl text-white leading-tight mb-6">
             Decisiones Legales Más Inteligentes, Hoy
           </h2>
           <p className="text-primary-200 text-lg leading-relaxed">
@@ -37,15 +37,15 @@ export default function LoginPage() {
             Gestión de asuntos, contratos, vigencia normativa e inteligencia procesal — todo en una plataforma.
           </p>
           <div className="mt-12 grid grid-cols-3 gap-4">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">
               <div className="text-2xl font-bold text-accent-400">130.906</div>
               <div className="text-sm text-primary-300">Sentencias con texto íntegro</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">
               <div className="text-2xl font-bold text-accent-400">202.444</div>
               <div className="text-sm text-primary-300">Componentes normativos</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">
               <div className="text-2xl font-bold text-accent-400">25</div>
               <div className="text-sm text-primary-300">Módulos vivos</div>
             </div>
@@ -63,12 +63,12 @@ export default function LoginPage() {
             </Link>
           </div>
 
-          <h1 className="text-2xl font-bold text-gray-900 mb-2">{t.auth.loginTitle}</h1>
-          <p className="text-gray-500 mb-8">{t.auth.loginSubtitle}</p>
+          <h1 className="text-2xl text-primary-800 mb-2">{t.auth.loginTitle}</h1>
+          <p className="text-primary-400 mb-8">{t.auth.loginSubtitle}</p>
 
           {/* Social logins */}
           <div className="grid grid-cols-2 gap-3 mb-6">
-            <button className="flex items-center justify-center gap-2 px-4 py-2.5 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
+            <button className="flex items-center justify-center gap-2 px-4 py-2.5 border border-rule rounded-edge hover:bg-paper transition-colors text-sm font-medium text-primary-600">
               <svg className="w-5 h-5" viewBox="0 0 24 24">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/>
                 <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -77,7 +77,7 @@ export default function LoginPage() {
               </svg>
               {t.auth.google}
             </button>
-            <button className="flex items-center justify-center gap-2 px-4 py-2.5 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors text-sm font-medium text-gray-700">
+            <button className="flex items-center justify-center gap-2 px-4 py-2.5 border border-rule rounded-edge hover:bg-paper transition-colors text-sm font-medium text-primary-600">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="#00A4EF">
                 <path d="M11.4 24H0V12.6h11.4V24zM24 24H12.6V12.6H24V24zM11.4 11.4H0V0h11.4v11.4zM24 11.4H12.6V0H24v11.4z"/>
               </svg>
@@ -87,10 +87,10 @@ export default function LoginPage() {
 
           <div className="relative mb-6">
             <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-gray-200" />
+              <div className="w-full border-t border-rule" />
             </div>
             <div className="relative flex justify-center">
-              <span className="bg-gradient-to-br from-primary-50 via-accent-50/20 to-white px-4 text-sm text-gray-400">
+              <span className="bg-gradient-to-br from-primary-50 via-accent-50/20 to-white px-4 text-sm text-muted">
                 {t.auth.orContinueWith}
               </span>
             </div>
@@ -98,14 +98,14 @@ export default function LoginPage() {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1.5">
+              <label className="block text-sm font-medium text-primary-600 mb-1.5">
                 {t.auth.email}
               </label>
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-2.5 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm text-gray-900 placeholder-gray-400"
+                className="w-full px-4 py-2.5 border border-rule rounded-edge focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm text-primary-800 placeholder-gray-400"
                 placeholder="nombre@firma.com"
                 required
               />
@@ -113,7 +113,7 @@ export default function LoginPage() {
 
             <div>
               <div className="flex items-center justify-between mb-1.5">
-                <label className="block text-sm font-medium text-gray-700">
+                <label className="block text-sm font-medium text-primary-600">
                   {t.auth.password}
                 </label>
                 <a href="#" className="text-xs text-primary-600 hover:text-primary-700">
@@ -124,20 +124,20 @@ export default function LoginPage() {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-2.5 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm text-gray-900"
+                className="w-full px-4 py-2.5 border border-rule rounded-edge focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm text-primary-800"
                 required
               />
             </div>
 
             <button
               type="submit"
-              className="w-full py-3 px-6 text-sm font-semibold text-primary-900 bg-gradient-to-r from-accent-400 to-accent-300 rounded-xl hover:from-accent-300 hover:to-accent-200 transition-all shadow-lg shadow-accent-400/25"
+              className="w-full py-3 px-6 text-sm font-semibold text-primary-900 bg-gradient-to-r from-accent-400 to-accent-300 rounded-edge hover:from-accent-300 hover:to-accent-200 transition-all shadow-lg shadow-accent-400/25"
             >
               {t.auth.login}
             </button>
           </form>
 
-          <p className="mt-6 text-center text-sm text-gray-500">
+          <p className="mt-6 text-center text-sm text-primary-400">
             {t.auth.noAccount}{" "}
             <Link href="/register" className="text-primary-600 font-medium hover:text-primary-700">
               {t.nav.register}
