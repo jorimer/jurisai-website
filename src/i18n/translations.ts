@@ -39,8 +39,8 @@ export const translations = {
           proof: "Ocho estados de vigencia sobre el grafo normativo",
         },
         {
-          claim: "Las leyes de 2010 a 2025 cotejadas una a una contra el portal oficial, para que lo que usted cite exista tal como lo cita.",
-          proof: "99,5 % reconciliado · med. ago 2026",
+          claim: "6.680 leyes en el corpus, desde la Constitución de 1844. Las de 2010 a 2025 están cotejadas una a una contra el portal oficial y los dieciséis años cierran en cero diferencias.",
+          proof: "6.680 leyes · 99,5 % en la ventana reconciliada · med. ago 2026",
         },
       ],
       cta: "Ver el detalle de cada cifra",
@@ -215,10 +215,10 @@ export const translations = {
         "Antes de comprometer su criterio profesional con una herramienta conviene saber dónde no llega. Esto no está en un anexo del contrato: está aquí, y también dentro del producto cuando le toca.",
       items: [
         {
-          value: "Antes de 2012",
-          title: "Decretos que no tenemos",
+          value: "Hasta 2020",
+          title: "Decretos: el hueco real",
           description:
-            "La cobertura de decretos empieza en 2012. Si su caso depende de uno anterior, vaya a la Gaceta. Se lo decimos aquí y se lo decimos en la búsqueda, no cuando ya esté en audiencia.",
+            "El corpus tiene 596 decretos y ni uno solo entre 1885 y 2020. Desde 2021 la cobertura sigue siendo parcial: de los 708 decretos de 2024 tenemos 16. Si su caso depende de un decreto, verifíquelo en la Gaceta. Para leyes sí puede apoyarse en nosotros.",
         },
         {
           value: "52",
@@ -530,6 +530,8 @@ export const translations = {
             { label: "Tribunal Superior Administrativo", value: "2.479", date: "01-08-2026", tone: "neutral", indent: true },
             { label: "Componentes normativos embebidos", value: "202.444 · 100 %", date: "22-08-2026", tone: "ok", indent: false },
             { label: "Relaciones en el grafo normativo", value: "22.146", date: "17-08-2026", tone: "neutral", indent: false },
+            { label: "Leyes en el corpus", value: "6.680", date: "17-08-2026", tone: "ok", indent: false },
+            { label: "Decretos en el corpus", value: "596", date: "17-08-2026", tone: "warn", indent: false },
           ],
           note: "Cifras retiradas que aún circulan y no deben reusarse: 810.818, ~152.000, 11.000+ y 103.833.",
         },
@@ -538,10 +540,12 @@ export const translations = {
           rows: [
             { label: "Leyes 2010–2025 contra el portal oficial", value: "99,5 %", date: "17-08-2026", tone: "ok", indent: false },
             { label: "años que cierran en cero diferencias", value: "16", date: "17-08-2026", tone: "neutral", indent: true },
-            { label: "Decretos, cobertura registral", value: "2012 →", date: "17-08-2026", tone: "neutral", indent: false },
-            { label: "Decretos entre 1885 y 2011", value: "cero", date: "17-08-2026", tone: "alert", indent: false },
+            { label: "Leyes anteriores a 2010, en el corpus", value: "~6.100 · sin reconciliar", date: "17-08-2026", tone: "warn", indent: false },
+            { label: "Decretos entre 1885 y 2020", value: "cero", date: "17-08-2026", tone: "alert", indent: false },
+            { label: "Decretos desde 2021", value: "parcial", date: "17-08-2026", tone: "alert", indent: true },
+            { label: "Decretos de 2024 que sí tenemos", value: "16 de 708", date: "17-08-2026", tone: "alert", indent: true },
           ],
-          note: "Hay documentos fundacionales desde 1844, así que «de 1844 hasta hoy» sería cierto en los extremos y engañoso en el medio. La formulación honesta nombra el tramo hueco.",
+          note: "El portal oficial solo publica de 2010 en adelante, así que la ventana reconciliada es esa. Las más de seis mil leyes anteriores están en el corpus, pero no hay fuente pública contra la cual cotejarlas: las tenemos, no las hemos medido, y son dos cosas distintas.",
         },
         {
           title: "Motor de vigencia",
@@ -635,8 +639,8 @@ export const translations = {
           proof: "Eight status states over the normative graph",
         },
         {
-          claim: "Statutes from 2010 to 2025 reconciled one by one against the official portal, so what you cite exists exactly as you cite it.",
-          proof: "99.5% reconciled · meas. Aug 2026",
+          claim: "6,680 statutes in the corpus, going back to the 1844 Constitution. Those from 2010 to 2025 are reconciled one by one against the official portal, and all sixteen years close at zero.",
+          proof: "6,680 statutes · 99.5% in the reconciled window · meas. Aug 2026",
         },
       ],
       cta: "See the figure behind each claim",
@@ -811,10 +815,10 @@ export const translations = {
         "Before you commit your professional judgment to a tool, you should know where it stops. This is not in a contract annex: it is here, and it is inside the product when it matters.",
       items: [
         {
-          value: "Before 2012",
-          title: "Decrees we do not have",
+          value: "Through 2020",
+          title: "Decrees: the real gap",
           description:
-            "Decree coverage starts in 2012. If your case depends on an earlier one, go to the Gaceta. We tell you here and we tell you in the search, not once you are already in the hearing.",
+            "The corpus holds 596 decrees and not one between 1885 and 2020. From 2021 coverage is still partial: of the 708 decrees issued in 2024 we have 16. If your case depends on a decree, check the Gaceta. For statutes you can rely on us.",
         },
         {
           value: "52",
@@ -1126,6 +1130,8 @@ export const translations = {
             { label: "Superior Administrative Court", value: "2,479", date: "2026-08-01", tone: "neutral", indent: true },
             { label: "Normative components embedded", value: "202,444 · 100%", date: "2026-08-22", tone: "ok", indent: false },
             { label: "Relations in the normative graph", value: "22,146", date: "2026-08-17", tone: "neutral", indent: false },
+            { label: "Statutes in the corpus", value: "6,680", date: "2026-08-17", tone: "ok", indent: false },
+            { label: "Decrees in the corpus", value: "596", date: "2026-08-17", tone: "warn", indent: false },
           ],
           note: "Retired figures still in circulation that must not be reused: 810,818, ~152,000, 11,000+ and 103,833.",
         },
@@ -1134,10 +1140,12 @@ export const translations = {
           rows: [
             { label: "2010–2025 statutes against the official portal", value: "99.5%", date: "2026-08-17", tone: "ok", indent: false },
             { label: "years closing at zero differences", value: "16", date: "2026-08-17", tone: "neutral", indent: true },
-            { label: "Decrees, registry coverage", value: "2012 →", date: "2026-08-17", tone: "neutral", indent: false },
-            { label: "Decrees between 1885 and 2011", value: "zero", date: "2026-08-17", tone: "alert", indent: false },
+            { label: "Pre-2010 statutes, in the corpus", value: "~6,100 · unreconciled", date: "2026-08-17", tone: "warn", indent: false },
+            { label: "Decrees between 1885 and 2020", value: "zero", date: "2026-08-17", tone: "alert", indent: false },
+            { label: "Decrees from 2021", value: "partial", date: "2026-08-17", tone: "alert", indent: true },
+            { label: "Decrees from 2024 we do hold", value: "16 of 708", date: "2026-08-17", tone: "alert", indent: true },
           ],
-          note: "We hold founding documents from 1844, so \"from 1844 to today\" would be true at the edges and misleading in the middle. The honest wording names the gap.",
+          note: "The official portal only publishes from 2010 onward, so that is the reconciled window. The six thousand-plus earlier statutes are in the corpus, but there is no public source to check them against: we hold them, we have not measured them, and those are two different things.",
         },
         {
           title: "Force-of-law engine",
