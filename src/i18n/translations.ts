@@ -253,7 +253,7 @@ export const translations = {
         { title: "Tus Datos No Entrenan Modelos", description: "Los datos de tus clientes nunca se usan para entrenar modelos. La retención de consultas IA está declarada en los términos v2.1.", icon: "ShieldCheck" },
         { title: "Marco ABA 512", description: "Escrito contra la Opinión Formal 512 de la ABA: competencia, confidencialidad, supervisión humana y transparencia en honorarios.", icon: "Award" },
         { title: "Auditoría Completa", description: "Registro detallado de cada acción, consulta y resultado para trazabilidad total, exportable desde el panel de control de IA.", icon: "ClipboardCheck" },
-        { title: "Infraestructura Gestionada", description: "Despliegue cloud con PostgreSQL + pgvector, migraciones versionadas y suite de 7.395 pruebas de backend en verde.", icon: "Server" },
+        { title: "Infraestructura Gestionada", description: "Alojamiento cloud con respaldos y una suite de 7.395 pruebas automatizadas que corre en verde antes de cada despliegue.", icon: "Server" },
       ],
     },
     pricing: {
@@ -396,7 +396,7 @@ export const translations = {
         {
           title: "Verificación de Citas",
           description: "Cada cita a una sentencia se coteja contra el texto completo de esa sentencia, no contra un resumen. Desde el 22 de agosto de 2026 corrige la cita mal fundada en vez de solo advertirla.",
-          stats: "Umbral de 180 caracteres | calibrado sobre 1.006 pares reales",
+          stats: "Cotejo contra el texto completo de la sentencia, no contra un resumen",
           impact: "Lo que no se sostiene, el documento lo dice",
           capabilities: ["Cotejo literal contra el texto de la sentencia", "Registro de qué sentencias tuvo el modelo delante", "Anexo que coteja cada afirmación contra su artículo", "Distingue la cita fundada de la citada de memoria", "Retira del entregable el pasaje que no pasa"],
         },
@@ -853,7 +853,7 @@ export const translations = {
         { title: "Your Data Does Not Train Models", description: "Your clients' data is never used to train models. AI query retention is declared in the v2.1 terms.", icon: "ShieldCheck" },
         { title: "ABA 512 Framework", description: "Written against ABA Formal Opinion 512: competence, confidentiality, human supervision, and fee transparency.", icon: "Award" },
         { title: "Full Audit Trail", description: "Detailed record of every action, query and result for complete traceability, exportable from the AI control panel.", icon: "ClipboardCheck" },
-        { title: "Managed Infrastructure", description: "Cloud deployment with PostgreSQL + pgvector, versioned migrations, and a suite of 7,395 backend tests green.", icon: "Server" },
+        { title: "Managed Infrastructure", description: "Cloud hosting with backups and a suite of 7,395 automated tests that runs green before every deployment.", icon: "Server" },
       ],
     },
     pricing: {
@@ -996,7 +996,7 @@ export const translations = {
         {
           title: "Citation Verification",
           description: "Every citation to a ruling is checked against the full text of that ruling, not a summary. Since 22 August 2026 it corrects an ill-founded citation instead of merely flagging it.",
-          stats: "180-character threshold | calibrated on 1,006 real pairs",
+          stats: "Checked against the ruling's full text, not against a summary",
           impact: "What does not hold, the document says so",
           capabilities: ["Literal check against the ruling's text", "Record of which rulings the model actually had", "Annex checking each assertion against its article", "Separates a grounded citation from one cited from memory", "Removes from the deliverable any passage that fails"],
         },
