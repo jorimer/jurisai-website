@@ -7,6 +7,7 @@ import Problem from "@/components/Problem";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
 import IPHighlight from "@/components/IPHighlight";
+import Transparency from "@/components/Transparency";
 import Impact from "@/components/Impact";
 import Trust from "@/components/Trust";
 import Pricing from "@/components/Pricing";
@@ -23,6 +24,7 @@ export default function Home() {
       <HowItWorks />
       <Features />
       <IPHighlight />
+      <Transparency />
       <Impact />
       <Trust />
       <Pricing />

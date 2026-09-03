@@ -191,6 +191,36 @@ export const translations = {
       cta: "Conocer Más",
       disclaimer: "Herramienta de apoyo al criterio profesional, no un sustituto. Escrita contra el marco de la Opinión Formal 512 de la ABA.",
     },
+    transparency: {
+      sectionTitle: "Transparencia",
+      title: "Los Tres Límites que Declaramos",
+      subtitle:
+        "Antes de vender verificación de vigencia hay que decir qué no cubre. Hay responsabilidad profesional en juego, así que esto va en el sitio y no en un anexo del contrato.",
+      items: [
+        {
+          value: "179",
+          title: "normas figuran derogadas sin respaldo",
+          description:
+            "Sin fecha, sin norma derogante y sin pasaje que lo sostenga. La consulta programática las devuelve marcadas como no confiables y la búsqueda del producto las filtra. Cerrarlas exige fuentes de 1960–2010 que están fuera del corpus.",
+        },
+        {
+          value: "1885–2011",
+          title: "decretos: cobertura cero",
+          description:
+            "La cobertura registral de decretos empieza en 2012. Hay documentos fundacionales desde 1844, así que «de 1844 hasta hoy» sería cierto en los extremos y engañoso en el medio. Preferimos nombrar el tramo hueco.",
+        },
+        {
+          value: "52",
+          title: "anulaciones parciales identificadas, aún sin cargar",
+          description:
+            "Hoy el motor no responde si un artículo concreto fue anulado por el Tribunal Constitucional: opera a nivel de norma entera. La infraestructura de datos existe; la carga no se ha hecho.",
+        },
+      ],
+      footerTitle: "Cada cifra lleva su fecha de medición",
+      footerText:
+        "Publicamos el estado de la plataforma con la fecha de cada dato: corpus, reconciliación contra la fuente oficial, calidad de las pruebas y lo que sigue abierto. Si un dato lleva más de treinta días sin medirse, lo decimos en vez de citarlo.",
+      cta: "Pregunta por una cifra que no esté aquí",
+    },
     impact: {
       sectionTitle: "Lo Que Está Medido",
       title: "Cifras con su Fecha de Medición",
@@ -667,6 +697,36 @@ export const translations = {
       tech: "130,906 rulings | reliable profile from n = 30 | heuristic prediction below 200 labeled cases",
       cta: "Learn More",
       disclaimer: "A support tool for professional judgment, not a substitute. Written against the framework of ABA Formal Opinion 512.",
+    },
+    transparency: {
+      sectionTitle: "Transparency",
+      title: "The Three Limits We Declare",
+      subtitle:
+        "Before selling force-of-law verification you have to say what it does not cover. There is real professional liability at stake, so this goes on the site, not in a contract annex.",
+      items: [
+        {
+          value: "179",
+          title: "rules recorded as repealed without support",
+          description:
+            "No date, no repealing rule, and no passage to back it. The programmatic query returns them flagged as unreliable and the product search filters them out. Closing them requires 1960–2010 sources outside the corpus.",
+        },
+        {
+          value: "1885–2011",
+          title: "decrees: zero coverage",
+          description:
+            "Registry coverage for decrees starts in 2012. We hold founding documents from 1844, so \"from 1844 to today\" would be true at the edges and misleading in the middle. We prefer to name the gap.",
+        },
+        {
+          value: "52",
+          title: "partial annulments identified, not yet loaded",
+          description:
+            "Today the engine cannot answer whether a specific article was annulled by the Constitutional Court: it operates at whole-rule level. The data infrastructure exists; the load has not been done.",
+        },
+      ],
+      footerTitle: "Every figure carries its measurement date",
+      footerText:
+        "We publish the platform status with a date on every figure: corpus, reconciliation against the official source, test quality, and what remains open. If a figure has gone more than thirty days without being measured, we say so instead of quoting it.",
+      cta: "Ask for a figure that is not here",
     },
     impact: {
       sectionTitle: "What Is Measured",
