@@ -51,6 +51,7 @@ export default function Footer() {
               <li><Link href="/modulos" className="text-sm hover:text-accent-400 transition-colors">{t.nav.modules}</Link></li>
               <li><Link href="/#pricing" className="text-sm hover:text-accent-400 transition-colors">{t.nav.pricing}</Link></li>
               <li><Link href="/contact" className="text-sm hover:text-accent-400 transition-colors">{t.nav.contact}</Link></li>
+              <li><Link href="/estado" className="text-sm hover:text-accent-400 transition-colors">{t.footer.status}</Link></li>
             </ul>
           </div>
 

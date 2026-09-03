@@ -52,7 +52,7 @@ export default function Transparency() {
               </p>
             </div>
             <Link
-              href="/contact"
+              href="/estado"
               className="group inline-flex items-center justify-center gap-2 flex-shrink-0 px-6 py-4 text-base font-semibold text-primary-900 bg-gradient-to-r from-accent-400 to-accent-300 rounded-full hover:from-accent-300 hover:to-accent-200 hover:shadow-lg hover:shadow-accent-400/30 transition-all"
             >
               {t.transparency.cta}

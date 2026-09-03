@@ -47,6 +47,12 @@ export default function Navbar() {
               {t.nav.modules}
             </Link>
             <Link
+              href="/estado"
+              className={`text-sm font-medium transition-colors ${scrolled ? "text-primary-500 hover:text-primary-800" : "text-white/80 hover:text-white"}`}
+            >
+              {t.nav.status}
+            </Link>
+            <Link
               href="/#pricing"
               className={`text-sm font-medium transition-colors ${scrolled ? "text-primary-500 hover:text-primary-800" : "text-white/80 hover:text-white"}`}
             >
@@ -127,6 +133,13 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
             >
               {t.nav.modules}
+            </Link>
+            <Link
+              href="/estado"
+              className="block px-4 py-2 text-sm font-medium text-primary-600 hover:bg-primary-50 rounded-lg"
+              onClick={() => setMobileOpen(false)}
+            >
+              {t.nav.status}
             </Link>
             <Link
               href="/#pricing"

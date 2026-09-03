@@ -5,6 +5,7 @@ export const translations = {
     nav: {
       modules: "Módulos",
       intelligence: "Inteligencia Procesal",
+      status: "Estado",
       pricing: "Precios",
       contact: "Contacto",
       login: "Iniciar Sesión",
@@ -219,7 +220,7 @@ export const translations = {
       footerTitle: "Cada cifra lleva su fecha de medición",
       footerText:
         "Publicamos el estado de la plataforma con la fecha de cada dato: corpus, reconciliación contra la fuente oficial, calidad de las pruebas y lo que sigue abierto. Si un dato lleva más de treinta días sin medirse, lo decimos en vez de citarlo.",
-      cta: "Pregunta por una cifra que no esté aquí",
+      cta: "Ver el estado de la plataforma",
     },
     impact: {
       sectionTitle: "Lo Que Está Medido",
@@ -322,6 +323,7 @@ export const translations = {
       about: "Sobre Nosotros",
       blog: "Recursos",
       careers: "Carreras",
+      status: "Estado de la plataforma",
       privacy: "Privacidad",
       terms: "Términos",
       cookies: "Cookies",
@@ -499,6 +501,81 @@ export const translations = {
       emailPlaceholder: "tu@firma.com",
       subscribe: "Suscribirse",
     },
+    estadoPage: {
+      kicker: "Documento público",
+      title: "Estado de la plataforma",
+      intro:
+        "Cada fila lleva su fecha de medición. Una cifra sin fecha es una mentira futura: este producto arrastró durante cuatro meses una cobertura medida en abril como si fuera del día. Si el dato que busca no está, o lleva más de treinta días sin medirse, lo decimos en vez de citarlo.",
+      lastReviewLabel: "Última revisión general",
+      lastReview: "03-09-2026",
+      sections: [
+        {
+          title: "Corpus",
+          rows: [
+            { label: "Sentencias con texto íntegro", value: "130.906", date: "25-08-2026", tone: "ok", indent: false },
+            { label: "Suprema Corte de Justicia", value: "94.025", date: "01-08-2026", tone: "neutral", indent: true },
+            { label: "Tribunal Constitucional", value: "10.457", date: "01-08-2026", tone: "neutral", indent: true },
+            { label: "Tribunal Superior Administrativo", value: "2.479", date: "01-08-2026", tone: "neutral", indent: true },
+            { label: "Componentes normativos embebidos", value: "202.444 · 100 %", date: "22-08-2026", tone: "ok", indent: false },
+            { label: "Relaciones en el grafo normativo", value: "22.146", date: "17-08-2026", tone: "neutral", indent: false },
+          ],
+          note: "Cifras retiradas que aún circulan y no deben reusarse: 810.818, ~152.000, 11.000+ y 103.833.",
+        },
+        {
+          title: "Reconciliación contra fuente oficial",
+          rows: [
+            { label: "Leyes 2010–2025 contra el portal oficial", value: "99,5 %", date: "17-08-2026", tone: "ok", indent: false },
+            { label: "años que cierran en cero diferencias", value: "16", date: "17-08-2026", tone: "neutral", indent: true },
+            { label: "Decretos, cobertura registral", value: "2012 →", date: "17-08-2026", tone: "neutral", indent: false },
+            { label: "Decretos entre 1885 y 2011", value: "cero", date: "17-08-2026", tone: "alert", indent: false },
+          ],
+          note: "Hay documentos fundacionales desde 1844, así que «de 1844 hasta hoy» sería cierto en los extremos y engañoso en el medio. La formulación honesta nombra el tramo hueco.",
+        },
+        {
+          title: "Motor de vigencia",
+          rows: [
+            { label: "Reglas formales de inferencia", value: "6", date: "18-08-2026", tone: "neutral", indent: false },
+            { label: "Estados de vigencia (anulada ≠ derogada)", value: "8", date: "18-08-2026", tone: "neutral", indent: false },
+            { label: "Consulta point-in-time", value: "en producción", date: "18-08-2026", tone: "ok", indent: false },
+            { label: "Anulaciones parciales identificadas, sin cargar", value: "52 de 55", date: "24-08-2026", tone: "alert", indent: false },
+          ],
+          note: "Hoy el motor no responde si un artículo concreto fue anulado por el Tribunal Constitucional: opera a nivel de norma entera.",
+        },
+        {
+          title: "Calidad y producto",
+          rows: [
+            { label: "Pruebas de backend en el stack de CI", value: "7.395 · 0 fallos", date: "01-09-2026", tone: "ok", indent: false },
+            { label: "Módulos vivos en el registro", value: "25 de 26", date: "25-08-2026", tone: "neutral", indent: false },
+            { label: "Redactor legislativo, entregables en producción", value: "85", date: "14-08-2026", tone: "neutral", indent: false },
+            { label: "Verificador de citas: corrige, no solo advierte", value: "desde 22-08", date: "22-08-2026", tone: "ok", indent: false },
+            { label: "Cobertura de pruebas del frontend", value: "< 2 %", date: "13-07-2026", tone: "warn", indent: false },
+          ],
+          note: "La última fila lleva más de treinta días sin medirse. La dejamos visible con su fecha en vez de retirarla.",
+        },
+      ],
+      openTitle: "Abiertos",
+      openSubtitle: "Lo que sabemos que no está resuelto",
+      openItems: [
+        {
+          title: "179 normas derogadas sin evidencia",
+          description:
+            "Sin fecha, sin norma derogante y sin pasaje. La consulta programática las devuelve marcadas como no confiables; la búsqueda del producto las filtra. Cerrarlas requiere fuentes de 1960–2010 que están fuera del corpus.",
+        },
+        {
+          title: "Cobertura de extracción de referencias",
+          description:
+            "No se mide desde el 28-04-2026. El 21,1 % de esa fecha es el último dato existente y las campañas de agosto ampliaron el denominador, así que pudo bajar. No lo citamos como vigente.",
+        },
+        {
+          title: "Dictamen: fundamentación por precedentes",
+          description:
+            "La v1 se emite sin ella, con interruptor declarado y reversible. La sección de constitucionalidad queda en lo verificable contra texto hasta tener corpus suficiente para medirla.",
+        },
+      ],
+      contactText:
+        "¿Necesita una cifra que no está aquí para una opinión legal o una due diligence? Escríbanos: la medimos, o le decimos que no la tenemos.",
+      contactCta: "Pedir una medición",
+    },
     dashboard: {
       welcome: "Bienvenido",
       overview: "Resumen",
@@ -512,6 +589,7 @@ export const translations = {
     nav: {
       modules: "Modules",
       intelligence: "Procedural Intelligence",
+      status: "Status",
       pricing: "Pricing",
       contact: "Contact",
       login: "Log In",
@@ -726,7 +804,7 @@ export const translations = {
       footerTitle: "Every figure carries its measurement date",
       footerText:
         "We publish the platform status with a date on every figure: corpus, reconciliation against the official source, test quality, and what remains open. If a figure has gone more than thirty days without being measured, we say so instead of quoting it.",
-      cta: "Ask for a figure that is not here",
+      cta: "See the platform status",
     },
     impact: {
       sectionTitle: "What Is Measured",
@@ -829,6 +907,7 @@ export const translations = {
       about: "About Us",
       blog: "Resources",
       careers: "Careers",
+      status: "Platform status",
       privacy: "Privacy",
       terms: "Terms",
       cookies: "Cookies",
@@ -1005,6 +1084,81 @@ export const translations = {
       categories: ["Legal AI Guides", "Dominican Case Law", "Compliance & Regulation", "Best Practices"],
       emailPlaceholder: "you@firm.com",
       subscribe: "Subscribe",
+    },
+    estadoPage: {
+      kicker: "Public document",
+      title: "Platform status",
+      intro:
+        "Every row carries its measurement date. A figure without a date is a future lie: this product carried a coverage number measured in April as if it were current for four months. If the figure you need is not here, or has gone more than thirty days without being measured, we say so instead of quoting it.",
+      lastReviewLabel: "Last general review",
+      lastReview: "2026-09-03",
+      sections: [
+        {
+          title: "Corpus",
+          rows: [
+            { label: "Rulings with full text", value: "130,906", date: "2026-08-25", tone: "ok", indent: false },
+            { label: "Supreme Court of Justice", value: "94,025", date: "2026-08-01", tone: "neutral", indent: true },
+            { label: "Constitutional Court", value: "10,457", date: "2026-08-01", tone: "neutral", indent: true },
+            { label: "Superior Administrative Court", value: "2,479", date: "2026-08-01", tone: "neutral", indent: true },
+            { label: "Normative components embedded", value: "202,444 · 100%", date: "2026-08-22", tone: "ok", indent: false },
+            { label: "Relations in the normative graph", value: "22,146", date: "2026-08-17", tone: "neutral", indent: false },
+          ],
+          note: "Retired figures still in circulation that must not be reused: 810,818, ~152,000, 11,000+ and 103,833.",
+        },
+        {
+          title: "Reconciliation against the official source",
+          rows: [
+            { label: "2010–2025 statutes against the official portal", value: "99.5%", date: "2026-08-17", tone: "ok", indent: false },
+            { label: "years closing at zero differences", value: "16", date: "2026-08-17", tone: "neutral", indent: true },
+            { label: "Decrees, registry coverage", value: "2012 →", date: "2026-08-17", tone: "neutral", indent: false },
+            { label: "Decrees between 1885 and 2011", value: "zero", date: "2026-08-17", tone: "alert", indent: false },
+          ],
+          note: "We hold founding documents from 1844, so \"from 1844 to today\" would be true at the edges and misleading in the middle. The honest wording names the gap.",
+        },
+        {
+          title: "Force-of-law engine",
+          rows: [
+            { label: "Formal inference rules", value: "6", date: "2026-08-18", tone: "neutral", indent: false },
+            { label: "Status states (annulled ≠ repealed)", value: "8", date: "2026-08-18", tone: "neutral", indent: false },
+            { label: "Point-in-time query", value: "in production", date: "2026-08-18", tone: "ok", indent: false },
+            { label: "Partial annulments identified, not loaded", value: "52 of 55", date: "2026-08-24", tone: "alert", indent: false },
+          ],
+          note: "Today the engine cannot answer whether a specific article was annulled by the Constitutional Court: it operates at whole-rule level.",
+        },
+        {
+          title: "Quality and product",
+          rows: [
+            { label: "Backend tests on the CI stack", value: "7,395 · 0 failures", date: "2026-09-01", tone: "ok", indent: false },
+            { label: "Live modules in the registry", value: "25 of 26", date: "2026-08-25", tone: "neutral", indent: false },
+            { label: "Legislative drafter, deliverables in production", value: "85", date: "2026-08-14", tone: "neutral", indent: false },
+            { label: "Citation verifier: corrects, not just warns", value: "since 08-22", date: "2026-08-22", tone: "ok", indent: false },
+            { label: "Frontend test coverage", value: "< 2%", date: "2026-07-13", tone: "warn", indent: false },
+          ],
+          note: "The last row has gone more than thirty days without being measured. We leave it visible with its date instead of removing it.",
+        },
+      ],
+      openTitle: "Open",
+      openSubtitle: "What we know is unresolved",
+      openItems: [
+        {
+          title: "179 rules repealed without evidence",
+          description:
+            "No date, no repealing rule, and no passage. The programmatic query returns them flagged as unreliable; the product search filters them out. Closing them requires 1960–2010 sources outside the corpus.",
+        },
+        {
+          title: "Reference extraction coverage",
+          description:
+            "Not measured since 2026-04-28. The 21.1% from that date is the last existing figure, and the August campaigns widened the denominator, so it may have dropped. We do not quote it as current.",
+        },
+        {
+          title: "Bill opinion: precedent-based grounding",
+          description:
+            "The v1 ships without it, behind a declared and reversible switch. The constitutionality section stays within what is verifiable against text until there is corpus enough to measure it.",
+        },
+      ],
+      contactText:
+        "Need a figure that is not here for a legal opinion or a due diligence? Write to us: we will measure it, or tell you we do not have it.",
+      contactCta: "Request a measurement",
     },
     dashboard: {
       welcome: "Welcome",
