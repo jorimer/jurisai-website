@@ -66,28 +66,33 @@ export default function DashboardPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Welcome */}
         <div className="mb-8">
-          <h1 className="text-2xl font-bold text-gray-900">
-            {t.dashboard.welcome}, Ricardo
-          </h1>
+          <div className="flex items-center gap-3">
+            <h1 className="text-2xl font-bold text-gray-900">
+              {t.dashboard.welcome}, Ricardo
+            </h1>
+            <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-accent-50 text-accent-700 border border-accent-200">
+              {locale === "es" ? "Vista de demostración" : "Demo view"}
+            </span>
+          </div>
           <p className="text-gray-500 text-sm mt-1">
             {locale === "es"
-              ? "Aquí tienes un resumen de tu actividad reciente."
-              : "Here's a summary of your recent activity."}
+              ? "Las cifras del corpus son reales y llevan su fecha de medición. Los conteos por módulo y la actividad reciente son datos de ejemplo."
+              : "The corpus figures are real and carry their measurement date. Per-module counts and recent activity are sample data."}
           </p>
         </div>
 
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           {[
-            { label: locale === "es" ? "Consultas Hoy" : "Today's Queries", value: "47", change: "+12%" },
-            { label: locale === "es" ? "Documentos Activos" : "Active Documents", value: "156", change: "+3%" },
-            { label: locale === "es" ? "Horas Ahorradas" : "Hours Saved", value: "23.5", change: "+18%" },
-            { label: locale === "es" ? "Precisión" : "Accuracy", value: "97.8%", change: "+0.3%" },
+            { label: locale === "es" ? "Sentencias en el corpus" : "Rulings in the corpus", value: locale === "es" ? "130.906" : "130,906", change: locale === "es" ? "med. ago 2026" : "meas. Aug 2026" },
+            { label: locale === "es" ? "Corpus normativo embebido" : "Normative corpus embedded", value: "100%", change: locale === "es" ? "202.444 componentes" : "202,444 components" },
+            { label: locale === "es" ? "Relaciones en el grafo" : "Relations in the graph", value: locale === "es" ? "22.146" : "22,146", change: locale === "es" ? "med. ago 2026" : "meas. Aug 2026" },
+            { label: locale === "es" ? "Módulos disponibles" : "Available modules", value: "25", change: locale === "es" ? "med. ago 2026" : "meas. Aug 2026" },
           ].map((stat, i) => (
             <div key={i} className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
               <div className="text-sm text-gray-500 mb-1">{stat.label}</div>
               <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
-              <div className="text-xs text-green-600 mt-1">{stat.change}</div>
+              <div className="text-xs text-gray-400 mt-1">{stat.change}</div>
             </div>
           ))}
         </div>

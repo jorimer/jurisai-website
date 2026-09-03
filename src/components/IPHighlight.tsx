@@ -12,39 +12,38 @@ export default function IPHighlight() {
     <div className="flex flex-col gap-4">
       {/* Title */}
       <div className="text-sm font-semibold text-primary-200 mb-2">
-        Perfil Judicial - Predicción
+        Umbral de fiabilidad del perfil
       </div>
 
-      {/* Metric bars with actual data from t.ipHighlight.metrics */}
+      {/* Thresholds from t.ipHighlight.metrics — no bars: these are sample sizes, not proportions */}
       <div className="space-y-4">
         {t.ipHighlight.metrics.map((metric, index) => (
-          <div key={index} className="space-y-2">
-            <div className="flex items-center justify-between">
-              <span className="text-xs text-primary-300">{metric.label}</span>
-              <span className="text-sm font-bold text-white">{metric.value}</span>
-            </div>
-            <div className="w-full h-2 bg-primary-700/50 rounded-full overflow-hidden">
-              <div
-                className={`h-full rounded-full transition-all duration-1000 ${
-                  metric.color === "green"
-                    ? "bg-emerald-400"
-                    : metric.color === "gold"
-                      ? "bg-accent-400"
-                      : "bg-red-400"
-                }`}
-                style={{
-                  width: metric.value.replace("%", ""),
-                }}
-              />
-            </div>
+          <div
+            key={index}
+            className="flex items-baseline justify-between gap-4 pb-3 border-b border-primary-700/30"
+          >
+            <span className="text-xs text-primary-300 leading-snug">{metric.label}</span>
+            <span
+              className={`text-base font-bold whitespace-nowrap ${
+                metric.color === "green"
+                  ? "text-emerald-400"
+                  : metric.color === "gold"
+                    ? "text-accent-400"
+                    : "text-primary-200"
+              }`}
+            >
+              {metric.value}
+            </span>
           </div>
         ))}
       </div>
 
-      {/* Sample profile name */}
-      <div className="mt-6 pt-4 border-t border-primary-700/30">
-        <div className="text-xs text-primary-400">Juez: Hon. Dr. Carlos Rodríguez</div>
-        <div className="text-xs text-primary-400 mt-1">Corte: TSA (Civil)</div>
+      {/* Por qué no hay un perfil de ejemplo */}
+      <div className="mt-4 pt-4 border-t border-primary-700/30">
+        <p className="text-xs text-primary-400 leading-relaxed">
+          No mostramos un perfil de ejemplo con cifras inventadas: los valores dependen del
+          magistrado y del tamaño de su muestra.
+        </p>
       </div>
     </div>
   );
@@ -138,7 +137,7 @@ export default function IPHighlight() {
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-white">Inteligencia Procesal</div>
-                  <div className="text-xs text-primary-400">Análisis Judicial en Tiempo Real</div>
+                  <div className="text-xs text-primary-400">Perfiles sobre el corpus completo</div>
                 </div>
               </div>
 
@@ -150,12 +149,12 @@ export default function IPHighlight() {
               {/* Additional info box */}
               <div className="mt-6 pt-6 border-t border-primary-700/30 grid grid-cols-2 gap-4">
                 <div className="bg-primary-900/50 rounded-lg p-3">
-                  <div className="text-xs text-primary-400">Confianza</div>
-                  <div className="text-lg font-bold text-white mt-1">±15-20%</div>
+                  <div className="text-xs text-primary-400">Perfil fiable desde</div>
+                  <div className="text-lg font-bold text-white mt-1">n = 30</div>
                 </div>
                 <div className="bg-primary-900/50 rounded-lg p-3">
-                  <div className="text-xs text-primary-400">Sentencias</div>
-                  <div className="text-lg font-bold text-white mt-1">11,000+</div>
+                  <div className="text-xs text-primary-400">Sentencias · ago 2026</div>
+                  <div className="text-lg font-bold text-white mt-1">130.906</div>
                 </div>
               </div>
             </div>

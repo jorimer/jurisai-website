@@ -83,45 +83,45 @@ export default function InteligenciaProcesalPage() {
             {/* Right: Visualization */}
             <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg">
               <h3 className="text-lg font-bold text-primary-950 mb-8 text-center">
-                Distribución de Resultados
+                Distribución del Corpus por Tribunal
               </h3>
 
-              {/* Prediction Bars */}
+              {/* Corpus por tribunal */}
               <div className="space-y-8">
-                {/* Favorable - 62% */}
+                {/* Suprema Corte de Justicia */}
                 <div>
                   <div className="flex justify-between items-baseline mb-3">
-                    <p className="text-sm font-semibold text-slate-700">Resultados Favorables</p>
-                    <p className="text-2xl font-bold text-emerald-600">62%</p>
+                    <p className="text-sm font-semibold text-slate-700">Suprema Corte de Justicia</p>
+                    <p className="text-2xl font-bold text-primary-800">87,9%</p>
                   </div>
                   <div className="w-full h-3 bg-slate-100 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-emerald-500 to-emerald-400 rounded-full transition-all duration-500" style={{ width: '62%' }}></div>
+                    <div className="h-full bg-gradient-to-r from-primary-700 to-primary-600 rounded-full transition-all duration-500" style={{ width: '87.9%' }}></div>
                   </div>
-                  <p className="text-xs text-slate-500 mt-2">Decisiones favorables al demandante por materia jurídica</p>
+                  <p className="text-xs text-slate-500 mt-2">94.025 sentencias con texto íntegro · med. 1-ago-2026</p>
                 </div>
 
-                {/* Parcial - 23% */}
+                {/* Tribunal Constitucional */}
                 <div>
                   <div className="flex justify-between items-baseline mb-3">
-                    <p className="text-sm font-semibold text-slate-700">Resultados Parciales</p>
-                    <p className="text-2xl font-bold text-accent-500">23%</p>
+                    <p className="text-sm font-semibold text-slate-700">Tribunal Constitucional</p>
+                    <p className="text-2xl font-bold text-accent-600">9,8%</p>
                   </div>
                   <div className="w-full h-3 bg-slate-100 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-accent-400 to-amber-300 rounded-full transition-all duration-500" style={{ width: '23%' }}></div>
+                    <div className="h-full bg-gradient-to-r from-accent-500 to-accent-400 rounded-full transition-all duration-500" style={{ width: '9.8%' }}></div>
                   </div>
-                  <p className="text-xs text-slate-500 mt-2">Sentencias parcialmente favorables con resoluciones mixtas</p>
+                  <p className="text-xs text-slate-500 mt-2">10.457 sentencias con texto íntegro · med. 1-ago-2026</p>
                 </div>
 
-                {/* Desfavorable - 15% */}
+                {/* Tribunal Superior Administrativo */}
                 <div>
                   <div className="flex justify-between items-baseline mb-3">
-                    <p className="text-sm font-semibold text-slate-700">Resultados Desfavorables</p>
-                    <p className="text-2xl font-bold text-rose-600">15%</p>
+                    <p className="text-sm font-semibold text-slate-700">Tribunal Superior Administrativo</p>
+                    <p className="text-2xl font-bold text-primary-500">2,3%</p>
                   </div>
                   <div className="w-full h-3 bg-slate-100 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-rose-500 to-rose-400 rounded-full transition-all duration-500" style={{ width: '15%' }}></div>
+                    <div className="h-full bg-gradient-to-r from-primary-400 to-primary-300 rounded-full transition-all duration-500" style={{ width: '2.3%' }}></div>
                   </div>
-                  <p className="text-xs text-slate-500 mt-2">Sentencias desfavorables al demandante</p>
+                  <p className="text-xs text-slate-500 mt-2">2.479 sentencias con texto íntegro · med. 1-ago-2026</p>
                 </div>
               </div>
 
@@ -131,7 +131,7 @@ export default function InteligenciaProcesalPage() {
                   Nota
                 </p>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Las predicciones incluyen intervalos de confianza ±15-20% y factores que sustentan cada resultado. Son herramientas de apoyo, no sustitutos del criterio profesional.
+                  Las tres cifras se midieron el 1-ago-2026 y suman 106.961. El total de 130.906 es del 25-ago e incluye tribunales cuyo desglose no hemos publicado. Preferimos declarar la diferencia a cuadrar el número.
                 </p>
               </div>
             </div>
@@ -160,16 +160,16 @@ export default function InteligenciaProcesalPage() {
 
             <div className="mt-8 pt-8 border-t border-slate-200 grid sm:grid-cols-3 gap-6">
               <div className="text-center">
-                <p className="text-2xl font-bold text-primary-950 mb-2">ABA 512</p>
-                <p className="text-sm text-slate-600">Estándares de ética</p>
+                <p className="text-2xl font-bold text-primary-950 mb-2">Marco ABA 512</p>
+                <p className="text-sm text-slate-600">Competencia, confidencialidad y supervisión humana</p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-bold text-primary-950 mb-2">±15-20%</p>
-                <p className="text-sm text-slate-600">Intervalo de confianza</p>
+                <p className="text-2xl font-bold text-primary-950 mb-2">n ≥ 30</p>
+                <p className="text-sm text-slate-600">Muestra mínima para publicar un perfil</p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-bold text-primary-950 mb-2">Transparencia</p>
-                <p className="text-sm text-slate-600">Explicabilidad SHAP completa</p>
+                <p className="text-2xl font-bold text-primary-950 mb-2">Sin tasa de acierto</p>
+                <p className="text-sm text-slate-600">No publicamos una que no hayamos medido</p>
               </div>
             </div>
           </div>
@@ -210,20 +210,20 @@ export default function InteligenciaProcesalPage() {
             <div>
               <h3 className="text-2xl font-bold text-primary-950 mb-4">¿Cómo Funciona?</h3>
               <p className="text-slate-700 mb-6 leading-relaxed">
-                La Inteligencia Procesal analiza 11,000+ sentencias dominicanas usando XGBoost y SHAP. El modelo identifica patrones en decisiones judiciales considerando juez, materia, abogado, jurisdicción y monto.
+                La Inteligencia Procesal construye perfiles sobre las 130.906 sentencias del corpus, con resolución de entidades y duración real de resolución. La predicción considera juez, materia, abogado, jurisdicción y monto, y declara cuándo opera en modo heurístico.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent-400 mt-2 flex-shrink-0"></span>
-                  <span className="text-slate-700">Análisis de 11,000+ sentencias dominicanas</span>
+                  <span className="text-slate-700">130.906 sentencias con texto íntegro · med. 25-ago-2026</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent-400 mt-2 flex-shrink-0"></span>
-                  <span className="text-slate-700">32 endpoints especializados por tipo de caso</span>
+                  <span className="text-slate-700">Perfil fiable desde 30 sentencias del magistrado</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent-400 mt-2 flex-shrink-0"></span>
-                  <span className="text-slate-700">Explicabilidad con SHAP en cada predicción</span>
+                  <span className="text-slate-700">Modo heurístico declarado bajo 200 casos etiquetados</span>
                 </li>
               </ul>
             </div>
@@ -231,7 +231,7 @@ export default function InteligenciaProcesalPage() {
             <div>
               <h3 className="text-2xl font-bold text-primary-950 mb-4">Casos de Uso Reales</h3>
               <p className="text-slate-700 mb-6 leading-relaxed">
-                Litigantes usan Inteligencia Procesal para evaluar riesgo antes de llevar casos a juicio, abogados de firmas grandes la utilizan para perfilar jueces antes de cada audiencia.
+                Sirve para evaluar el riesgo antes de llevar un caso a juicio y para preparar una audiencia sabiendo cómo ha decidido ese tribunal en esa materia. Describe comportamiento histórico: no predice el resultado de un caso concreto.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -240,11 +240,11 @@ export default function InteligenciaProcesalPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent-400 mt-2 flex-shrink-0"></span>
-                  <span className="text-slate-700">Selección de estrategia por juez</span>
+                  <span className="text-slate-700">Preparación de audiencia por magistrado y materia</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent-400 mt-2 flex-shrink-0"></span>
-                  <span className="text-slate-700">Estimación de probabilidades y tiempos de resolución</span>
+                  <span className="text-slate-700">Duración real de resolución por materia y corte</span>
                 </li>
               </ul>
             </div>

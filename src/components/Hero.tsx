@@ -80,10 +80,9 @@ export default function Hero() {
           <div className="mt-16 animate-fade-in animation-delay-600">
             <p className="text-sm text-primary-400 mb-4">{t.hero.trustedBy}</p>
             <div className="flex items-center justify-center gap-8 opacity-50">
-              <span className="text-sm font-semibold text-primary-300">TSA</span>
-              <span className="text-sm font-semibold text-primary-300">TSE</span>
-              <span className="text-sm font-semibold text-primary-300">TC</span>
-              <span className="text-sm font-semibold text-primary-300">Suprema Corte</span>
+              <span className="text-sm font-semibold text-primary-300">Suprema Corte · 94.025</span>
+              <span className="text-sm font-semibold text-primary-300">Tribunal Constitucional · 10.457</span>
+              <span className="text-sm font-semibold text-primary-300">TSA · 2.479</span>
             </div>
           </div>
         </div>
@@ -106,46 +105,46 @@ export default function Hero() {
             <div className="bg-gradient-to-br from-primary-50 to-accent-50/30 p-8 sm:p-12">
               <div className="grid grid-cols-3 gap-4 mb-6">
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary-100">
-                  <div className="text-xs text-primary-400 mb-1">Contratos Revisados</div>
-                  <div className="text-2xl font-bold text-primary-800">1,284</div>
-                  <div className="text-xs text-green-600 mt-1">+12% este mes</div>
+                  <div className="text-xs text-primary-400 mb-1">Sentencias en el corpus</div>
+                  <div className="text-2xl font-bold text-primary-800">130.906</div>
+                  <div className="text-xs text-primary-400 mt-1">texto íntegro · ago 2026</div>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary-100">
-                  <div className="text-xs text-primary-400 mb-1">Horas Ahorradas</div>
-                  <div className="text-2xl font-bold text-primary-800">3,450</div>
-                  <div className="text-xs text-green-600 mt-1">+8% este mes</div>
+                  <div className="text-xs text-primary-400 mb-1">Corpus normativo embebido</div>
+                  <div className="text-2xl font-bold text-primary-800">100%</div>
+                  <div className="text-xs text-primary-400 mt-1">202.444 componentes · ago 2026</div>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary-100">
-                  <div className="text-xs text-primary-400 mb-1">Precisión IA</div>
-                  <div className="text-2xl font-bold text-primary-800">97.8%</div>
-                  <div className="text-xs text-green-600 mt-1">+0.3% este mes</div>
+                  <div className="text-xs text-primary-400 mb-1">Leyes 2010–2025 reconciliadas</div>
+                  <div className="text-2xl font-bold text-primary-800">99,5%</div>
+                  <div className="text-xs text-primary-400 mt-1">portal oficial · ago 2026</div>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary-100 h-32">
-                  <div className="text-xs text-primary-400 mb-2">Actividad Reciente</div>
+                  <div className="text-xs text-primary-400 mb-2">Verificación de Citas</div>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-green-400" />
-                      <span className="text-xs text-primary-600">Contrato de Arrendamiento - Revisado</span>
+                      <span className="text-xs text-primary-600">TC/0822/23 — pareada contra su texto</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-accent-400" />
-                      <span className="text-xs text-primary-600">Due Diligence Corp. XYZ - En progreso</span>
+                      <div className="w-2 h-2 rounded-full bg-red-400" />
+                      <span className="text-xs text-primary-600">TC/0176/14 — impareada, se retira del documento</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-primary-400" />
-                      <span className="text-xs text-primary-600">Investigación Jurisprudencial - Completada</span>
+                      <span className="text-xs text-primary-600">TC/0168/13 — sin fundamento localizable</span>
                     </div>
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary-100 h-32">
                   <div className="text-xs text-primary-400 mb-2">Módulos Activos</div>
                   <div className="flex flex-wrap gap-2">
+                    <span className="px-2 py-1 text-xs bg-primary-50 text-primary-700 rounded-full">Gestión de Asuntos</span>
                     <span className="px-2 py-1 text-xs bg-primary-50 text-primary-700 rounded-full">Contratos</span>
-                    <span className="px-2 py-1 text-xs bg-primary-50 text-primary-700 rounded-full">Due Diligence</span>
-                    <span className="px-2 py-1 text-xs bg-primary-50 text-primary-700 rounded-full">Investigación</span>
-                    <span className="px-2 py-1 text-xs bg-accent-50 text-accent-700 rounded-full">Inteligencia Procesal</span>
+                    <span className="px-2 py-1 text-xs bg-primary-50 text-primary-700 rounded-full">Motor de Vigencia</span>
+                    <span className="px-2 py-1 text-xs bg-accent-50 text-accent-700 rounded-full">Redactor Legislativo</span>
                   </div>
                 </div>
               </div>

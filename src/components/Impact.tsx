@@ -52,7 +52,7 @@ export default function Impact() {
         {/* Optional: Subtext or additional context */}
         <div className="mt-16 text-center max-w-2xl mx-auto">
           <p className="text-base text-primary-800/80">
-            Métricas medidas en implementaciones reales de JurisAI en firmas dominicanas durante los últimos 12 meses.
+            Cada cifra lleva su fecha de medición. Si un dato nuestro no la tiene, no lo cites.
           </p>
         </div>
       </div>

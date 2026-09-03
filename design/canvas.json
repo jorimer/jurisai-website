@@ -1,0 +1,111 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 8400,
+      "title": "Home — jurisai.do",
+      "print": "flow"
+    },
+    {
+      "file": "Estado.dc.html",
+      "x": 1600,
+      "y": 0,
+      "w": 1440,
+      "h": 1900,
+      "title": "/estado — nueva página",
+      "print": "flow"
+    },
+    {
+      "file": "Modulos.dc.html",
+      "x": 1600,
+      "y": 2100,
+      "w": 1440,
+      "h": 2100,
+      "title": "/modulos — rediseño",
+      "print": "flow"
+    },
+    {
+      "file": "Sistema.dc.html",
+      "x": 1600,
+      "y": 4400,
+      "w": 1040,
+      "h": 1560,
+      "title": "Sistema visual — handoff"
+    },
+    {
+      "file": "Movil.dc.html",
+      "x": 3200,
+      "y": 0,
+      "w": 390,
+      "h": 4800,
+      "title": "Home — 390 px",
+      "print": "flow"
+    },
+    {
+      "file": "Procesal.dc.html",
+      "x": 1600,
+      "y": 6160,
+      "w": 1440,
+      "h": 3000,
+      "title": "/inteligencia-procesal — rediseño",
+      "print": "flow"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "nota-que-cambio",
+      "x": -660,
+      "y": 0,
+      "w": 520,
+      "text": "QUÉ CAMBIA Y POR QUÉ\n\nEl sitio de hoy es el plan de marzo ejecutado: sus cifras salen del deck para abogados senior de esa fecha. Seis meses después el producto es otro y varias de esas cifras están retiradas en docs/ESTADO.md.\n\nCorregido aquí:\n· 11.000+ sentencias → 130.906 (25-ago)\n· 23+ módulos → 25 vivos de 26 en el registro\n· 97,8 % de precisión IA → fuera: no existe esa medición\n· 3.450 horas / 1.284 contratos → fuera, mismo motivo\n· Gestión de Litigios (8 agentes) → absorbido por Gestión de asuntos; el módulo se retiró el 14-jul\n· XGBoost + SHAP y el 62/23/15 → fuera: el predictor cae a modo heurístico bajo 200 casos etiquetados\n· 11 productos normativos → 10 + 2 legislativos"
+    },
+    {
+      "id": "nota-testimonios",
+      "x": -660,
+      "y": 620,
+      "w": 520,
+      "text": "DECISIÓN QUE TE TOCA CONFIRMAR\n\nQuité los tres testimonios de «Firma Piloto». ESTADO dice: 2 arrendatarios, ambos internos (demostración y SDQ), facturación emitida ninguna. En un mercado de doscientas firmas donde todos se conocen, un testimonio inventado es riesgo reputacional, no prueba social.\n\nEn su lugar va § 07 Transparencia: los tres límites declarados. Para este comprador —un socio que responde con su licencia— eso convierte mejor que un elogio anónimo.\n\nSi prefieres conservarlos, se reponen en un artboard aparte: dímelo."
+    },
+    {
+      "id": "nota-ux",
+      "x": -660,
+      "y": 1180,
+      "w": 520,
+      "text": "MEJORAS DE UX\n\n1. El hero enseña el producto real —una cita cotejada contra su sentencia— en vez de un dashboard falso con números inventados.\n\n2. Veinte tarjetas planas (9 módulos + 11 normativos) pasan a cuatro familias con jerarquía. El comprador puede decir qué compra.\n\n3. Segunda vía de entrada: «Ver el estado de la plataforma». Hoy el único camino es «Solicitar demo» cinco veces; el abogado escéptico no tiene nada que verificar por su cuenta.\n\n4. Nav reordenada por lo que se vende hoy: Plataforma · Verificación · Vigencia · Módulos · Precios · Estado.\n\n5. Precios dejan de ser «500 consultas/mes» y pasan a la escalera real del producto: las cuatro capas de insight (dato / contexto / implicación / acción) que el backend ya aplica en plan_gate.py."
+    },
+    {
+      "id": "nota-tipografia",
+      "x": -660,
+      "y": 1900,
+      "w": 520,
+      "text": "DIRECCIÓN VISUAL\n\nNavy y Gold se conservan tal cual salen de globals.css. Lo que se añade:\n\n· Newsreader para titulares y cifras. Inter sola leía a SaaS genérico; una serif editorial lee a documento jurídico y es lo que el comprador respeta.\n· JetBrains Mono para identificadores (TC/0822/23), fechas de medición y respuestas de API.\n· Papel cálido #F7F5F1 en vez de blanco puro, filetes finos, radio de 2 px.\n\nEl dispositivo de marca es la cifra fechada: ningún número aparece sin su fecha de medición. Es la regla de ESTADO.md convertida en diseño, y ningún competidor local puede copiarla sin tener las mediciones."
+    },
+    {
+      "id": "nota-fuentes",
+      "x": -660,
+      "y": 2560,
+      "w": 520,
+      "text": "DE DÓNDE SALE CADA DATO\n\nTodo el contenido viene de:\n· docs/ESTADO.md (fuente de verdad de cifras, con fecha por fila)\n· jurisai-frontend/src/data/changelog.ts (registro de módulos y 410 entradas de cambios)\n· jurisai-backend/app/services/matter_type_seeds.py (los 11 tipos de asunto y sus fases)\n· jurisai-backend/app/api/router_normas.py (la API de verificación normativa y su bloque «alcance»)\n· jurisai-backend/app/middleware/plan_gate.py (las capas de insight y los límites por plan)\n\nNo inventé ninguna cifra. Donde faltaba un dato comercial —correo de contacto— quedó un marcador."
+    },
+    {
+      "id": "nota-pendiente",
+      "x": -660,
+      "y": 3200,
+      "w": 520,
+      "text": "PENDIENTE, SI SEGUIMOS\n\nHecho en esta pasada:\n· /inteligencia-procesal, rehecha (tablero de abajo a la derecha)\n· layout.tsx: metadata, Open Graph, Twitter y JSON-LD ya corregidos en el código\n\nSigue abierto:\n· translations.ts es la fuente del texto de casi todo el sitio y aún trae 23+ / 50+ / 400+ / 11.000+, «Gestión de Litigios» y «97,8 %». Es el archivo a tocar cuando se implemente.\n· Hero.tsx (1.284 contratos, 3.450 horas, 97,8 %), IPHighlight.tsx (11.000+), login y register (23+, 50+, 97,8 %, 3.450 horas), dashboard (97,8 %).\n· /modulos repite el bloque de XGBoost y 11.000+ en su pie.\n· /acerca: el roadmap anuncia «módulo de litigios con 8 agentes» como Q1 completado.\n· src/components/components/ tiene una copia duplicada de los trece componentes.\n· Falta decidir si el sitio queda bilingüe: todo esto está escrito solo en es."
+    },
+    {
+      "id": "nota-procesal",
+      "x": -660,
+      "y": 3980,
+      "w": 520,
+      "text": "/INTELIGENCIA-PROCESAL — QUÉ CAMBIÓ\n\nLa página vieja vendía el modelo predictivo y escondía el perfil. Es al revés: el perfil está construido y medido; la predicción tiene techo.\n\nVerificado contra el código, no contra el deck:\n· Los campos del perfil salen de profile_calculator.py — tasas por materia, días de resolución, HHI de especialización, consistencia, deriva, preferencia probatoria, rango monetario, fundamentos más citados.\n· Los umbrales son constantes reales: MIN_CASES_USABLE = 10, MIN_CASES_PER_JUDGE = 30 (con el ±18 % al 95 % que deriva el propio comentario del código), MIN_CASES_FOR_ML = 200.\n· judicial_predictor.py cae a modo heurístico por debajo de 200 y lo declara en la respuesta.\n· Los límites 50 / 500 / 5.000 salen de plan_gate.py.\n\nLa sección § 03 publica la corrección en vez de reescribir en silencio. Es una decisión de tono: si alguien leyó el 62/23/15 y decidió con eso, merece saberlo. Si prefieres que desaparezca sin dejar rastro, se quita ese bloque y la página sigue en pie.\n\nEl perfil del hero va SIN cifras: barras neutras y una nota que explica por qué. Fue el error original — un mockup con números inventados que terminaron leyéndose como datos del producto."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

@@ -4,11 +4,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "JurisAI — Decisiones Legales Más Inteligentes | República Dominicana",
+    default: "JurisAI — IA Legal con Citas Verificadas | República Dominicana",
     template: "%s | JurisAI",
   },
   description:
-    "Plataforma de inteligencia artificial con 23+ módulos legales, 50+ agentes IA y 11,000+ sentencias dominicanas analizadas. Contratos, litigios, compliance, due diligence e inteligencia procesal.",
+    "IA legal sobre el corpus dominicano: 130.906 sentencias con texto íntegro y 202.444 componentes normativos. Gestión de asuntos, verificación de citas y vigencia point-in-time.",
   keywords: [
     "JurisAI",
     "inteligencia artificial legal",
@@ -19,7 +19,13 @@ export const metadata: Metadata = {
     "due diligence automatizado",
     "derecho dominicano",
     "jurisprudencia dominicana",
-    "análisis contratos IA",
+    "gestión de asuntos legales",
+    "verificación de citas jurisprudenciales",
+    "vigencia normativa República Dominicana",
+    "consulta point-in-time normativa",
+    "repositorio normativo dominicano",
+    "redactor legislativo IA",
+    "dictamen proyectos de ley",
     "inteligencia procesal",
     "perfilamiento judicial",
     "compliance regulatorio",
@@ -30,9 +36,9 @@ export const metadata: Metadata = {
   publisher: "SDQ Consulting Group",
   metadataBase: new URL("https://jurisai.do"),
   openGraph: {
-    title: "JurisAI — Decisiones Legales Más Inteligentes",
+    title: "JurisAI — Cada cita, atada al texto que la sostiene",
     description:
-      "23+ módulos legales, 50+ agentes IA. Plataforma de inteligencia artificial especializada en derecho dominicano para firmas de abogados.",
+      "Investiga, redacta y dictamina sobre el corpus normativo y jurisprudencial dominicano, y coteja cada cita contra el texto original. Cuando una cita no se sostiene, el documento lo dice.",
     url: "https://jurisai.do",
     siteName: "JurisAI",
     type: "website",
@@ -43,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "JurisAI — IA Legal para República Dominicana",
     description:
-      "Potencia tu firma con 50+ agentes IA especializados en derecho dominicano. Contratos, litigios, compliance e inteligencia procesal.",
+      "130.906 sentencias con texto íntegro y el 100 % del corpus normativo embebido. Verificación de citas contra el texto original y vigencia point-in-time.",
   },
   robots: { index: true, follow: true },
   alternates: {
@@ -75,7 +81,7 @@ export default function RootLayout({
               name: "JurisAI",
               applicationCategory: "BusinessApplication",
               operatingSystem: "Web",
-              description: "Plataforma de inteligencia artificial con 23+ módulos legales especializada en derecho dominicano.",
+              description: "Plataforma de inteligencia artificial especializada en derecho dominicano, construida sobre el corpus normativo y jurisprudencial de la República Dominicana.",
               url: "https://jurisai.do",
               author: {
                 "@type": "Organization",
@@ -92,21 +98,25 @@ export default function RootLayout({
                 "@type": "AggregateOffer",
                 priceCurrency: "USD",
                 lowPrice: "99",
-                highPrice: "299",
+                highPrice: "799",
                 offerCount: "3",
               },
               featureList: [
+                "Gestión de Asuntos (11 tipos, litigiosos y no litigiosos)",
+                "Verificación de Citas contra el Texto Original",
+                "Motor de Vigencia con Consulta Point-in-Time",
+                "Repositorio Normativo con Grafo de Relaciones",
                 "Análisis de Contratos con IA",
-                "Gestión de Litigios",
-                "Compliance Regulatorio",
                 "Due Diligence Automatizado",
+                "Compliance Regulatorio",
                 "eDiscovery",
                 "Investigación Legal con RAG",
-                "Chatbot Legal 24/7",
-                "Predicción de Resultados",
                 "Generación de Documentos",
+                "Asistente Legal Virtual",
                 "Inteligencia Procesal",
-                "Repositorio Normativo",
+                "Redactor Legislativo IA",
+                "Evaluador de Impacto Legislativo",
+                "API de Verificación Normativa",
               ],
             }),
           }}

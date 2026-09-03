@@ -35,26 +35,26 @@ export default function RegisterPage() {
             Solicita tu Demo Personalizada
           </h2>
           <p className="text-primary-200 text-lg leading-relaxed">
-            Más de 3,450 horas ahorradas. Únete a las firmas que están transformando su práctica con inteligencia artificial especializada en derecho dominicano.
+            Traiga un expediente real a la demo: cuarenta minutos, su propio caso, y la lista completa de lo que el sistema no pudo verificar.
           </p>
 
           {/* Stats */}
           <div className="mt-12 grid grid-cols-2 gap-4">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <div className="text-2xl font-bold text-accent-400">40-60%</div>
-              <div className="text-sm text-primary-300">Reducción tiempo revisión</div>
+              <div className="text-2xl font-bold text-accent-400">130.906</div>
+              <div className="text-sm text-primary-300">Sentencias con texto íntegro</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <div className="text-2xl font-bold text-accent-400">3x</div>
-              <div className="text-sm text-primary-300">Más consistencia</div>
+              <div className="text-2xl font-bold text-accent-400">99,5%</div>
+              <div className="text-sm text-primary-300">Leyes 2010–2025 reconciliadas</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <div className="text-2xl font-bold text-accent-400">23+</div>
-              <div className="text-sm text-primary-300">Módulos legales</div>
+              <div className="text-2xl font-bold text-accent-400">22.146</div>
+              <div className="text-sm text-primary-300">Relaciones en el grafo normativo</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <div className="text-2xl font-bold text-accent-400">50+</div>
-              <div className="text-sm text-primary-300">Agentes IA</div>
+              <div className="text-2xl font-bold text-accent-400">25</div>
+              <div className="text-sm text-primary-300">Módulos vivos</div>
             </div>
           </div>
         </div>

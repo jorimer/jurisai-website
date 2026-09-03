@@ -30,3 +30,7 @@ npm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# design canvas — se regenera desde design/*.dc.html + design/canvas.json
+# con el helper de la skill /design; 2,5 MB de payload que no toca versionar
+/design/jurisai-website-2026.html

@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; background: #F7F5F1; font-family: "Inter", system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+    * { box-sizing: border-box; }
+    a { color: #B8923D; text-decoration: none; }
+    a:hover { color: #8F7130; }
+    h1, h2, h3 { margin: 0; font-family: "Newsreader", "Iowan Old Style", Georgia, serif; font-weight: 400; letter-spacing: -0.01em; }
+    p { margin: 0; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .kicker { font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; background: #F7F5F1; color: #1A2332;">
+
+  <div style="display: flex; align-items: center; gap: 40px; padding: 0 144px; height: 76px; background: #141B27; border-bottom: 1px solid rgba(212,184,122,0.18);">
+    <div style="display: flex; align-items: center; gap: 9px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D4B87A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8l-3 7h6zM19 8l-3 7h6zM5 8l7-3 7 3"></path></svg>
+      <span style="font-family: 'Newsreader', Georgia, serif; font-size: 22px; color: #FFFFFF;">JurisAI</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 30px; flex-grow: 1;">
+      <span style="font-size: 14px; color: #D1D7E1;">Plataforma</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Verificación</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Vigencia</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Módulos</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Precios</span>
+      <span style="font-size: 14px; color: #D4B87A; border-bottom: 1px solid #D4B87A; padding-bottom: 2px;">Estado de la plataforma</span>
+    </div>
+    <span style="font-size: 14px; font-weight: 600; color: #141B27; background: #D4B87A; padding: 9px 20px; border-radius: 2px;">Solicitar demo</span>
+  </div>
+
+  <div style="padding: 76px 144px 90px;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+
+      <div style="display: flex; gap: 60px; align-items: flex-end; border-bottom: 1px solid #D8D2C6; padding-bottom: 30px;">
+        <div style="flex-grow: 1;">
+          <span class="kicker" style="color: #B8923D;">Documento público</span>
+          <h1 style="margin-top: 14px; font-size: 56px; line-height: 1.08; color: #1A2332;">Estado de la plataforma</h1>
+          <p style="margin-top: 18px; font-size: 17px; line-height: 1.62; color: #475F87; max-width: 660px;">Cada fila lleva su fecha de medición. Una cifra sin fecha es una mentira futura: este producto arrastró durante cuatro meses una cobertura medida en abril como si fuera del día. Si el dato que busca no está, o lleva más de treinta días sin medirse, lo decimos en vez de citarlo.</p>
+        </div>
+        <div style="flex-shrink: 0; text-align: right;">
+          <span class="kicker" style="color: #9B958A;">Última revisión general</span>
+          <p class="mono" style="margin-top: 8px; font-size: 22px; color: #1A2332;">03-09-2026</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 56px; margin-top: 52px;">
+
+        <div>
+          <h2 style="font-size: 26px; color: #1A2332; border-bottom: 2px solid #1A2332; padding-bottom: 12px;">Corpus</h2>
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Sentencias con texto íntegro</span>
+              <span class="mono" style="font-size: 14.5px; color: #1A2332; font-weight: 500;">130.906</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">25-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #7587A5; flex-grow: 1; padding-left: 18px;">— Suprema Corte de Justicia</span>
+              <span class="mono" style="font-size: 14.5px; color: #475F87;">94.025</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">01-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #7587A5; flex-grow: 1; padding-left: 18px;">— Tribunal Constitucional</span>
+              <span class="mono" style="font-size: 14.5px; color: #475F87;">10.457</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">01-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #7587A5; flex-grow: 1; padding-left: 18px;">— Tribunal Superior Administrativo</span>
+              <span class="mono" style="font-size: 14.5px; color: #475F87;">2.479</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">01-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Componentes normativos embebidos</span>
+              <span class="mono" style="font-size: 14.5px; color: #1A2332; font-weight: 500;">202.444 · 100 %</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">22-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Relaciones en el grafo normativo</span>
+              <span class="mono" style="font-size: 14.5px; color: #1A2332; font-weight: 500;">22.146</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">17-08-2026</span>
+            </div>
+          </div>
+          <p style="margin-top: 14px; font-size: 12.5px; line-height: 1.6; color: #9B958A;">Cifras retiradas que aún circulan por ahí y no deben reusarse: 810.818, ~152.000, 11.000+ y 103.833.</p>
+        </div>
+
+        <div>
+          <h2 style="font-size: 26px; color: #1A2332; border-bottom: 2px solid #1A2332; padding-bottom: 12px;">Reconciliación contra fuente oficial</h2>
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Leyes 2010–2025 contra el portal oficial</span>
+              <span class="mono" style="font-size: 14.5px; color: #1F5C43; font-weight: 500;">99,5 %</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">17-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #7587A5; flex-grow: 1; padding-left: 18px;">— años que cierran en cero diferencias</span>
+              <span class="mono" style="font-size: 14.5px; color: #475F87;">16</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">17-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Decretos, cobertura registral</span>
+              <span class="mono" style="font-size: 14.5px; color: #1A2332; font-weight: 500;">2012 →</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">17-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA; background: #FCF4F2;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1; padding-left: 8px;">Decretos entre 1885 y 2011</span>
+              <span class="mono" style="font-size: 14.5px; color: #96331F; font-weight: 500;">cero</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right; padding-right: 8px;">17-08-2026</span>
+            </div>
+          </div>
+          <p style="margin-top: 14px; font-size: 12.5px; line-height: 1.6; color: #9B958A;">Hay documentos fundacionales desde 1844, así que «de 1844 hasta hoy» sería cierto en los extremos y engañoso en el medio. La formulación honesta nombra el tramo hueco.</p>
+        </div>
+
+        <div>
+          <h2 style="font-size: 26px; color: #1A2332; border-bottom: 2px solid #1A2332; padding-bottom: 12px;">Motor de vigencia</h2>
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Reglas formales de inferencia</span>
+              <span class="mono" style="font-size: 14.5px; color: #1A2332; font-weight: 500;">6</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">18-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Estados de vigencia (anulada ≠ derogada)</span>
+              <span class="mono" style="font-size: 14.5px; color: #1A2332; font-weight: 500;">8</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">18-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Consulta point-in-time</span>
+              <span class="mono" style="font-size: 14.5px; color: #1F5C43; font-weight: 500;">en producción</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">18-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA; background: #FCF4F2;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1; padding-left: 8px;">Anulaciones parciales identificadas, sin cargar</span>
+              <span class="mono" style="font-size: 14.5px; color: #96331F; font-weight: 500;">52 de 55</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right; padding-right: 8px;">24-08-2026</span>
+            </div>
+          </div>
+          <p style="margin-top: 14px; font-size: 12.5px; line-height: 1.6; color: #9B958A;">Hoy el motor no responde si un artículo concreto fue anulado por el TC: opera a nivel de norma entera.</p>
+        </div>
+
+        <div>
+          <h2 style="font-size: 26px; color: #1A2332; border-bottom: 2px solid #1A2332; padding-bottom: 12px;">Calidad y producto</h2>
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Pruebas de backend en el stack de CI</span>
+              <span class="mono" style="font-size: 14.5px; color: #1F5C43; font-weight: 500;">7.395 · 0 fallos</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">01-09-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Módulos vivos en el registro</span>
+              <span class="mono" style="font-size: 14.5px; color: #1A2332; font-weight: 500;">25 de 26</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">25-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Redactor legislativo, entregables en producción</span>
+              <span class="mono" style="font-size: 14.5px; color: #1A2332; font-weight: 500;">85</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">14-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1;">Verificador de citas: corrige, no solo advierte</span>
+              <span class="mono" style="font-size: 14.5px; color: #1F5C43; font-weight: 500;">desde 22-08</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right;">22-08-2026</span>
+            </div>
+            <div style="display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid #E7E3DA; background: #FDF9EF;">
+              <span style="font-size: 14.5px; color: #22324B; flex-grow: 1; padding-left: 8px;">Cobertura de pruebas del frontend</span>
+              <span class="mono" style="font-size: 14.5px; color: #8F7130; font-weight: 500;">&lt; 2 %</span>
+              <span class="mono" style="font-size: 11px; color: #9B958A; width: 84px; text-align: right; padding-right: 8px;">13-07-2026</span>
+            </div>
+          </div>
+          <p style="margin-top: 14px; font-size: 12.5px; line-height: 1.6; color: #9B958A;">La última fila lleva más de treinta días sin medirse. La dejamos visible con su fecha en vez de retirarla.</p>
+        </div>
+
+      </div>
+
+      <div style="margin-top: 56px; padding: 34px 38px; background: #141B27; border-radius: 3px;">
+        <div style="display: flex; align-items: baseline; gap: 20px; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 16px;">
+          <h2 style="font-size: 26px; color: #FFFFFF;">Abiertos</h2>
+          <span style="font-size: 14px; color: #7587A5;">Lo que sabemos que no está resuelto</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 26px;">
+          <div>
+            <h3 style="font-size: 17px; color: #D4B87A; line-height: 1.3;">179 normas derogadas sin evidencia</h3>
+            <p style="margin-top: 9px; font-size: 13.5px; line-height: 1.62; color: #A3AFC3;">Sin fecha, sin norma derogante y sin pasaje. La consulta programática las devuelve marcadas como no confiables; la búsqueda del producto las filtra. Cerrarlas exige fuentes de 1960–2010 fuera del corpus.</p>
+          </div>
+          <div>
+            <h3 style="font-size: 17px; color: #D4B87A; line-height: 1.3;">Cobertura de extracción de referencias</h3>
+            <p style="margin-top: 9px; font-size: 13.5px; line-height: 1.62; color: #A3AFC3;">No se mide desde el 28-abr-2026. El 21,1 % de esa fecha es el último dato existente y las campañas de agosto ampliaron el denominador, así que pudo bajar. No lo citamos como vigente.</p>
+          </div>
+          <div>
+            <h3 style="font-size: 17px; color: #D4B87A; line-height: 1.3;">Dictamen: fundamentación por precedentes</h3>
+            <p style="margin-top: 9px; font-size: 13.5px; line-height: 1.62; color: #A3AFC3;">La v1 se emite sin ella, con interruptor declarado y reversible. La sección de constitucionalidad queda en lo verificable contra texto hasta tener corpus suficiente para medirla.</p>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top: 34px; font-size: 13px; line-height: 1.6; color: #7587A5; max-width: 780px;">¿Necesita una cifra que no está aquí para una opinión legal o una due diligence? Escríbanos y la medimos, o le decimos que no la tenemos. <span style="color: #B8923D;">estado@jurisai.do</span></p>
+
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

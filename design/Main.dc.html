@@ -1,0 +1,710 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; background: #0E131B; font-family: "Inter", system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+    * { box-sizing: border-box; }
+    a { color: #B8923D; text-decoration: none; }
+    a:hover { color: #8F7130; }
+    h1, h2, h3 { margin: 0; font-family: "Newsreader", "Iowan Old Style", Georgia, serif; font-weight: 400; letter-spacing: -0.01em; }
+    p { margin: 0; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .kicker { font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; background: #F7F5F1; color: #1A2332;">
+
+  <!-- ══ NAV ══ -->
+  <div style="display: flex; align-items: center; gap: 40px; padding: 0 144px; height: 76px; background: #141B27; border-bottom: 1px solid rgba(212,184,122,0.18);">
+    <div style="display: flex; align-items: baseline; gap: 9px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D4B87A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="align-self: center;">
+        <path d="M12 3v18M5 8l-3 7h6zM19 8l-3 7h6zM5 8l7-3 7 3"></path>
+      </svg>
+      <span style="font-family: 'Newsreader', Georgia, serif; font-size: 22px; color: #FFFFFF; letter-spacing: -0.01em;">JurisAI</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 30px; flex-grow: 1;">
+      <span style="font-size: 14px; color: #D1D7E1;">Plataforma</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Verificación</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Vigencia</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Módulos</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Precios</span>
+      <span style="font-size: 14px; color: #D4B87A; border-bottom: 1px solid rgba(212,184,122,0.5); padding-bottom: 2px;">Estado de la plataforma</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <span style="font-size: 14px; color: #A3AFC3;">Iniciar sesión</span>
+      <span style="font-size: 14px; font-weight: 600; color: #141B27; background: #D4B87A; padding: 9px 20px; border-radius: 2px;">Solicitar demo</span>
+    </div>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <div style="position: relative; background: #141B27; padding: 92px 144px 96px; overflow: hidden;">
+    <div style="position: absolute; top: -180px; right: -120px; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(212,184,122,0.10) 0%, rgba(212,184,122,0) 68%);"></div>
+    <div style="position: relative; display: flex; gap: 72px; align-items: flex-start; max-width: 1152px; margin: 0 auto;">
+
+      <div style="width: 552px; flex-shrink: 0;">
+        <div style="display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(212,184,122,0.32); border-radius: 2px; padding: 7px 13px; margin-bottom: 34px;">
+          <span style="width: 5px; height: 5px; border-radius: 50%; background: #C9A656;"></span>
+          <span class="kicker" style="color: #D4B87A;">Corpus dominicano · 130.906 sentencias</span>
+        </div>
+        <h1 style="font-size: 62px; line-height: 1.06; color: #FFFFFF; letter-spacing: -0.022em;">Cada cita, atada<br>al texto que<br><span style="color: #D4B87A; font-style: italic;">la sostiene</span>.</h1>
+        <p style="margin-top: 28px; font-size: 18px; line-height: 1.62; color: #A3AFC3; max-width: 470px;">JurisAI investiga, redacta y dictamina sobre el corpus normativo y jurisprudencial dominicano, y coteja cada cita contra el texto original. Cuando una cita no se sostiene, el documento lo dice.</p>
+        <div style="display: flex; gap: 14px; margin-top: 38px;">
+          <span style="font-size: 15px; font-weight: 600; color: #141B27; background: #D4B87A; padding: 15px 28px; border-radius: 2px;">Solicitar demo</span>
+          <span style="font-size: 15px; font-weight: 500; color: #FFFFFF; border: 1px solid rgba(255,255,255,0.22); padding: 15px 28px; border-radius: 2px;">Ver el estado de la plataforma</span>
+        </div>
+        <p style="margin-top: 26px; font-size: 13px; line-height: 1.6; color: #7587A5;">Publicamos cifras con su fecha de medición y los límites que aún tiene el motor. <span style="color: #D4B87A;">Léelos antes de comprar.</span></p>
+      </div>
+
+      <!-- Producto real: la verificación de citas -->
+      <div style="flex-grow: 1; background: #FFFFFF; border-radius: 3px; box-shadow: 0 24px 64px rgba(0,0,0,0.42); overflow: hidden;">
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: #1A2332; border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <span class="mono" style="font-size: 11px; color: #A3AFC3;">dictamen · proyecto de ley 30-26</span>
+          <span class="kicker" style="color: #D4B87A;">Verificación de citas</span>
+        </div>
+        <div style="padding: 22px 24px 26px;">
+          <p style="font-family: 'Newsreader', Georgia, serif; font-size: 16px; line-height: 1.62; color: #22324B; border-left: 2px solid #E2C88A; padding-left: 16px;">«…el Tribunal Constitucional ha establecido que la reserva de ley en materia sancionadora administrativa alcanza la determinación de la conducta punible…»</p>
+
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 22px;">
+
+            <div style="display: flex; gap: 12px; padding: 13px 14px; background: #F3F7F4; border: 1px solid #CFE3D6; border-radius: 2px;">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#2E7D5B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M4 10.5l4 4 8-9"></path></svg>
+              <div>
+                <div style="display: flex; align-items: baseline; gap: 9px;">
+                  <span style="font-size: 13px; font-weight: 600; color: #1F5C43;">pareada</span>
+                  <span class="mono" style="font-size: 12px; color: #22324B;">TC/0822/23</span>
+                  <span class="mono" style="font-size: 11px; color: #7587A5;">· fundamento §7.4</span>
+                </div>
+                <p style="margin-top: 4px; font-size: 12.5px; line-height: 1.5; color: #475F87;">432 caracteres literales localizados en el texto de esa sentencia.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; padding: 13px 14px; background: #FCF4F2; border: 1px solid #EDD3CB; border-radius: 2px;">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#B4462F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M10 3.5l7 13H3zM10 8v4M10 14.2v.3"></path></svg>
+              <div>
+                <div style="display: flex; align-items: baseline; gap: 9px;">
+                  <span style="font-size: 13px; font-weight: 600; color: #96331F;">impareada</span>
+                  <span class="mono" style="font-size: 12px; color: #22324B;">TC/0176/14</span>
+                </div>
+                <p style="margin-top: 4px; font-size: 12.5px; line-height: 1.5; color: #475F87;">El pasaje no aparece en esa sentencia. El propio modelo la declaró «no en expediente». La afirmación se retira del dictamen.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; padding: 13px 14px; background: #F5F4F1; border: 1px solid #DCD8CE; border-radius: 2px;">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#6E6A5F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><circle cx="10" cy="10" r="7"></circle><path d="M10 6.5v4M10 13v.3"></path></svg>
+              <div>
+                <div style="display: flex; align-items: baseline; gap: 9px;">
+                  <span style="font-size: 13px; font-weight: 600; color: #55514A;">sin fundamento localizable</span>
+                  <span class="mono" style="font-size: 12px; color: #22324B;">TC/0168/13</span>
+                </div>
+                <p style="margin-top: 4px; font-size: 12.5px; line-height: 1.5; color: #475F87;">Está en el corpus, pero sin sección de fundamentos identificable. El sistema prohíbe citarla en vez de arriesgar la atribución.</p>
+              </div>
+            </div>
+
+          </div>
+          <p style="margin-top: 18px; padding-top: 14px; border-top: 1px solid #E7E3DA; font-size: 12px; line-height: 1.55; color: #7587A5;">No eliminamos el error del modelo. Lo hacemos visible antes de que salga de la firma.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ CIFRAS CON FECHA ══ -->
+  <div style="background: #FFFFFF; padding: 52px 144px 56px; border-bottom: 1px solid #E7E3DA;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px;">
+        <div style="display: flex; flex-direction: column; gap: 7px; border-top: 2px solid #1A2332; padding-top: 16px;">
+          <span style="font-family: 'Newsreader', Georgia, serif; font-size: 42px; line-height: 1; color: #1A2332;">130.906</span>
+          <span style="font-size: 13.5px; line-height: 1.45; color: #475F87;">sentencias con texto íntegro<br>SCJ 94.025 · TC 10.457 · TSA 2.479</span>
+          <span class="mono" style="font-size: 10px; color: #9B958A; letter-spacing: 0.05em;">MED. 25-AGO-2026</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 7px; border-top: 2px solid #1A2332; padding-top: 16px;">
+          <span style="font-family: 'Newsreader', Georgia, serif; font-size: 42px; line-height: 1; color: #1A2332;">99,5<span style="font-size: 26px;">%</span></span>
+          <span style="font-size: 13.5px; line-height: 1.45; color: #475F87;">de las leyes 2010–2025 reconciliadas<br>contra el portal oficial; 16 años en cero</span>
+          <span class="mono" style="font-size: 10px; color: #9B958A; letter-spacing: 0.05em;">MED. 17-AGO-2026</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 7px; border-top: 2px solid #1A2332; padding-top: 16px;">
+          <span style="font-family: 'Newsreader', Georgia, serif; font-size: 42px; line-height: 1; color: #1A2332;">202.444</span>
+          <span style="font-size: 13.5px; line-height: 1.45; color: #475F87;">componentes normativos embebidos,<br>el 100 % del corpus</span>
+          <span class="mono" style="font-size: 10px; color: #9B958A; letter-spacing: 0.05em;">MED. 22-AGO-2026</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 7px; border-top: 2px solid #1A2332; padding-top: 16px;">
+          <span style="font-family: 'Newsreader', Georgia, serif; font-size: 42px; line-height: 1; color: #1A2332;">22.146</span>
+          <span style="font-size: 13.5px; line-height: 1.45; color: #475F87;">relaciones en el grafo normativo<br>(deroga, modifica, reglamenta, anula)</span>
+          <span class="mono" style="font-size: 10px; color: #9B958A; letter-spacing: 0.05em;">MED. 17-AGO-2026</span>
+        </div>
+      </div>
+      <p style="margin-top: 30px; font-size: 13px; color: #7587A5;">Cada cifra lleva su fecha de medición. Si un dato nuestro no la tiene, no lo cites. <span style="color: #B8923D;">Cómo medimos →</span></p>
+    </div>
+  </div>
+
+  <!-- ══ § 01 — GESTIÓN DE ASUNTOS ══ -->
+  <div style="background: #F7F5F1; padding: 100px 144px;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid #D8D2C6; padding-top: 22px; margin-bottom: 44px;">
+        <span class="kicker" style="color: #B8923D; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 01</span>
+        <div style="flex-grow: 1;">
+          <h2 style="font-size: 46px; line-height: 1.1; color: #1A2332; max-width: 640px;">El litigio dejó de ser un módulo aparte.</h2>
+          <p style="margin-top: 18px; font-size: 17px; line-height: 1.62; color: #475F87; max-width: 620px;">Es una de las once formas que puede tomar un asunto. Demanda civil, reclamo laboral, amparo, transacción corporativa o due diligence viven en la misma ficha, con las mismas fases, los mismos plazos y el mismo expediente documental.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 40px; align-items: stretch;">
+
+        <div style="width: 620px; flex-shrink: 0; background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 3px; padding: 26px 28px 28px;">
+          <span class="kicker" style="color: #7587A5;">11 tipos de asunto</span>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;">
+            <span style="font-size: 13px; color: #1A2332; background: #EDE7DA; border: 1px solid #DFD4BC; border-radius: 2px; padding: 7px 12px;">Civil ordinario</span>
+            <span style="font-size: 13px; color: #1A2332; background: #EDE7DA; border: 1px solid #DFD4BC; border-radius: 2px; padding: 7px 12px;">Laboral</span>
+            <span style="font-size: 13px; color: #1A2332; background: #EDE7DA; border: 1px solid #DFD4BC; border-radius: 2px; padding: 7px 12px;">Penal</span>
+            <span style="font-size: 13px; color: #1A2332; background: #EDE7DA; border: 1px solid #DFD4BC; border-radius: 2px; padding: 7px 12px;">Constitucional (amparo)</span>
+            <span style="font-size: 13px; color: #1A2332; background: #EDE7DA; border: 1px solid #DFD4BC; border-radius: 2px; padding: 7px 12px;">Tributario / administrativo</span>
+            <span style="font-size: 13px; color: #1A2332; background: #EDE7DA; border: 1px solid #DFD4BC; border-radius: 2px; padding: 7px 12px;">Inmobiliario</span>
+            <span style="font-size: 13px; color: #1A2332; background: #EDE7DA; border: 1px solid #DFD4BC; border-radius: 2px; padding: 7px 12px;">Comercial</span>
+            <span style="font-size: 13px; color: #475F87; background: #F2F3F5; border: 1px solid #E1E4E9; border-radius: 2px; padding: 7px 12px;">Transacción corporativa</span>
+            <span style="font-size: 13px; color: #475F87; background: #F2F3F5; border: 1px solid #E1E4E9; border-radius: 2px; padding: 7px 12px;">Due diligence</span>
+            <span style="font-size: 13px; color: #475F87; background: #F2F3F5; border: 1px solid #E1E4E9; border-radius: 2px; padding: 7px 12px;">Cumplimiento regulatorio</span>
+            <span style="font-size: 13px; color: #475F87; background: #F2F3F5; border: 1px solid #E1E4E9; border-radius: 2px; padding: 7px 12px;">General</span>
+          </div>
+          <p style="margin-top: 14px; font-size: 12px; color: #9B958A;"><span style="display: inline-block; width: 9px; height: 9px; background: #EDE7DA; border: 1px solid #DFD4BC; vertical-align: -1px;"></span> siete litigiosos &nbsp;·&nbsp; <span style="display: inline-block; width: 9px; height: 9px; background: #F2F3F5; border: 1px solid #E1E4E9; vertical-align: -1px;"></span> cuatro no litigiosos</p>
+
+          <div style="height: 1px; background: #EDE9E0; margin: 26px 0 24px;"></div>
+
+          <span class="kicker" style="color: #7587A5;">Fases del asunto · civil ordinario</span>
+          <div style="display: flex; align-items: center; gap: 0; margin-top: 18px;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 9px; width: 110px;">
+              <span style="width: 11px; height: 11px; border-radius: 50%; background: #B8923D;"></span>
+              <span style="font-size: 11.5px; line-height: 1.35; color: #1A2332; text-align: center; font-weight: 600;">Investigación</span>
+            </div>
+            <span style="flex-grow: 1; height: 1px; background: #DFD4BC; margin-bottom: 26px;"></span>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 9px; width: 110px;">
+              <span style="width: 11px; height: 11px; border-radius: 50%; background: #B8923D;"></span>
+              <span style="font-size: 11.5px; line-height: 1.35; color: #1A2332; text-align: center; font-weight: 600;">Demanda /<br>apoderamiento</span>
+            </div>
+            <span style="flex-grow: 1; height: 1px; background: #E2DDD2; margin-bottom: 26px;"></span>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 9px; width: 110px;">
+              <span style="width: 11px; height: 11px; border-radius: 50%; background: #FFFFFF; border: 2px solid #C3BCAD;"></span>
+              <span style="font-size: 11.5px; line-height: 1.35; color: #475F87; text-align: center;">Instrucción y<br>sustanciación</span>
+            </div>
+            <span style="flex-grow: 1; height: 1px; background: #E2DDD2; margin-bottom: 26px;"></span>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 9px; width: 110px;">
+              <span style="width: 11px; height: 11px; border-radius: 50%; background: #FFFFFF; border: 2px solid #C3BCAD;"></span>
+              <span style="font-size: 11.5px; line-height: 1.35; color: #475F87; text-align: center;">Juicio /<br>sentencia</span>
+            </div>
+            <span style="flex-grow: 1; height: 1px; background: #E2DDD2; margin-bottom: 26px;"></span>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 9px; width: 110px;">
+              <span style="width: 11px; height: 11px; border-radius: 50%; background: #FFFFFF; border: 2px solid #C3BCAD;"></span>
+              <span style="font-size: 11.5px; line-height: 1.35; color: #475F87; text-align: center;">Ejecución /<br>recurso</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; padding: 16px 18px; background: #FAF8F4; border: 1px solid #EDE9E0; border-radius: 2px;">
+            <span class="kicker" style="color: #7587A5;">Documentos que la fase genera</span>
+            <div style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px;">
+              <span style="font-size: 12px; color: #22324B; background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 2px; padding: 5px 10px;">Memo de viabilidad (CREAC)</span>
+              <span style="font-size: 12px; color: #22324B; background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 2px; padding: 5px 10px;">Análisis de jurisprudencia</span>
+              <span style="font-size: 12px; color: #22324B; background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 2px; padding: 5px 10px;">Perfil de contraparte</span>
+              <span style="font-size: 12px; color: #22324B; background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 2px; padding: 5px 10px;">Estimación de costos y tiempos</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 10px; margin-top: 18px;">
+            <span class="kicker" style="color: #7587A5;">Instancias</span>
+            <span class="mono" style="font-size: 11.5px; color: #475F87;">1ª Instancia → Corte de Apelación → SCJ (Casación) → TC</span>
+          </div>
+        </div>
+
+        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 22px;">
+          <div style="border-top: 1px solid #D8D2C6; padding-top: 16px;">
+            <h3 style="font-size: 19px; color: #1A2332;">Plazos que cuentan como cuenta el tribunal</h3>
+            <p style="margin-top: 7px; font-size: 14px; line-height: 1.6; color: #475F87;">Días francos y feriados según la Ley 139-97, con un solo recordatorio por plazo al día. El acto procesal de un plazo se genera desde «Mi Día».</p>
+          </div>
+          <div style="border-top: 1px solid #D8D2C6; padding-top: 16px;">
+            <h3 style="font-size: 19px; color: #1A2332;">Firma electrónica donde el cliente contesta</h3>
+            <p style="margin-top: 7px; font-size: 14px; line-height: 1.6; color: #475F87;">Circuito de firma con ZapSign por correo y por WhatsApp, dentro del asunto: sin exportar el documento a otra herramienta.</p>
+          </div>
+          <div style="border-top: 1px solid #D8D2C6; padding-top: 16px;">
+            <h3 style="font-size: 19px; color: #1A2332;">Sign-off del socio antes de que salga</h3>
+            <p style="margin-top: 7px; font-size: 14px; line-height: 1.6; color: #475F87;">Aprobaciones, versionado con comparación y restauración, y evaluación de riesgo del asunto. Lo que la IA propone no sale de la firma sin que alguien lo firme.</p>
+          </div>
+          <div style="border-top: 1px solid #D8D2C6; padding-top: 16px;">
+            <h3 style="font-size: 19px; color: #1A2332;">Historial adversario real</h3>
+            <p style="margin-top: 7px; font-size: 14px; line-height: 1.6; color: #475F87;">Al cerrar un asunto con su resultado, la contraparte y su abogado quedan en el historial de la firma. Es dato propio, no del corpus.</p>
+          </div>
+          <div style="margin-top: 6px; padding: 14px 16px; background: #EFEADD; border-left: 2px solid #C9A656;">
+            <p style="font-size: 12.5px; line-height: 1.55; color: #55514A;"><strong style="color: #1A2332;">Nota de migración.</strong> «Gestión de Litigios» se retiró como módulo el 14-jul-2026 y se consolidó aquí. Las rutas antiguas siguen abriendo el asunto.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ § 02 — VERIFICACIÓN ══ -->
+  <div style="background: #141B27; padding: 100px 144px; color: #FFFFFF;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid rgba(212,184,122,0.28); padding-top: 22px; margin-bottom: 46px;">
+        <span class="kicker" style="color: #D4B87A; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 02</span>
+        <div style="flex-grow: 1;">
+          <h2 style="font-size: 46px; line-height: 1.1; color: #FFFFFF; max-width: 700px;">Desde el 22 de agosto, el verificador <span style="color: #D4B87A; font-style: italic;">corrige</span> la cita mal fundada. Antes solo avisaba.</h2>
+          <p style="margin-top: 18px; font-size: 17px; line-height: 1.62; color: #A3AFC3; max-width: 660px;">Un asistente legal que inventa una sentencia es un pasivo. El nuestro también se equivoca; la diferencia es que el documento lo declara y el pasaje se retira antes de llegar al cliente.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 3px; padding: 26px 24px 28px;">
+          <span class="mono" style="font-size: 26px; color: #D4B87A;">01</span>
+          <h3 style="margin-top: 14px; font-size: 21px; color: #FFFFFF; line-height: 1.25;">Cotejo literal contra la sentencia</h3>
+          <p style="margin-top: 11px; font-size: 14px; line-height: 1.62; color: #A3AFC3;">El fragmento que el documento atribuye a una sentencia se busca dentro del texto completo de esa sentencia, no de un resumen. Umbral en 180 caracteres, elegido midiendo el falso casado sobre 1.006 pares reales del recuperador.</p>
+          <p class="mono" style="margin-top: 14px; font-size: 10.5px; color: #7587A5; letter-spacing: 0.05em;">MED. 02-SEP-2026</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 3px; padding: 26px 24px 28px;">
+          <span class="mono" style="font-size: 26px; color: #D4B87A;">02</span>
+          <h3 style="margin-top: 14px; font-size: 21px; color: #FFFFFF; line-height: 1.25;">Qué tuvo el modelo delante</h3>
+          <p style="margin-top: 11px; font-size: 14px; line-height: 1.62; color: #A3AFC3;">Se guarda la lista de sentencias que el recuperador le entregó en esa corrida. Así se separa la cita fundada de la citada de memoria — una distinción que el sello «verificada» por sí solo no hace.</p>
+          <p class="mono" style="margin-top: 14px; font-size: 10.5px; color: #7587A5; letter-spacing: 0.05em;">DESDE 31-AGO-2026</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 3px; padding: 26px 24px 28px;">
+          <span class="mono" style="font-size: 26px; color: #D4B87A;">03</span>
+          <h3 style="margin-top: 14px; font-size: 21px; color: #FFFFFF; line-height: 1.25;">Anexo artículo por artículo</h3>
+          <p style="margin-top: 11px; font-size: 14px; line-height: 1.62; color: #A3AFC3;">Lo que el borrador afirma de cada artículo se coteja contra el texto de ese artículo. En una corrida de 73 artículos: 28 pares, 28 pareados, cero artículos inexistentes.</p>
+          <p class="mono" style="margin-top: 14px; font-size: 10.5px; color: #7587A5; letter-spacing: 0.05em;">MED. 02-SEP-2026</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 20px; margin-top: 26px; padding: 22px 26px; background: rgba(212,184,122,0.07); border: 1px solid rgba(212,184,122,0.22); border-radius: 3px;">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#D4B87A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><circle cx="10" cy="10" r="7.4"></circle><path d="M10 6.2v4.4M10 13.4v.3"></path></svg>
+        <p style="font-size: 14px; line-height: 1.62; color: #D1D7E1;"><strong style="color: #FFFFFF;">Lo que esto todavía no resuelve.</strong> El cotejo comprueba que el pasaje pertenece a la sentencia citada; no comprueba que la sentencia venga a cuento. La pertinencia sigue siendo lectura del abogado, y así lo decimos en el documento.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ § 03 — VIGENCIA + API ══ -->
+  <div style="background: #FFFFFF; padding: 100px 144px;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid #D8D2C6; padding-top: 22px; margin-bottom: 46px;">
+        <span class="kicker" style="color: #B8923D; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 03</span>
+        <div style="flex-grow: 1;">
+          <h2 style="font-size: 46px; line-height: 1.1; color: #1A2332; max-width: 700px;">«¿Estaba vigente el 14 de marzo de 2019?»</h2>
+          <p style="margin-top: 18px; font-size: 17px; line-height: 1.62; color: #475F87; max-width: 660px;">El motor de vigencia responde el estado jurídico de una norma en una fecha pasada, computado de su promulgación, su entrada en vigor y su derogación. Ocho estados, con la distinción que casi nadie hace: <em>anulada</em> por el Tribunal Constitucional no es <em>derogada</em> por el legislador.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 40px; align-items: flex-start;">
+        <div style="width: 548px; flex-shrink: 0;">
+          <span class="kicker" style="color: #7587A5;">Ocho estados de vigencia</span>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;">
+            <span style="font-size: 13px; color: #1F5C43; background: #F3F7F4; border: 1px solid #CFE3D6; border-radius: 2px; padding: 7px 12px;">vigente</span>
+            <span style="font-size: 13px; color: #22324B; background: #F5F6F8; border: 1px solid #E1E4E9; border-radius: 2px; padding: 7px 12px;">promulgada, sin entrar en vigor</span>
+            <span style="font-size: 13px; color: #22324B; background: #F5F6F8; border: 1px solid #E1E4E9; border-radius: 2px; padding: 7px 12px;">vigencia diferida</span>
+            <span style="font-size: 13px; color: #96331F; background: #FCF4F2; border: 1px solid #EDD3CB; border-radius: 2px; padding: 7px 12px;">derogada</span>
+            <span style="font-size: 13px; color: #96331F; background: #FCF4F2; border: 1px solid #EDD3CB; border-radius: 2px; padding: 7px 12px;">derogada parcialmente</span>
+            <span style="font-size: 13px; color: #7A3E8F; background: #F8F3FA; border: 1px solid #E4D5EA; border-radius: 2px; padding: 7px 12px;">anulada por el TC</span>
+            <span style="font-size: 13px; color: #7A3E8F; background: #F8F3FA; border: 1px solid #E4D5EA; border-radius: 2px; padding: 7px 12px;">anulada parcialmente</span>
+            <span style="font-size: 13px; color: #55514A; background: #F5F4F1; border: 1px solid #DCD8CE; border-radius: 2px; padding: 7px 12px;">indeterminada</span>
+          </div>
+          <p style="margin-top: 16px; font-size: 13.5px; line-height: 1.6; color: #475F87;">Seis reglas formales de inferencia leen las derogaciones expresas y las tácitas sobre el grafo de 22.146 relaciones. Una norma que consta derogada sin fecha conocida <strong>no se responde como vigente</strong>.</p>
+
+          <div style="margin-top: 26px; padding: 18px 20px; background: #FAF8F4; border: 1px solid #EDE9E0; border-radius: 2px;">
+            <span class="kicker" style="color: #7587A5;">Caso real</span>
+            <p style="margin-top: 10px; font-size: 13.5px; line-height: 1.62; color: #22324B;">El Código Penal de 2014 constaba <span style="color: #96331F;">derogado</span> en el repositorio. El Tribunal Constitucional lo había <span style="color: #7A3E8F;">anulado</span>. Son dos consecuencias jurídicas distintas y ahora el sistema las distingue.</p>
+            <p class="mono" style="margin-top: 10px; font-size: 10.5px; color: #9B958A; letter-spacing: 0.05em;">CORREGIDO 18-AGO-2026</p>
+          </div>
+        </div>
+
+        <div style="flex-grow: 1;">
+          <div style="background: #141B27; border-radius: 3px; overflow: hidden;">
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 13px 20px; border-bottom: 1px solid rgba(255,255,255,0.09);">
+              <span class="kicker" style="color: #D4B87A;">API de verificación normativa</span>
+              <span class="mono" style="font-size: 11px; color: #7587A5;">credencial de servicio</span>
+            </div>
+            <div style="padding: 20px 22px 24px;">
+              <p class="mono" style="font-size: 12px; line-height: 1.9; color: #A3AFC3;"><span style="color: #E2C88A;">GET</span> /normas?tipo=decreto&amp;cita_a=ley:1-12<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;desde=2024-01-01&amp;vence=2024-06-30</p>
+              <div style="height: 1px; background: rgba(255,255,255,0.09); margin: 16px 0;"></div>
+              <p class="mono" style="font-size: 12px; line-height: 1.9; color: #A3AFC3;">{<br>&nbsp;&nbsp;<span style="color: #D1D7E1;">"resultados"</span>: [],<br>&nbsp;&nbsp;<span style="color: #D1D7E1;">"alcance"</span>: {<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #D1D7E1;">"vacio_es_concluyente"</span>: <span style="color: #8FCFAE;">true</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #D1D7E1;">"cobertura_registral_desde"</span>: <span style="color: #E2C88A;">"2012-01-01"</span><br>&nbsp;&nbsp;}<br>}</p>
+            </div>
+            <div style="padding: 16px 22px 20px; background: rgba(212,184,122,0.08); border-top: 1px solid rgba(212,184,122,0.20);">
+              <p style="font-size: 13.5px; line-height: 1.6; color: #E8EBF0;">Con <span class="mono" style="color: #D4B87A;">vacio_es_concluyente: true</span> puedes escribir en tu informe <strong>«no se dictó»</strong>. Con <span class="mono" style="color: #D4B87A;">false</span>, solo «no se localizó registro». La diferencia es responsabilidad profesional, y por eso va en la respuesta y no en la letra pequeña.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 28px; margin-top: 20px;">
+            <div style="flex-grow: 1;">
+              <p style="font-size: 13.5px; line-height: 1.6; color: #475F87;"><strong style="color: #1A2332;">Consulta por lotes.</strong> Hasta 50 obligaciones por llamada. Pasarse devuelve un error, no un recorte silencioso: un lote truncado se lee como si esas obligaciones no tuvieran nada que decir.</p>
+            </div>
+            <div style="flex-grow: 1;">
+              <p style="font-size: 13.5px; line-height: 1.6; color: #475F87;"><strong style="color: #1A2332;">Lo que el API no hace.</strong> No interpreta si una obligación se cumplió, ni califica el contenido de una norma. Devuelve hechos con fecha.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ § 04 — REDACTOR + DICTAMEN ══ -->
+  <div style="background: #F7F5F1; padding: 100px 144px;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid #D8D2C6; padding-top: 22px; margin-bottom: 44px;">
+        <span class="kicker" style="color: #B8923D; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 04</span>
+        <div style="flex-grow: 1;">
+          <h2 style="font-size: 46px; line-height: 1.1; color: #1A2332; max-width: 680px;">Redacta el instrumento y explica por qué cada decisión está ahí.</h2>
+          <p style="margin-top: 18px; font-size: 17px; line-height: 1.62; color: #475F87; max-width: 640px;">El Redactor Legislativo propone reformas de ley, reglamentos de aplicación y normas administrativas fundadas únicamente en el corpus. Entrega dos piezas: el articulado y el memo de motivación que lo sostiene.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px;">
+
+        <div style="background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 3px; padding: 30px 30px 32px;">
+          <div style="display: flex; align-items: baseline; gap: 14px;">
+            <span style="font-family: 'Newsreader', Georgia, serif; font-size: 50px; line-height: 1; color: #1A2332;">85</span>
+            <span style="font-size: 14px; line-height: 1.45; color: #475F87;">entregables en producción<br><span class="mono" style="font-size: 10.5px; color: #9B958A; letter-spacing: 0.05em;">22-JUL A 14-AGO-2026</span></span>
+          </div>
+          <div style="height: 1px; background: #EDE9E0; margin: 24px 0;"></div>
+          <div style="display: flex; flex-direction: column; gap: 15px;">
+            <div style="display: flex; gap: 12px;">
+              <span style="width: 5px; height: 5px; border-radius: 50%; background: #C9A656; margin-top: 8px; flex-shrink: 0;"></span>
+              <p style="font-size: 14px; line-height: 1.6; color: #22324B;"><strong>Radar de vacíos normativos:</strong> lo que el análisis identifica tiene que quedar resuelto en el articulado, o el borrador no cierra.</p>
+            </div>
+            <div style="display: flex; gap: 12px;">
+              <span style="width: 5px; height: 5px; border-radius: 50%; background: #C9A656; margin-top: 8px; flex-shrink: 0;"></span>
+              <p style="font-size: 14px; line-height: 1.6; color: #22324B;"><strong>Órganos que ya hacen ese trabajo:</strong> el proyecto debe decir qué pasa con ellos. La figura del organismo y su presupuesto se registran como una sola decisión.</p>
+            </div>
+            <div style="display: flex; gap: 12px;">
+              <span style="width: 5px; height: 5px; border-radius: 50%; background: #C9A656; margin-top: 8px; flex-shrink: 0;"></span>
+              <p style="font-size: 14px; line-height: 1.6; color: #22324B;"><strong>Revisión del encargo antes de gastar una generación:</strong> si el encargo no cierra, se devuelve al autor en vez de producir un borrador caro y equivocado.</p>
+            </div>
+            <div style="display: flex; gap: 12px;">
+              <span style="width: 5px; height: 5px; border-radius: 50%; background: #C9A656; margin-top: 8px; flex-shrink: 0;"></span>
+              <p style="font-size: 14px; line-height: 1.6; color: #22324B;"><strong>Las siete decisiones cerradas del encargo</strong> se cumplieron en las 7 de 7 medidas sobre el encargo vigente. <span class="mono" style="font-size: 10.5px; color: #9B958A;">MED. 01-SEP-2026</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 3px; padding: 30px 30px 32px;">
+          <span class="kicker" style="color: #B8923D;">Dictamen sobre proyectos de ley</span>
+          <h3 style="margin-top: 12px; font-size: 24px; line-height: 1.25; color: #1A2332;">Mapeo artículo por artículo contra el marco vigente</h3>
+          <p style="margin-top: 12px; font-size: 14px; line-height: 1.62; color: #475F87;">Constitucionalidad, coherencia sistémica, impacto proyectado y tabla de concordancias, exportable como dictamen legislativo. La tabla ya no puede afirmar una derogación que la ley no hace.</p>
+          <div style="height: 1px; background: #EDE9E0; margin: 22px 0;"></div>
+          <div style="padding: 16px 18px; background: #FAF8F4; border-left: 2px solid #C9A656;">
+            <p style="font-size: 13px; line-height: 1.6; color: #55514A;"><strong style="color: #1A2332;">Alcance declarado de la v1 (3-sep-2026).</strong> La sección de constitucionalidad se emite <em>sin fundamentación por precedentes</em>: queda en lo verificable contra texto. El interruptor está declarado y es reversible. Preferimos un dictamen más corto a uno que atribuya doctrina a la sentencia equivocada.</p>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: 12px; margin-top: 20px;">
+            <span style="font-family: 'Newsreader', Georgia, serif; font-size: 30px; line-height: 1; color: #1A2332;">US$ 1,90</span>
+            <span style="font-size: 13px; line-height: 1.45; color: #475F87;">coste real de un dictamen de 73 artículos<br><span class="mono" style="font-size: 10.5px; color: #9B958A; letter-spacing: 0.05em;">MED. 02-SEP-2026 · 356.700 TOKENS</span></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ § 05 — INTELIGENCIA PROCESAL ══ -->
+  <div style="background: #FFFFFF; padding: 100px 144px;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid #D8D2C6; padding-top: 22px; margin-bottom: 44px;">
+        <span class="kicker" style="color: #B8923D; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 05</span>
+        <div style="flex-grow: 1;">
+          <h2 style="font-size: 46px; line-height: 1.1; color: #1A2332; max-width: 660px;">Inteligencia procesal, con el techo puesto donde está.</h2>
+          <p style="margin-top: 18px; font-size: 17px; line-height: 1.62; color: #475F87; max-width: 640px;">Perfiles de jueces y abogados construidos sobre el corpus completo, con resolución de entidades y duración real de resolución. Lo que hay medido lo mostramos; lo que no, lo decimos.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 40px; align-items: flex-start;">
+        <div style="width: 640px; flex-shrink: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div style="border-top: 1px solid #D8D2C6; padding-top: 15px;">
+            <h3 style="font-size: 17px; color: #1A2332;">Perfil de juez</h3>
+            <p style="margin-top: 7px; font-size: 13.5px; line-height: 1.6; color: #475F87;">Materias, duración real de resolución, fundamentos más citados, preferencia probatoria y tendencia temporal.</p>
+          </div>
+          <div style="border-top: 1px solid #D8D2C6; padding-top: 15px;">
+            <h3 style="font-size: 17px; color: #1A2332;">Estadísticas judiciales</h3>
+            <p style="margin-top: 7px; font-size: 13.5px; line-height: 1.6; color: #475F87;">Tasas de éxito y duración por materia y por corte, calculadas sobre el corpus, no estimadas.</p>
+          </div>
+          <div style="border-top: 1px solid #D8D2C6; padding-top: 15px;">
+            <h3 style="font-size: 17px; color: #1A2332;">Resolución de entidades</h3>
+            <p style="margin-top: 7px; font-size: 13.5px; line-height: 1.6; color: #475F87;">«Licenciado X» y «X» son la misma persona; los «abogados» que no eran personas quedaron fuera.</p>
+          </div>
+          <div style="border-top: 1px solid #D8D2C6; padding-top: 15px;">
+            <h3 style="font-size: 17px; color: #1A2332;">Perfiles fiscales y adversario</h3>
+            <p style="margin-top: 7px; font-size: 13.5px; line-height: 1.6; color: #475F87;">Reconstruidos sobre el corpus completo, más el historial propio de la firma al cerrar asuntos.</p>
+          </div>
+        </div>
+
+        <div style="flex-grow: 1; padding: 24px 26px; background: #F7F5F1; border: 1px solid #E2DDD2; border-radius: 3px;">
+          <span class="kicker" style="color: #B8923D;">Lo que no vas a ver aquí</span>
+          <p style="margin-top: 13px; font-size: 14px; line-height: 1.65; color: #22324B;">Un porcentaje de acierto de la predicción. El modelo entrenado necesita 200 casos etiquetados por materia; por debajo de ese umbral opera en <strong>modo heurístico</strong> y lo declara en la respuesta.</p>
+          <p style="margin-top: 13px; font-size: 14px; line-height: 1.65; color: #22324B;">Publicar una tasa que no hemos medido sería exactamente el error que este producto existe para evitar.</p>
+          <div style="height: 1px; background: #E2DDD2; margin: 20px 0;"></div>
+          <p style="font-size: 12.5px; line-height: 1.6; color: #7587A5;">Herramienta de apoyo al criterio profesional. No sustituye el juicio del abogado ni predice el resultado de un caso concreto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ § 06 — MÓDULOS ══ -->
+  <div style="background: #F7F5F1; padding: 100px 144px;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid #D8D2C6; padding-top: 22px; margin-bottom: 44px;">
+        <span class="kicker" style="color: #B8923D; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 06</span>
+        <div style="display: flex; gap: 40px; align-items: baseline; flex-grow: 1;">
+          <h2 style="font-size: 46px; line-height: 1.1; color: #1A2332; flex-grow: 1;">Veinticinco módulos vivos,<br>en cuatro familias.</h2>
+          <p style="font-size: 14px; line-height: 1.62; color: #7587A5; width: 300px; flex-shrink: 0;">El registro trae 26. El vigesimosexto es una tarjeta de «Gestión de Litigios» que se retiró en julio y que estamos limpiando. La contamos aparte en vez de sumarla.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px;">
+
+        <div style="background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 3px; padding: 26px 26px 28px;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #EDE9E0; padding-bottom: 14px;">
+            <h3 style="font-size: 22px; color: #1A2332;">La práctica diaria</h3>
+            <span class="mono" style="font-size: 12px; color: #B8923D;">09</span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px;">
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Gestión de asuntos</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Revisión de contratos</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Due diligence</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Investigación legal</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Generación de documentos</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Cumplimiento regulatorio</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">eDiscovery</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Analítica predictiva</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Asistente legal virtual</span>
+          </div>
+          <p style="margin-top: 16px; font-size: 13px; line-height: 1.6; color: #7587A5;">Playbooks de negociación, editor IA de contratos, cola de revisión, TAR 2.0 con detección de privilegio y PII (cédula, RNC, teléfono).</p>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 3px; padding: 26px 26px 28px;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #EDE9E0; padding-bottom: 14px;">
+            <h3 style="font-size: 22px; color: #1A2332;">Inteligencia normativa</h3>
+            <span class="mono" style="font-size: 12px; color: #B8923D;">10</span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px;">
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Repositorio normativo</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Búsqueda legal inteligente</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Monitor de vigencia</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Feed de cambios regulatorios</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Memorándums bajo demanda</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Motor de análisis de impacto</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">DD regulatorio</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Contexto normativo judicial</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Observatorio de cumplimiento</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Suite académica legal</span>
+          </div>
+          <p style="margin-top: 16px; font-size: 13px; line-height: 1.6; color: #7587A5;">Versionado point-in-time por artículo, grafo interactivo de relaciones, consultas en lenguaje natural sobre el grafo, seis tipos de memorándum.</p>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 3px; padding: 26px 26px 28px;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #EDE9E0; padding-bottom: 14px;">
+            <h3 style="font-size: 22px; color: #1A2332;">Trabajo legislativo</h3>
+            <span class="mono" style="font-size: 12px; color: #B8923D;">02</span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px;">
+            <span style="font-size: 13px; color: #1A2332; background: #EDE7DA; border: 1px solid #DFD4BC; border-radius: 2px; padding: 6px 11px;">Redactor legislativo IA</span>
+            <span style="font-size: 13px; color: #1A2332; background: #EDE7DA; border: 1px solid #DFD4BC; border-radius: 2px; padding: 6px 11px;">Evaluador de impacto legislativo</span>
+          </div>
+          <p style="margin-top: 16px; font-size: 13px; line-height: 1.6; color: #7587A5;">La línea más joven y la que más se movió este trimestre. Para congreso, ministerios y firmas con práctica regulatoria.</p>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 3px; padding: 26px 26px 28px;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #EDE9E0; padding-bottom: 14px;">
+            <h3 style="font-size: 22px; color: #1A2332;">Inteligencia procesal y capa IA</h3>
+            <span class="mono" style="font-size: 12px; color: #B8923D;">04</span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px;">
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Inteligencia procesal</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Panel de control de IA</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Asistente contextual · Ctrl+J</span>
+            <span style="font-size: 13px; color: #1A2332; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 6px 11px;">Command palette · Ctrl+K</span>
+          </div>
+          <p style="margin-top: 16px; font-size: 13px; line-height: 1.6; color: #7587A5;">El panel de control aprueba o rechaza cada acción que la IA ejecuta, fija los límites de autonomía de la firma y exporta el registro. La política de IA de tu firma se cumple, no se declara.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ § 07 — TRANSPARENCIA ══ -->
+  <div style="background: #141B27; padding: 100px 144px; color: #FFFFFF;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid rgba(212,184,122,0.28); padding-top: 22px; margin-bottom: 46px;">
+        <span class="kicker" style="color: #D4B87A; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 07</span>
+        <div style="flex-grow: 1;">
+          <h2 style="font-size: 46px; line-height: 1.1; color: #FFFFFF; max-width: 700px;">Los tres límites que hay que declarar antes de vender «verificación de vigencia».</h2>
+          <p style="margin-top: 18px; font-size: 17px; line-height: 1.62; color: #A3AFC3; max-width: 660px;">Hay responsabilidad profesional en juego. Publicamos esto en el sitio, no en un anexo del contrato.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+        <div style="border-top: 2px solid #B8923D; padding-top: 20px;">
+          <span style="font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; color: #D4B87A;">179</span>
+          <h3 style="margin-top: 12px; font-size: 18px; color: #FFFFFF; line-height: 1.3;">normas figuran derogadas sin respaldo</h3>
+          <p style="margin-top: 10px; font-size: 13.5px; line-height: 1.62; color: #A3AFC3;">Sin fecha, sin norma derogante y sin pasaje. La consulta programática las devuelve marcadas como no confiables y la búsqueda del producto las filtra. Cerrarlas exige fuentes de 1960–2010 que están fuera del corpus.</p>
+        </div>
+        <div style="border-top: 2px solid #B8923D; padding-top: 20px;">
+          <span style="font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; color: #D4B87A;">1885–2011</span>
+          <h3 style="margin-top: 12px; font-size: 18px; color: #FFFFFF; line-height: 1.3;">decretos: cobertura cero</h3>
+          <p style="margin-top: 10px; font-size: 13.5px; line-height: 1.62; color: #A3AFC3;">La cobertura registral de decretos empieza en 2012. Tenemos documentos fundacionales desde 1844, así que «de 1844 hasta hoy» sería cierto en los extremos y engañoso en el medio. Preferimos nombrar el tramo hueco.</p>
+        </div>
+        <div style="border-top: 2px solid #B8923D; padding-top: 20px;">
+          <span style="font-family: 'Newsreader', Georgia, serif; font-size: 40px; line-height: 1; color: #D4B87A;">52</span>
+          <h3 style="margin-top: 12px; font-size: 18px; color: #FFFFFF; line-height: 1.3;">anulaciones parciales identificadas, aún sin cargar</h3>
+          <p style="margin-top: 10px; font-size: 13.5px; line-height: 1.62; color: #A3AFC3;">Hoy el motor no responde si un artículo concreto fue anulado por el TC: opera a nivel de norma entera. La infraestructura de datos existe; la carga no se ha hecho.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; margin-top: 40px; padding: 26px 30px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 3px;">
+        <p style="font-size: 15px; line-height: 1.62; color: #D1D7E1; max-width: 720px;">Mantenemos un estado público de la plataforma con cada cifra y su fecha de medición: corpus, reconciliación, calidad de las pruebas y lo que está abierto. Si un dato lleva más de treinta días sin medirse, lo decimos en vez de citarlo.</p>
+        <span style="font-size: 14px; font-weight: 600; color: #141B27; background: #D4B87A; padding: 13px 24px; border-radius: 2px; flex-shrink: 0;">Ver el estado de la plataforma</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ PRECIOS ══ -->
+  <div style="background: #FFFFFF; padding: 100px 144px;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid #D8D2C6; padding-top: 22px; margin-bottom: 44px;">
+        <span class="kicker" style="color: #B8923D; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 08</span>
+        <div style="display: flex; gap: 40px; align-items: baseline; flex-grow: 1;">
+          <h2 style="font-size: 46px; line-height: 1.1; color: #1A2332; flex-grow: 1;">Lo que cambia entre planes<br>es la profundidad del insight.</h2>
+          <p style="font-size: 14px; line-height: 1.62; color: #7587A5; width: 300px; flex-shrink: 0;">Cada hallazgo se entrega en cuatro capas: el <strong style="color: #1A2332;">dato</strong>, su <strong style="color: #1A2332;">contexto</strong>, la <strong style="color: #1A2332;">implicación</strong> para tu caso y la <strong style="color: #1A2332;">acción</strong> recomendada. El plan define hasta dónde llegas.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+
+        <div style="background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 3px; padding: 30px 28px 32px; display: flex; flex-direction: column;">
+          <h3 style="font-size: 24px; color: #1A2332;">Asesor</h3>
+          <p style="margin-top: 8px; font-size: 13.5px; line-height: 1.55; color: #7587A5;">Abogados independientes y equipos pequeños</p>
+          <div style="display: flex; align-items: baseline; gap: 6px; margin: 24px 0 4px;">
+            <span style="font-family: 'Newsreader', Georgia, serif; font-size: 46px; line-height: 1; color: #1A2332;">US$ 99</span>
+            <span style="font-size: 14px; color: #7587A5;">/mes</span>
+          </div>
+          <div style="height: 1px; background: #EDE9E0; margin: 24px 0 20px;"></div>
+          <div style="display: flex; flex-direction: column; gap: 11px; flex-grow: 1;">
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;"><strong>Insight de capa 1</strong> — el dato</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Hasta 5 usuarios</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">50 consultas de perfilamiento al mes</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Repositorio normativo y memorándums</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Revisión de contratos y asistente legal</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Búsqueda sobre corpus y perfil básico</p>
+          </div>
+          <span style="margin-top: 26px; text-align: center; font-size: 14px; font-weight: 600; color: #1A2332; border: 1px solid #C3BCAD; padding: 13px 20px; border-radius: 2px;">Solicitar demo</span>
+        </div>
+
+        <div style="background: #141B27; border: 1px solid #141B27; border-radius: 3px; padding: 30px 28px 32px; display: flex; flex-direction: column; position: relative;">
+          <span class="kicker" style="position: absolute; top: -10px; left: 28px; color: #141B27; background: #D4B87A; padding: 4px 10px; border-radius: 2px;">Más elegido</span>
+          <h3 style="font-size: 24px; color: #FFFFFF;">Firma</h3>
+          <p style="margin-top: 8px; font-size: 13.5px; line-height: 1.55; color: #A3AFC3;">Firmas medianas con práctica litigiosa y corporativa</p>
+          <div style="display: flex; align-items: baseline; gap: 6px; margin: 24px 0 4px;">
+            <span style="font-family: 'Newsreader', Georgia, serif; font-size: 46px; line-height: 1; color: #FFFFFF;">US$ 299</span>
+            <span style="font-size: 14px; color: #A3AFC3;">/mes</span>
+          </div>
+          <div style="height: 1px; background: rgba(255,255,255,0.12); margin: 24px 0 20px;"></div>
+          <div style="display: flex; flex-direction: column; gap: 11px; flex-grow: 1;">
+            <p style="font-size: 13.5px; line-height: 1.55; color: #E8EBF0;"><strong style="color: #D4B87A;">Insight de capas 1 a 3</strong> — dato, contexto e implicación</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #E8EBF0;">Hasta 20 usuarios · 500 consultas/mes</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #E8EBF0;">Gestión de asuntos completa, con firma electrónica</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #E8EBF0;">Vigencia point-in-time y análisis de impacto</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #E8EBF0;">Due diligence, eDiscovery y compliance</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #E8EBF0;">Alertas de deriva, preferencia probatoria, rango monetario</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #E8EBF0;">Exportación del repositorio normativo</p>
+          </div>
+          <span style="margin-top: 26px; text-align: center; font-size: 14px; font-weight: 600; color: #141B27; background: #D4B87A; padding: 13px 20px; border-radius: 2px;">Solicitar demo</span>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 3px; padding: 30px 28px 32px; display: flex; flex-direction: column;">
+          <h3 style="font-size: 24px; color: #1A2332;">Consorcio</h3>
+          <p style="margin-top: 8px; font-size: 13.5px; line-height: 1.55; color: #7587A5;">Grandes firmas, corporativos e instituciones</p>
+          <div style="display: flex; align-items: baseline; gap: 6px; margin: 24px 0 4px;">
+            <span style="font-family: 'Newsreader', Georgia, serif; font-size: 46px; line-height: 1; color: #1A2332;">US$ 799</span>
+            <span style="font-size: 14px; color: #7587A5;">/mes</span>
+          </div>
+          <div style="height: 1px; background: #EDE9E0; margin: 24px 0 20px;"></div>
+          <div style="display: flex; flex-direction: column; gap: 11px; flex-grow: 1;">
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;"><strong>Las cuatro capas</strong> — incluida la acción recomendada</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Usuarios ilimitados · 5.000 consultas/mes</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">API de verificación normativa con credencial de servicio</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Redactor legislativo y dictamen sobre proyectos de ley</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Forum shopping y narrativa explicativa del modelo</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Onboarding dedicado y facturación local (RNC / NCF)</p>
+          </div>
+          <span style="margin-top: 26px; text-align: center; font-size: 14px; font-weight: 600; color: #1A2332; border: 1px solid #C3BCAD; padding: 13px 20px; border-radius: 2px;">Hablar con ventas</span>
+        </div>
+
+      </div>
+      <p style="margin-top: 26px; font-size: 12.5px; color: #9B958A;">Precios vigentes al 26-ago-2026. Pago con PayPal o transferencia local; factura con NCF automática al cobro.</p>
+    </div>
+  </div>
+
+  <!-- ══ CTA ══ -->
+  <div style="background: #F7F5F1; padding: 92px 144px; border-top: 1px solid #E7E3DA;">
+    <div style="max-width: 1152px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 60px;">
+      <div style="max-width: 640px;">
+        <h2 style="font-size: 40px; line-height: 1.14; color: #1A2332;">Traiga un expediente real a la demo.</h2>
+        <p style="margin-top: 16px; font-size: 16px; line-height: 1.62; color: #475F87;">Cuarenta minutos, su propio caso, y la lista completa de lo que el sistema no pudo verificar. Es la mejor forma de saber si esto le sirve.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; flex-shrink: 0;">
+        <span style="text-align: center; font-size: 15px; font-weight: 600; color: #141B27; background: #D4B87A; padding: 16px 34px; border-radius: 2px;">Solicitar demo</span>
+        <span style="text-align: center; font-size: 13.5px; color: #7587A5;">o escríbanos a <span style="color: #B8923D;">hola@jurisai.do</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <div style="background: #0E131B; padding: 60px 144px 40px;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 80px; align-items: flex-start;">
+        <div style="width: 320px; flex-shrink: 0;">
+          <div style="display: flex; align-items: center; gap: 9px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4B87A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8l-3 7h6zM19 8l-3 7h6zM5 8l7-3 7 3"></path></svg>
+            <span style="font-family: 'Newsreader', Georgia, serif; font-size: 20px; color: #FFFFFF;">JurisAI</span>
+          </div>
+          <p style="margin-top: 16px; font-size: 13.5px; line-height: 1.65; color: #7587A5;">Inteligencia legal construida sobre el corpus normativo y jurisprudencial dominicano. Un producto de SDQ Consulting Group, Santo Domingo.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px; flex-grow: 1;">
+          <div style="display: flex; flex-direction: column; gap: 11px;">
+            <span class="kicker" style="color: #475F87; margin-bottom: 4px;">Plataforma</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Gestión de asuntos</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Verificación de citas</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Motor de vigencia</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Inteligencia procesal</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 11px;">
+            <span class="kicker" style="color: #475F87; margin-bottom: 4px;">Legislativo</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Redactor legislativo</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Dictamen de proyectos</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">API de normas</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Suite académica</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 11px;">
+            <span class="kicker" style="color: #475F87; margin-bottom: 4px;">Transparencia</span>
+            <span style="font-size: 13.5px; color: #D4B87A;">Estado de la plataforma</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Cómo medimos</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Límites declarados</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Novedades</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 11px;">
+            <span class="kicker" style="color: #475F87; margin-bottom: 4px;">Legal</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Términos v2.1</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Privacidad y DPA</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Retención de consultas</span>
+            <span style="font-size: 13.5px; color: #A3AFC3;">Seguridad</span>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; margin-top: 48px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.08);">
+        <span style="font-size: 12.5px; color: #475F87;">© 2026 SDQ Consulting Group. Santo Domingo, República Dominicana.</span>
+        <span style="font-size: 12.5px; color: #475F87;">Sus datos no entrenan modelos. Aislamiento por firma. Registro de auditoría por acción.</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

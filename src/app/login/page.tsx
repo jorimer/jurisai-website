@@ -33,21 +33,21 @@ export default function LoginPage() {
             Decisiones Legales Más Inteligentes, Hoy
           </h2>
           <p className="text-primary-200 text-lg leading-relaxed">
-            Accede a 23+ módulos de IA diseñados específicamente para el ecosistema legal dominicano.
-            Contratos, litigios, compliance e inteligencia procesal — todo en una plataforma.
+            Accede a 25 módulos de IA diseñados específicamente para el ecosistema legal dominicano.
+            Gestión de asuntos, contratos, vigencia normativa e inteligencia procesal — todo en una plataforma.
           </p>
           <div className="mt-12 grid grid-cols-3 gap-4">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <div className="text-2xl font-bold text-accent-400">97.8%</div>
-              <div className="text-sm text-primary-300">Precisión IA</div>
+              <div className="text-2xl font-bold text-accent-400">130.906</div>
+              <div className="text-sm text-primary-300">Sentencias con texto íntegro</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <div className="text-2xl font-bold text-accent-400">50+</div>
-              <div className="text-sm text-primary-300">Agentes IA</div>
+              <div className="text-2xl font-bold text-accent-400">202.444</div>
+              <div className="text-sm text-primary-300">Componentes normativos</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <div className="text-2xl font-bold text-accent-400">11K+</div>
-              <div className="text-sm text-primary-300">Sentencias</div>
+              <div className="text-2xl font-bold text-accent-400">25</div>
+              <div className="text-sm text-primary-300">Módulos vivos</div>
             </div>
           </div>
         </div>

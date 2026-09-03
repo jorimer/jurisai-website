@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; background: #0E131B; font-family: "Inter", system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+    * { box-sizing: border-box; }
+    a { color: #B8923D; text-decoration: none; }
+    a:hover { color: #8F7130; }
+    h1, h2, h3 { margin: 0; font-family: "Newsreader", "Iowan Old Style", Georgia, serif; font-weight: 400; letter-spacing: -0.01em; }
+    p { margin: 0; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .kicker { font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+  </style>
+</helmet>
+
+<div style="width: 1440px; background: #F7F5F1; color: #1A2332;">
+
+  <div style="display: flex; align-items: center; gap: 40px; padding: 0 144px; height: 76px; background: #141B27; border-bottom: 1px solid rgba(212,184,122,0.18);">
+    <div style="display: flex; align-items: center; gap: 9px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D4B87A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8l-3 7h6zM19 8l-3 7h6zM5 8l7-3 7 3"></path></svg>
+      <span style="font-family: 'Newsreader', Georgia, serif; font-size: 22px; color: #FFFFFF;">JurisAI</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 30px; flex-grow: 1;">
+      <span style="font-size: 14px; color: #D4B87A; border-bottom: 1px solid #D4B87A; padding-bottom: 2px;">Plataforma</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Verificación</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Vigencia</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Módulos</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Precios</span>
+      <span style="font-size: 14px; color: #D1D7E1;">Estado de la plataforma</span>
+    </div>
+    <span style="font-size: 14px; font-weight: 600; color: #141B27; background: #D4B87A; padding: 9px 20px; border-radius: 2px;">Solicitar demo</span>
+  </div>
+
+  <!-- HERO -->
+  <div style="position: relative; background: #141B27; padding: 80px 144px 84px; overflow: hidden;">
+    <div style="position: absolute; top: -200px; left: 40%; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(212,184,122,0.09) 0%, rgba(212,184,122,0) 68%);"></div>
+    <div style="position: relative; display: flex; gap: 72px; align-items: flex-start; max-width: 1152px; margin: 0 auto;">
+      <div style="width: 580px; flex-shrink: 0;">
+        <span class="kicker" style="color: #D4B87A;">Inteligencia procesal</span>
+        <h1 style="margin-top: 20px; font-size: 56px; line-height: 1.08; color: #FFFFFF; letter-spacing: -0.02em;">El perfil del juez es dato.<br>La predicción, <span style="color: #D4B87A; font-style: italic;">todavía no</span>.</h1>
+        <p style="margin-top: 26px; font-size: 17.5px; line-height: 1.62; color: #A3AFC3; max-width: 520px;">Construimos perfiles de jueces y abogados sobre las 130.906 sentencias del corpus, con resolución de entidades y duración real de resolución. Lo que está medido lo publicamos; el umbral desde el cual una cifra vale, también.</p>
+        <div style="display: flex; gap: 14px; margin-top: 34px;">
+          <span style="font-size: 15px; font-weight: 600; color: #141B27; background: #D4B87A; padding: 15px 28px; border-radius: 2px;">Solicitar demo</span>
+          <span style="font-size: 15px; font-weight: 500; color: #FFFFFF; border: 1px solid rgba(255,255,255,0.22); padding: 15px 28px; border-radius: 2px;">Ver el estado de la plataforma</span>
+        </div>
+      </div>
+
+      <div style="flex-grow: 1; background: #FFFFFF; border-radius: 3px; box-shadow: 0 24px 64px rgba(0,0,0,0.42); overflow: hidden;">
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 13px 20px; background: #1A2332; border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <span class="mono" style="font-size: 11px; color: #A3AFC3;">perfil de juez · estructura</span>
+          <span class="kicker" style="color: #D4B87A;">Sin cifras de ejemplo</span>
+        </div>
+        <div style="padding: 22px 24px 24px;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #EDE9E0; padding-bottom: 14px;">
+            <span style="font-family: 'Newsreader', Georgia, serif; font-size: 22px; color: #1A2332;">Magistrado / a</span>
+            <span class="mono" style="font-size: 11px; color: #9B958A;">n = SENTENCIAS EN CORPUS</span>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px 26px; margin-top: 18px;">
+            <div>
+              <span class="kicker" style="color: #9B958A; font-size: 9.5px;">Tasa favorable</span>
+              <div style="height: 9px; background: #E7E3DA; border-radius: 1px; margin-top: 8px;"><div style="width: 58%; height: 9px; background: #C3BCAD; border-radius: 1px;"></div></div>
+            </div>
+            <div>
+              <span class="kicker" style="color: #9B958A; font-size: 9.5px;">Parcialmente favorable</span>
+              <div style="height: 9px; background: #E7E3DA; border-radius: 1px; margin-top: 8px;"><div style="width: 31%; height: 9px; background: #C3BCAD; border-radius: 1px;"></div></div>
+            </div>
+            <div>
+              <span class="kicker" style="color: #9B958A; font-size: 9.5px;">Días promedio de resolución</span>
+              <div style="height: 9px; background: #E7E3DA; border-radius: 1px; margin-top: 8px;"><div style="width: 44%; height: 9px; background: #C3BCAD; border-radius: 1px;"></div></div>
+            </div>
+            <div>
+              <span class="kicker" style="color: #9B958A; font-size: 9.5px;">Índice de especialización (HHI)</span>
+              <div style="height: 9px; background: #E7E3DA; border-radius: 1px; margin-top: 8px;"><div style="width: 66%; height: 9px; background: #C3BCAD; border-radius: 1px;"></div></div>
+            </div>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 7px; margin-top: 20px; padding-top: 18px; border-top: 1px solid #EDE9E0;">
+            <span style="font-size: 12px; color: #475F87; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 5px 10px;">Materia principal</span>
+            <span style="font-size: 12px; color: #475F87; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 5px 10px;">Consistencia</span>
+            <span style="font-size: 12px; color: #475F87; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 5px 10px;">Tendencia</span>
+            <span style="font-size: 12px; color: #475F87; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 5px 10px;">Preferencia probatoria</span>
+            <span style="font-size: 12px; color: #475F87; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 5px 10px;">Rango monetario</span>
+            <span style="font-size: 12px; color: #475F87; background: #F7F5F1; border: 1px solid #E7E3DA; border-radius: 2px; padding: 5px 10px;">Fundamentos más citados</span>
+          </div>
+          <p style="margin-top: 18px; padding: 13px 15px; background: #FAF8F4; border-left: 2px solid #C9A656; font-size: 12.5px; line-height: 1.6; color: #55514A;">Los valores dependen del juez y del tamaño de su muestra. No mostramos un perfil de ejemplo con cifras inventadas: la versión anterior de esta página lo hacía y esos números llegaron a leerse como si fueran del producto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- § 01 QUÉ TRAE UN PERFIL -->
+  <div style="background: #FFFFFF; padding: 92px 144px;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid #D8D2C6; padding-top: 22px; margin-bottom: 42px;">
+        <span class="kicker" style="color: #B8923D; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 01</span>
+        <div style="display: flex; gap: 40px; align-items: baseline; flex-grow: 1;">
+          <h2 style="font-size: 44px; line-height: 1.1; color: #1A2332; flex-grow: 1;">Qué trae un perfil</h2>
+          <p style="font-size: 14px; line-height: 1.62; color: #7587A5; width: 340px; flex-shrink: 0;">Todo se calcula sobre sentencias públicas ya publicadas por los tribunales, con resolución de entidades: «Licenciado X» y «X» son la misma persona, y los «abogados» que no eran personas quedaron fuera.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+        <div style="border-top: 2px solid #1A2332; padding-top: 18px;">
+          <h3 style="font-size: 20px; color: #1A2332;">Resultado</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px;">
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Tasas favorable, parcialmente favorable y desfavorable, <strong>por materia</strong>, derivadas del sentido del fallo.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Estadísticas por tipo de decisión y por tema.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Total de casos y de apariciones en el corpus.</p>
+          </div>
+        </div>
+        <div style="border-top: 2px solid #1A2332; padding-top: 18px;">
+          <h3 style="font-size: 20px; color: #1A2332;">Tiempo y materia</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px;">
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Días promedio de resolución y su distribución por tipo de caso.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Materia principal, materias secundarias y confianza de esa clasificación.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Índice de especialización <strong>Herfindahl-Hirschman</strong>: qué tan concentrado está el juez en una materia.</p>
+          </div>
+        </div>
+        <div style="border-top: 2px solid #1A2332; padding-top: 18px;">
+          <h3 style="font-size: 20px; color: #1A2332;">Comportamiento</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px;">
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Consistencia: varianza en decisiones sobre temas similares, con su etiqueta.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Tendencia temporal en <strong>ventanas móviles de seis meses</strong> con regresión lineal, y su dirección.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Deriva: cuándo el patrón reciente se aparta del histórico, con alerta.</p>
+          </div>
+        </div>
+        <div style="border-top: 2px solid #1A2332; padding-top: 18px;">
+          <h3 style="font-size: 20px; color: #1A2332;">Sustancia de la decisión</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px;">
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Fundamentos legales más citados y patrones de argumentación.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Preferencia probatoria: a qué tipo de prueba le da peso.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Rango monetario de las condenas por materia.</p>
+          </div>
+        </div>
+        <div style="border-top: 2px solid #1A2332; padding-top: 18px;">
+          <h3 style="font-size: 20px; color: #1A2332;">Abogados y contrapartes</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px;">
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Tasa de éxito general, <strong>por juez</strong> y por materia.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Perfiles fiscales reconstruidos sobre el corpus completo.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Historial adversario propio de tu firma, al cerrar cada asunto con su resultado.</p>
+          </div>
+        </div>
+        <div style="border-top: 2px solid #1A2332; padding-top: 18px;">
+          <h3 style="font-size: 20px; color: #1A2332;">Vistas que lo cruzan</h3>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px;">
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Comparación lado a lado entre magistrados.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Enfrentamiento abogado × juez con el historial de esa combinación.</p>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #22324B;">Estadísticas judiciales agregadas por materia y por corte.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- § 02 EL UMBRAL -->
+  <div style="background: #141B27; padding: 92px 144px; color: #FFFFFF;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid rgba(212,184,122,0.28); padding-top: 22px; margin-bottom: 44px;">
+        <span class="kicker" style="color: #D4B87A; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 02</span>
+        <div style="flex-grow: 1;">
+          <h2 style="font-size: 44px; line-height: 1.1; color: #FFFFFF; max-width: 720px;">Un perfil vale desde treinta sentencias. Antes de eso lo decimos.</h2>
+          <p style="margin-top: 18px; font-size: 17px; line-height: 1.62; color: #A3AFC3; max-width: 680px;">La fiabilidad de un porcentaje depende del tamaño de la muestra, no de la calidad del software. Estos son los cortes que aplica el sistema y lo que significa cada uno.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;">
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 3px; padding: 24px 22px 26px;">
+          <span class="mono" style="font-size: 24px; color: #B4462F;">n &lt; 10</span>
+          <h3 style="margin-top: 12px; font-size: 18px; color: #FFFFFF; line-height: 1.3;">No se publica perfil</h3>
+          <p style="margin-top: 10px; font-size: 13.5px; line-height: 1.6; color: #A3AFC3;">Con menos de diez sentencias en el corpus no hay nada que promediar. La ficha existe; las tasas no.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 3px; padding: 24px 22px 26px;">
+          <span class="mono" style="font-size: 24px; color: #E2C88A;">10 – 29</span>
+          <h3 style="margin-top: 12px; font-size: 18px; color: #FFFFFF; line-height: 1.3;">Usable, pero limitado</h3>
+          <p style="margin-top: 10px; font-size: 13.5px; line-height: 1.6; color: #A3AFC3;">Se muestra marcado como tal. Sirve para orientarse, no para fundar una decisión de estrategia.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(212,184,122,0.32); border-radius: 3px; padding: 24px 22px 26px;">
+          <span class="mono" style="font-size: 24px; color: #8FCFAE;">n ≥ 30</span>
+          <h3 style="margin-top: 12px; font-size: 18px; color: #FFFFFF; line-height: 1.3;">Perfil fiable</h3>
+          <p style="margin-top: 10px; font-size: 13.5px; line-height: 1.6; color: #A3AFC3;">A esa muestra, una proporción arrastra del orden de <strong style="color: #FFFFFF;">±18 % al 95 % de confianza</strong>. El intervalo se estrecha a medida que crece n.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 3px; padding: 24px 22px 26px;">
+          <span class="mono" style="font-size: 24px; color: #D4B87A;">n ≥ 200</span>
+          <h3 style="margin-top: 12px; font-size: 18px; color: #FFFFFF; line-height: 1.3;">Recién ahí entrena el modelo</h3>
+          <p style="margin-top: 10px; font-size: 13.5px; line-height: 1.6; color: #A3AFC3;">Doscientos casos etiquetados por materia. Por debajo, el sistema responde en <strong style="color: #FFFFFF;">modo heurístico</strong> y lo declara en la propia respuesta.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 20px; margin-top: 26px; padding: 22px 26px; background: rgba(212,184,122,0.07); border: 1px solid rgba(212,184,122,0.22); border-radius: 3px;">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#D4B87A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><circle cx="10" cy="10" r="7.4"></circle><path d="M10 6.2v4.4M10 13.4v.3"></path></svg>
+        <p style="font-size: 14px; line-height: 1.62; color: #D1D7E1;"><strong style="color: #FFFFFF;">El intervalo no es una característica del producto.</strong> Es la consecuencia del tamaño de la muestra de ese juez, y cambia con cada uno. Anunciarlo como una cifra fija del sistema —«±15-20 %»— era describir mal lo que ocurre.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- § 03 QUÉ CORREGIMOS -->
+  <div style="background: #F7F5F1; padding: 92px 144px;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid #D8D2C6; padding-top: 22px; margin-bottom: 40px;">
+        <span class="kicker" style="color: #B8923D; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 03</span>
+        <div style="display: flex; gap: 40px; align-items: baseline; flex-grow: 1;">
+          <h2 style="font-size: 44px; line-height: 1.1; color: #1A2332; flex-grow: 1;">Qué decía esta página<br>y qué dice ahora</h2>
+          <p style="font-size: 14px; line-height: 1.62; color: #7587A5; width: 340px; flex-shrink: 0;">Publicamos la corrección en vez de reemplazar el texto en silencio. Si usted leyó la versión anterior y tomó una decisión con esos números, esto es lo que cambió.</p>
+        </div>
+      </div>
+
+      <div style="background: #FFFFFF; border: 1px solid #E2DDD2; border-radius: 3px; overflow: hidden;">
+        <div style="display: flex; gap: 28px; padding: 14px 26px; background: #FAF8F4; border-bottom: 1px solid #E2DDD2;">
+          <span class="kicker" style="color: #9B958A; width: 400px; flex-shrink: 0;">Decía</span>
+          <span class="kicker" style="color: #B8923D; flex-grow: 1;">Dice</span>
+        </div>
+        <div style="display: flex; gap: 28px; padding: 18px 26px; border-bottom: 1px solid #EDE9E0;">
+          <span style="font-size: 14px; line-height: 1.6; color: #9B958A; width: 400px; flex-shrink: 0; text-decoration: line-through;">62 % favorable · 23 % parcial · 15 % desfavorable</span>
+          <span style="font-size: 14px; line-height: 1.6; color: #22324B; flex-grow: 1;">Eran valores de maqueta. La tasa se calcula <strong>por juez y por materia</strong>: no existe una tasa global de la plataforma.</span>
+        </div>
+        <div style="display: flex; gap: 28px; padding: 18px 26px; border-bottom: 1px solid #EDE9E0;">
+          <span style="font-size: 14px; line-height: 1.6; color: #9B958A; width: 400px; flex-shrink: 0; text-decoration: line-through;">Análisis rolling de 5 años</span>
+          <span style="font-size: 14px; line-height: 1.6; color: #22324B; flex-grow: 1;">Ventanas móviles de <strong>seis meses</strong> con regresión lineal sobre la tasa favorable.</span>
+        </div>
+        <div style="display: flex; gap: 28px; padding: 18px 26px; border-bottom: 1px solid #EDE9E0;">
+          <span style="font-size: 14px; line-height: 1.6; color: #9B958A; width: 400px; flex-shrink: 0; text-decoration: line-through;">XGBoost + SHAP en cada predicción</span>
+          <span style="font-size: 14px; line-height: 1.6; color: #22324B; flex-grow: 1;">El entrenador existe y la narrativa explicativa es una función del plan superior. Por debajo de 200 casos etiquetados por materia la respuesta es <strong>heurística</strong>, y va marcada.</span>
+        </div>
+        <div style="display: flex; gap: 28px; padding: 18px 26px; border-bottom: 1px solid #EDE9E0;">
+          <span style="font-size: 14px; line-height: 1.6; color: #9B958A; width: 400px; flex-shrink: 0; text-decoration: line-through;">Intervalo de confianza ±15-20 %</span>
+          <span style="font-size: 14px; line-height: 1.6; color: #22324B; flex-grow: 1;">Depende de la muestra de cada juez. A n = 30 ronda ±18 % al 95 %; con más sentencias, menos.</span>
+        </div>
+        <div style="display: flex; gap: 28px; padding: 18px 26px; border-bottom: 1px solid #EDE9E0;">
+          <span style="font-size: 14px; line-height: 1.6; color: #9B958A; width: 400px; flex-shrink: 0; text-decoration: line-through;">32 endpoints API especializados</span>
+          <span style="font-size: 14px; line-height: 1.6; color: #22324B; flex-grow: 1;">Retirado: no hay medición que lo sostenga. Lo que sí está definido es el límite por plan — <span class="mono" style="font-size: 13px;">50 / 500 / 5.000</span> consultas al mes.</span>
+        </div>
+        <div style="display: flex; gap: 28px; padding: 18px 26px;">
+          <span style="font-size: 14px; line-height: 1.6; color: #9B958A; width: 400px; flex-shrink: 0; text-decoration: line-through;">11.000+ sentencias analizadas</span>
+          <span style="font-size: 14px; line-height: 1.6; color: #22324B; flex-grow: 1;"><strong>130.906</strong> con texto íntegro. <span class="mono" style="font-size: 12px; color: #9B958A;">MED. 25-AGO-2026</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- § 04 ÉTICA -->
+  <div style="background: #FFFFFF; padding: 92px 144px;">
+    <div style="max-width: 1152px; margin: 0 auto;">
+      <div style="display: flex; gap: 48px; align-items: baseline; border-top: 1px solid #D8D2C6; padding-top: 22px; margin-bottom: 42px;">
+        <span class="kicker" style="color: #B8923D; padding-top: 12px; width: 56px; flex-shrink: 0;">§ 04</span>
+        <h2 style="font-size: 44px; line-height: 1.1; color: #1A2332; flex-grow: 1;">Dónde se detiene esta herramienta</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px;">
+        <div style="display: flex; gap: 14px;">
+          <span style="width: 5px; height: 5px; border-radius: 50%; background: #C9A656; margin-top: 9px; flex-shrink: 0;"></span>
+          <p style="font-size: 15px; line-height: 1.62; color: #22324B;"><strong>No predice el resultado de su caso.</strong> Describe el comportamiento histórico de un juez en una materia. Un caso concreto no es una muestra.</p>
+        </div>
+        <div style="display: flex; gap: 14px;">
+          <span style="width: 5px; height: 5px; border-radius: 50%; background: #C9A656; margin-top: 9px; flex-shrink: 0;"></span>
+          <p style="font-size: 15px; line-height: 1.62; color: #22324B;"><strong>No sustituye el criterio profesional.</strong> Es apoyo a la decisión del abogado, que sigue respondiendo con su licencia.</p>
+        </div>
+        <div style="display: flex; gap: 14px;">
+          <span style="width: 5px; height: 5px; border-radius: 50%; background: #C9A656; margin-top: 9px; flex-shrink: 0;"></span>
+          <p style="font-size: 15px; line-height: 1.62; color: #22324B;"><strong>Solo sentencias públicas.</strong> Los perfiles se construyen sobre decisiones ya publicadas por los tribunales. No hay datos personales de las partes.</p>
+        </div>
+        <div style="display: flex; gap: 14px;">
+          <span style="width: 5px; height: 5px; border-radius: 50%; background: #C9A656; margin-top: 9px; flex-shrink: 0;"></span>
+          <p style="font-size: 15px; line-height: 1.62; color: #22324B;"><strong>Escrita contra la Opinión Formal 512 de la ABA:</strong> competencia técnica, confidencialidad del cliente, supervisión humana de la salida y transparencia en los honorarios. Es el marco que seguimos, no un sello que nos hayan otorgado.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; margin-top: 46px; padding: 26px 30px; background: #F7F5F1; border: 1px solid #E2DDD2; border-radius: 3px;">
+        <p style="font-size: 15px; line-height: 1.62; color: #22324B; max-width: 720px;">Las cifras de esta página, y las de cualquier otra, viven con su fecha de medición en el estado público de la plataforma. Si le hace falta una que no está, se la medimos o le decimos que no la tenemos.</p>
+        <span style="font-size: 14px; font-weight: 600; color: #1A2332; border: 1px solid #C3BCAD; padding: 13px 24px; border-radius: 2px; flex-shrink: 0;">Ver el estado de la plataforma</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="background: #0E131B; padding: 76px 144px 66px;">
+    <div style="max-width: 1152px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 60px;">
+      <div style="max-width: 660px;">
+        <h2 style="font-size: 38px; line-height: 1.14; color: #FFFFFF;">Traiga el nombre de un magistrado a la demo.</h2>
+        <p style="margin-top: 16px; font-size: 16px; line-height: 1.62; color: #A3AFC3;">Le mostramos su perfil real, con su n y su intervalo, o le decimos que en el corpus no hay suficiente para publicarlo. Las dos respuestas son útiles.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; flex-shrink: 0;">
+        <span style="text-align: center; font-size: 15px; font-weight: 600; color: #141B27; background: #D4B87A; padding: 16px 34px; border-radius: 2px;">Solicitar demo</span>
+        <span style="text-align: center; font-size: 13.5px; color: #7587A5;">o escríbanos a <span style="color: #B8923D;">hola@jurisai.do</span></span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
