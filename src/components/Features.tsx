@@ -45,7 +45,7 @@ export default function Features() {
           {t.features.items.map((feature, i) => (
             <article
               key={i}
-              className="group bg-white border border-rule rounded-edge p-6 hover:border-accent-300 transition-colors"
+              className="group flex flex-col bg-white border border-rule rounded-edge p-6 hover:border-accent-300 transition-colors"
             >
               <span className="inline-flex w-10 h-10 items-center justify-center bg-primary-800 text-accent-400 rounded-edge">
                 <svg
@@ -62,8 +62,11 @@ export default function Features() {
                 </svg>
               </span>
               <h3 className="mt-4 text-xl leading-snug text-primary-800">{feature.title}</h3>
-              <p className="mt-2.5 text-sm leading-relaxed text-primary-400">
+              <p className="mt-2.5 text-sm leading-relaxed text-primary-400 flex-1">
                 {feature.description}
+              </p>
+              <p className="mt-4 pt-3.5 border-t border-rule text-sm font-medium text-accent-700 leading-snug">
+                {feature.purpose}
               </p>
             </article>
           ))}
