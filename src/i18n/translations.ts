@@ -93,7 +93,7 @@ export const translations = {
           name: "Dictamen sobre proyectos de ley",
           body:
             "Mapeo artículo por artículo contra el marco vigente, análisis de constitucionalidad, coherencia sistémica, proyección de impacto y tabla de concordancias, exportable como dictamen. La tabla no puede afirmar una derogación que la ley no hace.",
-          proof: "Coste real de un dictamen de 73 artículos: US$ 1,90",
+          proof: "En una corrida de 73 artículos: 28 pares cotejados, cero artículos inexistentes · med. sep 2026",
         },
         {
           name: "Consultas por API",
@@ -693,7 +693,7 @@ export const translations = {
           name: "Bill opinions",
           body:
             "Article-by-article mapping against the framework in force, constitutionality analysis, systemic coherence, impact projection and a concordance table, exportable as an opinion. The table cannot assert a repeal the statute does not make.",
-          proof: "Real cost of a 73-article opinion: US$ 1.90",
+          proof: "On a 73-article run: 28 pairs checked, zero non-existent articles · meas. Sep 2026",
         },
         {
           name: "API queries",
