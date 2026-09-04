@@ -1,0 +1,331 @@
+{
+  "_comentario": [
+    "Registro de las cifras que el sitio publica. Cada una declara su valor, su fecha de",
+    "medición y de dónde sale. Las de source 'estado' se cotejan contra la fila homónima de",
+    "docs/ESTADO.md en el repo de la app; las de source 'codigo' salen de una constante del",
+    "backend y su verificación es manual, con la referencia anotada.",
+    "",
+    "Regla: ninguna cifra llega al sitio sin pasar por aquí. Lo verifica",
+    "scripts/check-figures.mjs, que corre en npm test."
+  ],
+  "figuras": [
+    {
+      "id": "sentencias-texto-integro",
+      "value": "130.906",
+      "measuredOn": "2026-08-25",
+      "source": "estado",
+      "estadoRow": "Sentencias con texto íntegro"
+    },
+    {
+      "id": "sentencias-scj",
+      "value": "94.025",
+      "measuredOn": "2026-08-01",
+      "source": "estado",
+      "estadoRow": "de la Suprema Corte de Justicia"
+    },
+    {
+      "id": "sentencias-tc",
+      "value": "10.457",
+      "measuredOn": "2026-08-01",
+      "source": "estado",
+      "estadoRow": "del Tribunal Constitucional"
+    },
+    {
+      "id": "sentencias-tsa",
+      "value": "2.479",
+      "measuredOn": "2026-08-01",
+      "source": "estado",
+      "estadoRow": "del Tribunal Superior Administrativo"
+    },
+    {
+      "id": "componentes-embebidos",
+      "value": "202.444",
+      "measuredOn": "2026-08-22",
+      "source": "estado",
+      "estadoRow": "Componentes normativos embebidos"
+    },
+    {
+      "id": "relaciones-grafo",
+      "value": "22.146",
+      "measuredOn": "2026-08-17",
+      "source": "estado",
+      "estadoRow": "Relaciones en el grafo normativo"
+    },
+    {
+      "id": "leyes-corpus",
+      "value": "6.680",
+      "measuredOn": "2026-08-17",
+      "source": "estado",
+      "estadoRow": "Leyes en el corpus"
+    },
+    {
+      "id": "decretos-corpus",
+      "value": "596",
+      "measuredOn": "2026-08-17",
+      "source": "estado",
+      "estadoRow": "Decretos en el corpus"
+    },
+    {
+      "id": "reconciliacion-leyes",
+      "value": "99,5",
+      "measuredOn": "2026-08-17",
+      "source": "estado",
+      "estadoRow": "Leyes 2010–2025 contra el portal oficial"
+    },
+    {
+      "id": "pruebas-backend",
+      "value": "7.395",
+      "measuredOn": "2026-09-01",
+      "source": "estado",
+      "estadoRow": "Pruebas de backend en el stack de CI"
+    },
+    {
+      "id": "anulaciones-parciales",
+      "value": "52",
+      "measuredOn": "2026-08-24",
+      "source": "estado",
+      "estadoRow": "Anulaciones parciales identificadas y no cargadas"
+    },
+    {
+      "id": "modulos-registro",
+      "value": "26",
+      "measuredOn": "2026-08-25",
+      "source": "estado",
+      "estadoRow": "Módulos en el registro"
+    },
+    {
+      "id": "entregables-redactor",
+      "value": "85",
+      "measuredOn": "2026-08-14",
+      "source": "estado",
+      "estadoRow": "Redactor legislativo, entregables en producción"
+    },
+    {
+      "id": "normas-derogadas-sin-respaldo",
+      "value": "179",
+      "measuredOn": "2026-08-19",
+      "source": "auditoria",
+      "ref": "docs/audits/derogadas-sin-respaldo-contra-la-lectura-integra-2026-08-19.md",
+      "nota": "ESTADO lo registra en «Abiertos», sin fila de tabla. La auditoría documenta 180: reconciliar antes de citar cualquiera de los dos."
+    },
+    {
+      "id": "decretos-2024-en-corpus",
+      "value": "16",
+      "measuredOn": "2026-08-17",
+      "source": "auditoria",
+      "ref": "docs/audits/api-verificacion-normativa-sdq-2026-08-17.md",
+      "nota": "16 de 708. EN REVISIÓN: el bloque de producto del brand kit (26-ago) afirma cobertura reconciliada al 100% para decretos, lo que contradice esta auditoría."
+    },
+    {
+      "id": "decretos-2024-en-fuente",
+      "value": "708",
+      "measuredOn": "2026-08-17",
+      "source": "auditoria",
+      "ref": "docs/audits/api-verificacion-normativa-sdq-2026-08-17.md"
+    },
+    {
+      "id": "leyes-anteriores-2010",
+      "value": "6.100",
+      "measuredOn": "2026-08-17",
+      "source": "derivada",
+      "nota": "6.680 leyes del corpus menos las 582 de la ventana 2010–2026. Aproximada, y así se publica."
+    },
+    {
+      "id": "umbral-perfil-fiable",
+      "value": "30",
+      "measuredOn": "2026-09-03",
+      "source": "codigo",
+      "ref": "app/services/profile_calculator.py:MIN_CASES_PER_JUDGE"
+    },
+    {
+      "id": "umbral-perfil-usable",
+      "value": "10",
+      "measuredOn": "2026-09-03",
+      "source": "codigo",
+      "ref": "app/services/profile_calculator.py:MIN_CASES_USABLE"
+    },
+    {
+      "id": "umbral-entrenamiento",
+      "value": "200",
+      "measuredOn": "2026-09-03",
+      "source": "codigo",
+      "ref": "app/services/judicial_predictor.py:MIN_TRAINING_SAMPLES"
+    },
+    {
+      "id": "intervalo-a-n30",
+      "value": "18",
+      "measuredOn": "2026-09-03",
+      "source": "codigo",
+      "ref": "app/services/profile_calculator.py, comentario del umbral (n≥30 → ~±18% al 95%)"
+    },
+    {
+      "id": "tipos-de-asunto",
+      "value": "11",
+      "measuredOn": "2026-09-03",
+      "source": "codigo",
+      "ref": "app/services/matter_type_seeds.py — 7 litigation + 4 no litigiosos"
+    },
+    {
+      "id": "limite-consultas-asesor",
+      "value": "50",
+      "measuredOn": "2026-09-03",
+      "source": "codigo",
+      "ref": "app/middleware/plan_gate.py:RATE_LIMITS"
+    },
+    {
+      "id": "limite-consultas-firma",
+      "value": "500",
+      "measuredOn": "2026-09-03",
+      "source": "codigo",
+      "ref": "app/middleware/plan_gate.py:RATE_LIMITS"
+    },
+    {
+      "id": "limite-consultas-consorcio",
+      "value": "5.000",
+      "measuredOn": "2026-09-03",
+      "source": "codigo",
+      "ref": "app/middleware/plan_gate.py:RATE_LIMITS"
+    },
+    {
+      "id": "lote-api-normas",
+      "value": "50",
+      "measuredOn": "2026-09-03",
+      "source": "codigo",
+      "ref": "app/api/router_normas.py:TOPE_LOTE"
+    },
+    {
+      "id": "precio-asesor",
+      "value": "99",
+      "measuredOn": "2026-08-26",
+      "source": "estado",
+      "estadoRow": "Precios"
+    },
+    {
+      "id": "precio-firma",
+      "value": "299",
+      "measuredOn": "2026-08-26",
+      "source": "estado",
+      "estadoRow": "Precios"
+    },
+    {
+      "id": "precio-consorcio",
+      "value": "799",
+      "measuredOn": "2026-08-26",
+      "source": "estado",
+      "estadoRow": "Precios"
+    },
+    {
+      "id": "cobertura-pruebas-frontend",
+      "value": "2",
+      "measuredOn": "2026-07-13",
+      "source": "estado",
+      "estadoRow": "Cobertura de pruebas del frontend",
+      "nota": "Se publica como «< 2 %». Lleva más de treinta días sin medirse y el sitio lo declara así."
+    },
+    {
+      "id": "cobertura-extraccion-referencias",
+      "value": "21,1",
+      "measuredOn": "2026-04-28",
+      "source": "estado_abiertos",
+      "ref": "ESTADO.md §Abiertos",
+      "nota": "Último dato existente. Las campañas de agosto ampliaron el denominador sin correr extracción, así que pudo bajar; el sitio lo publica con esa salvedad."
+    },
+    {
+      "id": "descuento-anual",
+      "value": "20",
+      "measuredOn": "2026-08-26",
+      "source": "comercial",
+      "nota": "Descuento del plan anual. Decisión comercial, no medición."
+    }
+  ],
+  "ignorar": [
+    {
+      "token": "139",
+      "porque": "Ley 139-97, número de norma"
+    },
+    {
+      "token": "512",
+      "porque": "Opinión Formal 512 de la ABA"
+    },
+    {
+      "token": "2010",
+      "porque": "año de la ventana reconciliada"
+    },
+    {
+      "token": "2025",
+      "porque": "año de la ventana reconciliada"
+    },
+    {
+      "token": "2021",
+      "porque": "año de inicio de cobertura de decretos"
+    },
+    {
+      "token": "1885",
+      "porque": "año del hueco declarado"
+    },
+    {
+      "token": "1844",
+      "porque": "año de la Constitución"
+    },
+    {
+      "token": "2026",
+      "porque": "año en curso"
+    },
+    {
+      "token": "948",
+      "porque": "precio anual del plan Asesor"
+    },
+    {
+      "token": "868",
+      "porque": "fragmento del precio anual del plan Firma"
+    },
+    {
+      "token": "668",
+      "porque": "fragmento del precio anual del plan Consorcio"
+    },
+    {
+      "token": "2.868",
+      "porque": "precio anual del plan Firma"
+    },
+    {
+      "token": "7.668",
+      "porque": "precio anual del plan Consorcio"
+    },
+    {
+      "token": "100",
+      "porque": "porcentaje del corpus embebido, ya cubierto por componentes-embebidos"
+    },
+    {
+      "token": "95",
+      "porque": "nivel de confianza estadística, no cifra de producto"
+    },
+    {
+      "token": "24",
+      "porque": "24/7 del asistente"
+    },
+    {
+      "token": "25",
+      "porque": "módulos vivos, derivado de modulos-registro (25 de 26)"
+    },
+    {
+      "token": "582",
+      "porque": "leyes de la ventana reconciliada, interno del cálculo"
+    },
+    {
+      "token": "810.818",
+      "porque": "cifra retirada que el sitio publica justamente para decir que no debe reusarse"
+    },
+    {
+      "token": "152.000",
+      "porque": "ídem, cifra retirada"
+    },
+    {
+      "token": "11.000",
+      "porque": "ídem, cifra retirada"
+    },
+    {
+      "token": "103.833",
+      "porque": "ídem, cifra retirada"
+    }
+  ]
+}

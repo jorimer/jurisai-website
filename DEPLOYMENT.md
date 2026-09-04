@@ -167,3 +167,34 @@ npm install
 npm run dev
 # Abre http://localhost:3000
 ```
+
+---
+
+## Verificación de cifras antes de desplegar
+
+Las cifras que el sitio publica —corpus, reconciliación, umbrales, precios— no se
+escriben a mano en el copy: se declaran en `src/data/figures.json` con su valor, su
+fecha de medición y su fuente. `scripts/check-figures.mjs` coteja ese registro contra
+`docs/ESTADO.md` del repo de la app, que es la fuente de verdad declarada del proyecto.
+
+```bash
+JURISAI_ESTADO_PATH=../JurisAi/docs/ESTADO.md npm test
+```
+
+Qué comprueba:
+
+1. Que toda cifra del registro siga apareciendo en `src/i18n/translations.ts`.
+2. Que el copy no traiga cifras sin declarar. Una cifra nueva obliga a declararla con
+   su fecha o a excluirla por escrito en `ignorar`.
+3. Que el valor y la fecha de cada cifra coincidan con su fila de `ESTADO.md`.
+4. Que ninguna lleve más de treinta días sin medirse, la misma regla que aplica
+   `ESTADO.md` a sí mismo. Esto avisa, no falla.
+
+Salidas: `0` todo coincide · `1` hay divergencia · `2` no se pudo cotejar porque no
+encontró `ESTADO.md`. El código 2 existe para que la falta de la fuente no se lea como
+un visto bueno.
+
+**Por qué existe.** El sitio anunció durante un día que la cobertura de decretos
+empezaba en 2012, copiado de una fila de `ESTADO.md` que contradecía a su propia
+auditoría. Ninguna herramienta lo detectó: lo detectó un lector. Cuando cambien las
+cifras de `ESTADO.md`, este verificador falla y obliga a actualizar el sitio.
