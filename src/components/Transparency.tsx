@@ -12,7 +12,6 @@ export default function Transparency() {
     <section id="transparency" className="bg-white py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          number="§ 05"
           title={t.transparency.title}
           intro={t.transparency.subtitle}
           className="mb-12"
@@ -21,10 +20,7 @@ export default function Transparency() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {t.transparency.items.map((item, i) => (
             <div key={i} className="border-t-2 border-accent-600 pt-5">
-              <span className="figure-value block text-4xl lg:text-[2.6rem] text-accent-600">
-                {item.value}
-              </span>
-              <h3 className="mt-3.5 text-xl leading-snug text-primary-800">{item.title}</h3>
+              <h3 className="text-xl leading-snug text-primary-800">{item.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-primary-400">{item.description}</p>
             </div>
           ))}

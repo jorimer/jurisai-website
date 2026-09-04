@@ -19,7 +19,7 @@ export default function Trust() {
   return (
     <section className="bg-white py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader number="§ 06" title={t.trust.title} className="mb-12" />
+        <SectionHeader title={t.trust.title} className="mb-12" />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-9">
           {t.trust.items.map((item, i) => (
             <div key={i} className="border-t border-rule-strong pt-4">

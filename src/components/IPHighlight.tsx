@@ -12,7 +12,6 @@ export default function IPHighlight() {
     <section className="bg-primary-900 py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          number="§ 03"
           title={t.ipHighlight.title}
           intro={t.ipHighlight.subtitle}
           tone="dark"
@@ -54,27 +53,20 @@ export default function IPHighlight() {
 
           {/* Umbral de fiabilidad: tamaños de muestra, no proporciones */}
           <div className="bg-white/[0.04] border border-white/10 rounded-edge p-7 sm:p-8">
-            <span className="kicker text-accent-400">Umbral de fiabilidad del perfil</span>
-            <div className="mt-6 flex flex-col">
+            <span className="kicker text-accent-400">Alcance declarado</span>
+            <div className="mt-6 flex flex-col gap-4">
               {t.ipHighlight.metrics.map((metric, i) => (
-                <div
+                <p
                   key={i}
-                  className="flex items-baseline justify-between gap-5 py-4 border-b border-white/10"
+                  className="text-sm leading-relaxed text-primary-200 pb-4 border-b border-white/10 last:border-0 last:pb-0"
                 >
-                  <span className="text-sm leading-snug text-primary-200">{metric.label}</span>
-                  <span
-                    className={`mono text-base font-medium whitespace-nowrap ${
-                      metric.color === "green" ? "text-emerald-400" : "text-accent-400"
-                    }`}
-                  >
-                    {metric.value}
-                  </span>
-                </div>
+                  {metric.statement}
+                </p>
               ))}
             </div>
             <p className="mt-6 text-xs leading-relaxed text-primary-300">
-              No mostramos un perfil de ejemplo con cifras inventadas: los valores dependen del
-              magistrado y del tamaño de su muestra.
+              La plataforma no presenta un perfil de ejemplo con valores ilustrativos. Los valores
+              dependen del magistrado y del tamaño de su muestra.
             </p>
           </div>
         </div>

@@ -35,7 +35,6 @@ export default function Features() {
     <section id="features" className="bg-paper py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          number="§ 02"
           title={t.features.title}
           intro={t.features.subtitle}
           className="mb-12"

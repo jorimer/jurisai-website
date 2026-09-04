@@ -13,7 +13,6 @@ export default function Pricing() {
     <section id="pricing" className="bg-white py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          number="§ 07"
           title={t.pricing.title}
           aside={t.pricing.subtitle}
           className="mb-10"
@@ -114,9 +113,10 @@ export default function Pricing() {
           })}
         </div>
 
-        <p className="mt-7 text-xs text-muted">
-          Precios vigentes al 26-ago-2026. Pago con PayPal o transferencia local; factura con NCF
-          automática al cobro.
+        <p className="mt-7 text-sm text-primary-400 leading-relaxed max-w-3xl">
+          JurisAI se encuentra en acceso temprano. El alta y el aprovisionamiento del acceso se
+          realizan con acompañamiento del equipo; no hay contratación en línea. Precios vigentes al
+          26-ago-2026.
         </p>
       </div>
     </section>

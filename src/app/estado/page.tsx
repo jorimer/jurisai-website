@@ -6,19 +6,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useI18n } from "@/i18n/context";
 
-const valueTone: Record<string, string> = {
-  ok: "text-emerald-700",
-  warn: "text-amber-700",
-  alert: "text-rose-700",
-  neutral: "text-primary-800",
-};
-
-const rowTint: Record<string, string> = {
-  ok: "",
-  warn: "bg-amber-50/60",
-  alert: "bg-rose-50/60",
-  neutral: "",
-};
+// Sin escala de severidad: el tintado por gravedad y el color de alerta son
+// rótulos de método, y el brand kit los confina al canal técnico interno
+// (TONE.md §3.4). Lo que la fila significa lo dice su propio texto.
 
 export default function EstadoPage() {
   const { t } = useI18n();
@@ -67,7 +57,7 @@ export default function EstadoPage() {
                   {section.rows.map((row, ri) => (
                     <div
                       key={ri}
-                      className={`flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6 px-2 py-3.5 border-b border-rule ${rowTint[row.tone]}`}
+                      className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6 px-2 py-3.5 border-b border-rule"
                     >
                       <span
                         className={`flex-1 text-sm sm:text-base ${
@@ -78,7 +68,7 @@ export default function EstadoPage() {
                         {row.label}
                       </span>
                       <span
-                        className={`text-sm sm:text-base font-semibold tabular-nums ${valueTone[row.tone]}`}
+                        className="text-sm sm:text-base font-semibold tabular-nums text-primary-800"
                       >
                         {row.value}
                       </span>

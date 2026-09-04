@@ -12,7 +12,6 @@ export default function ForInstitutions() {
     <section id="instituciones" className="bg-primary-900 py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          number="§ 04"
           title={t.forInstitutions.title}
           intro={t.forInstitutions.subtitle}
           tone="dark"

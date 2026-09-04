@@ -11,7 +11,6 @@ export default function ForFirms() {
     <section id="firmas" className="bg-paper py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          number="§ 01"
           title={t.forFirms.title}
           intro={t.forFirms.subtitle}
           className="mb-12"

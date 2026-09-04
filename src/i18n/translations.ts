@@ -47,9 +47,9 @@ export const translations = {
     },
     forFirms: {
       sectionTitle: "Para su firma",
-      title: "Cuatro momentos en los que esto le cambia el día",
+      title: "El sistema en cuatro momentos de la práctica",
       subtitle:
-        "No vendemos horas ahorradas: cuántas sean depende de su volumen y no lo hemos medido. Vendemos lo que el sistema hace, exactamente, en los cuatro momentos donde una firma se juega algo.",
+        "El ahorro de horas depende del volumen de cada firma y no ha sido medido, de modo que no se presenta como cifra. Lo que sigue describe la función del sistema en cuatro momentos concretos de la práctica.",
       items: [
         {
           moment: "La opinión que usted firma",
@@ -60,7 +60,7 @@ export const translations = {
         {
           moment: "El contrato que hay que devolver hoy",
           body:
-            "Análisis de cláusulas de riesgo contra el playbook de su firma, redlines propuestos y la versión lista para revisar. Ningún documento que produzca la IA se emite sin la aprobación de un socio: el sign-off es parte del flujo, no una promesa.",
+            "Análisis de cláusulas de riesgo contra el playbook de su firma, redlines propuestos y la versión lista para revisar. Ningún documento generado por el sistema se emite sin la aprobación de un socio. El sign-off está incorporado al flujo de trabajo.",
           gain: "Revisión con criterio de la casa, no genérica",
         },
         {
@@ -98,7 +98,7 @@ export const translations = {
         {
           name: "Consultas por API",
           body:
-            "Su sistema pregunta si una norma existe, cuándo se dictó y qué alcance tuvo la búsqueda; hasta cincuenta obligaciones por llamada, con credenciales de servicio que usted emite y revoca desde el panel.",
+            "Su sistema pregunta si una norma existe, cuándo se dictó y qué alcance tuvo la búsqueda; hasta cincuenta obligaciones por llamada. El acceso se habilita al contratar, con credenciales de servicio que su institución administra y revoca desde el panel.",
           gain: "Su informe puede afirmar «no se dictó», y no solo «no lo encontramos»",
         },
       ],
@@ -142,13 +142,13 @@ export const translations = {
         },
         {
           title: "Análisis de Contratos",
-          description: "Análisis multiagente de cláusulas de riesgo, comparación contra el playbook de la firma, redlines automáticos, editor IA y cola de revisión con sign-off del socio.",
+          description: "Análisis multiagente de cláusulas de riesgo, comparación contra el playbook de la firma, redlines automáticos, editor asistido y cola de revisión con sign-off del socio.",
           icon: "FileCheck",
           purpose: "Para devolver el contrato marcado hoy, con el criterio de la casa",
         },
         {
           title: "Due Diligence",
-          description: "Clasificación automática de documentos, registro de hallazgos y síntesis ejecutiva con IA por proyecto, con evaluación de riesgo multidimensional.",
+          description: "Clasificación automática de documentos, registro de hallazgos y síntesis ejecutiva redactada sobre los documentos del proyecto, con evaluación de riesgo multidimensional.",
           icon: "Search",
           purpose: "Para saber qué hay en el data room antes del cierre",
         },
@@ -201,59 +201,55 @@ export const translations = {
     },
     ipHighlight: {
       sectionTitle: "Diferenciador Único",
-      title: "Entre a la audiencia sabiendo cómo resuelve ese tribunal",
-      subtitle: "Cómo ha fallado en esa materia, cuánto tarda y en qué se apoya. Calculado sobre sentencias publicadas, no sobre impresiones de pasillo.",
+      title: "Cómo ha resuelto ese tribunal en esa materia",
+      subtitle: "Perfiles de magistrados y abogados construidos sobre las sentencias publicadas del corpus, con resolución de entidades y duración real de resolución.",
       metrics: [
-        { value: "30", label: "sentencias mínimas antes de mostrarle el perfil de un magistrado", color: "green" },
-        { value: "0", label: "tasas de acierto publicadas: no hemos medido ninguna y no la vamos a inventar", color: "gold" },
-        { value: "6 meses", label: "ventana móvil con la que se calcula su tendencia", color: "gold" },
+        { statement: "El perfil de un magistrado se publica desde treinta sentencias en el corpus. Por debajo de ese umbral la plataforma declara que no dispone de base suficiente." },
+        { statement: "No se publica una tasa de acierto de la predicción porque no ha sido medida. Una cifra sin medición no se cita." },
+        { statement: "La tendencia decisoria se calcula sobre ventanas móviles de seis meses con regresión lineal." },
       ],
       features: [
-        "Cómo resuelve por materia: favorable, parcial y desfavorable",
-        "Cuánto tarda en resolver, en días, por tipo de caso",
-        "En qué fundamentos legales se apoya con más frecuencia",
-        "Qué tipo de prueba pesa más en sus decisiones",
-        "Si su patrón reciente se aparta de su histórico",
-        "El historial de su firma contra ese abogado y esa contraparte",
+        "Resultados por materia: favorable, parcial y desfavorable",
+        "Duración de resolución, en días, por tipo de caso",
+        "Fundamentos legales de cita más frecuente",
+        "Preferencia probatoria observada en sus decisiones",
+        "Desviación del patrón reciente respecto del histórico",
+        "Historial de la firma frente a ese abogado y esa contraparte",
       ],
-      tech: "Sobre las 130.906 sentencias publicadas del corpus · med. ago 2026",
+      tech: "Calculado sobre las 130.906 sentencias publicadas del corpus · med. ago 2026",
       cta: "Conocer Más",
-      disclaimer: "No predice el resultado de su caso: describe cómo ha resuelto un tribunal. Es apoyo al criterio profesional, no un sustituto.",
+      disclaimer: "La herramienta describe el comportamiento histórico de un tribunal. No predice el resultado de un caso concreto ni sustituye el criterio profesional.",
     },
     transparency: {
       sectionTitle: "Límites declarados",
-      title: "Dónde no debe confiar en nosotros",
+      title: "Dónde no llega la plataforma",
       subtitle:
-        "Antes de comprometer su criterio profesional con una herramienta conviene saber dónde no llega. Esto no está en un anexo del contrato: está aquí, y también dentro del producto cuando le toca.",
+        "Antes de comprometer el criterio profesional con una herramienta conviene saber dónde se detiene. Esta información no vive en un anexo del contrato. Está publicada aquí, y aparece también dentro del producto cuando corresponde.",
       items: [
         {
-          value: "Hasta 2020",
-          title: "Decretos: el hueco real",
+          title: "Los decretos anteriores a 2021 no están en el corpus",
           description:
-            "El corpus tiene 596 decretos y ni uno solo entre 1885 y 2020. Desde 2021 la cobertura sigue siendo parcial: de los 708 decretos de 2024 tenemos 16. Si su caso depende de un decreto, verifíquelo en la Gaceta. Para leyes sí puede apoyarse en nosotros.",
+            "El repositorio contiene 596 decretos y ninguno entre 1885 y 2020. Desde 2021 la cobertura es parcial: de los 708 decretos dictados en 2024 el corpus tiene 16. Un caso que dependa de un decreto requiere verificación en la Gaceta Oficial. Para leyes la cobertura sí sostiene la consulta.",
         },
         {
-          value: "52",
-          title: "Anulaciones parciales del TC sin cargar",
+          title: "El motor de vigencia opera sobre la norma completa",
           description:
-            "El motor responde sobre la norma entera, no sobre el artículo. Si lo que decide su caso es si un artículo concreto quedó anulado, esa verificación sigue siendo suya.",
+            "No responde si un artículo concreto fue anulado por el Tribunal Constitucional. Hay 52 anulaciones parciales identificadas y pendientes de carga, de modo que esa verificación corresponde al usuario.",
         },
         {
-          value: "179",
-          title: "Normas derogadas sin evidencia",
+          title: "179 normas constan derogadas sin evidencia documental",
           description:
-            "Constan derogadas sin fecha ni norma derogante. En vez de mostrárselas como buenas, las filtramos de la búsqueda y las declaramos en público.",
+            "Figuran derogadas sin fecha y sin norma derogante. La búsqueda del producto las filtra en lugar de presentarlas como confiables, y la consulta programática las devuelve marcadas.",
         },
         {
-          value: "Sin perfil",
-          title: "Magistrados con pocas sentencias publicadas",
+          title: "Un magistrado con pocas sentencias publicadas no recibe perfil",
           description:
-            "No le mostramos un perfil que la muestra no sostiene. Preferimos decirle que no sabemos a que usted entre a audiencia con una estadística inventada.",
+            "Por debajo del umbral de muestra, la plataforma declara que no dispone de base suficiente en lugar de emitir una estadística que el dato no sostiene.",
         },
       ],
-      footerTitle: "La misma disciplina que aplicamos a lo que le entregamos",
+      footerTitle: "Las cifras publicadas llevan su fecha de medición",
       footerText:
-        "El estado completo de la plataforma —corpus, reconciliación contra la fuente oficial, calidad y lo que sigue abierto— es público y va fechado dato por dato. Si algo lleva más de treinta días sin medirse, lo decimos en vez de citarlo.",
+        "El estado de la plataforma es público y se actualiza con la fecha de cada dato: corpus, reconciliación contra la fuente oficial, calidad y asuntos abiertos. Un dato que lleve más de treinta días sin medirse se declara como tal en lugar de citarse.",
       cta: "Ver el estado de la plataforma",
     },
     trust: {
@@ -390,7 +386,7 @@ export const translations = {
     modulesPage: {
       title: "Módulos de Inteligencia Legal",
       subtitle: "25 módulos vivos en cuatro familias, diseñados sobre el corpus normativo y jurisprudencial dominicano.",
-      agentes: "agentes IA",
+      agentes: "agentes especializados",
       endpoints: "endpoints",
       tabs: {
         core: "Módulos Core",
@@ -400,10 +396,10 @@ export const translations = {
       modules: [
         {
           title: "Gestión de Asuntos",
-          description: "Centro de operaciones unificado para todo asunto legal: litigios, transacciones corporativas, due diligence y compliance viven en la misma ficha. «Gestión de Litigios» se retiró como módulo el 14 de julio de 2026 y se consolidó aquí.",
+          description: "Centro de operaciones unificado para todo asunto legal. Los procesos contenciosos, las transacciones corporativas, el due diligence y el cumplimiento regulatorio se gestionan sobre la misma ficha, con las mismas fases y los mismos plazos.",
           stats: "11 tipos de asunto | 7 litigiosos + 4 no litigiosos",
           impact: "El litigio dejó de ser un módulo aparte",
-          capabilities: ["Fases configurables con criterios de completitud", "Documentos y análisis IA por fase", "Plazos con días francos por Ley 139-97", "Firma electrónica ZapSign (email y WhatsApp)", "Tareas, alertas regulatorias e historial adversario"],
+          capabilities: ["Fases configurables con criterios de completitud", "Generación de documentos y análisis por fase sobre el corpus", "Plazos con días francos por Ley 139-97", "Firma electrónica ZapSign (email y WhatsApp)", "Tareas, alertas regulatorias e historial adversario"],
         },
         {
           title: "Verificación de Citas",
@@ -414,8 +410,8 @@ export const translations = {
         },
         {
           title: "Análisis de Contratos",
-          description: "Análisis multiagente de contratos con IA: extracción de cláusulas, evaluación de riesgo por nivel, comparación contra el playbook de negociación de la firma y generación de redlines.",
-          stats: "Playbooks de firma | editor IA | cola de revisión",
+          description: "Análisis multiagente de contratos. Extracción de cláusulas, evaluación de riesgo por nivel, comparación contra el playbook de negociación de la firma y generación de redlines.",
+          stats: "Playbooks de firma · editor asistido · cola de revisión",
           impact: "Sign-off del socio antes de que salga",
           capabilities: ["Extracción automática de cláusulas", "Evaluación de riesgo Bajo/Medio/Alto/Crítico", "Comparación contra playbook de firma", "Generación de redlines automáticos", "Versionado con comparación y restauración"],
         },
@@ -428,10 +424,10 @@ export const translations = {
         },
         {
           title: "Due Diligence",
-          description: "Gestión integral de proyectos de due diligence con clasificación automática de documentos, registro de hallazgos y síntesis ejecutiva con IA.",
+          description: "Gestión integral de proyectos de due diligence con clasificación automática de documentos, registro de hallazgos y síntesis ejecutiva redactada sobre los documentos cargados.",
           stats: "Análisis financiero, legal y operacional",
           impact: "Síntesis ejecutiva automatizada",
-          capabilities: ["Clasificación automática de documentos", "Registro y seguimiento de hallazgos", "Síntesis ejecutiva con IA", "Evaluación de riesgo multidimensional", "Paquetes de DD regulatorio para fondos"],
+          capabilities: ["Clasificación automática de documentos", "Registro y seguimiento de hallazgos", "Síntesis ejecutiva sobre los documentos cargados", "Evaluación de riesgo multidimensional", "Paquetes de DD regulatorio para fondos"],
         },
         {
           title: "eDiscovery",
@@ -450,7 +446,7 @@ export const translations = {
         {
           title: "Asistente Legal Virtual",
           description: "Chatbot 24/7 con base de conocimiento verificada, clasificación de intención, triage de casos entrantes y escalación a una persona real.",
-          stats: "RAG sobre base verificada | triage IA",
+          stats: "Base de conocimiento verificada · triage de casos entrantes",
           impact: "Escalaciones que sí llegan a alguien",
           capabilities: ["Asistente con RAG y citas", "Clasificación de intención y triage", "Escalación a un responsable real", "Historial de conversaciones", "Asistente contextual con Ctrl+J"],
         },
@@ -466,18 +462,18 @@ export const translations = {
           description: "Generación inteligente de documentos legales con plantillas y variables dinámicas, versionado y exportación multiformato con flujo de aprobación.",
           stats: "Versionado | export PDF/DOCX | aprobaciones",
           impact: "Ver, comparar y restaurar versiones",
-          capabilities: ["Plantillas inteligentes con IA", "Variables dinámicas inyectadas", "Versionado con comparación y restauración", "Export PDF/DOCX", "Sign-off del socio antes de emitir"],
+          capabilities: ["Plantillas con variables resueltas por el modelo", "Variables dinámicas inyectadas", "Versionado con comparación y restauración", "Export PDF/DOCX", "Sign-off del socio antes de emitir"],
         },
       ],
     },
     ipPage: {
       title: "Inteligencia Procesal",
       subtitle: "Perfiles de jueces y abogados construidos sobre las 130.906 sentencias del corpus, con resolución de entidades. El perfil está medido; la predicción tiene su techo declarado.",
-      profileTitle: "Perfil de Juez — Métricas Disponibles",
+      profileTitle: "Perfil de juez: métricas disponibles",
       profileMetrics: [
         { label: "Tasas de Resultado", description: "Favorable, parcialmente favorable y desfavorable, por juez y por materia, derivadas del sentido del fallo" },
         { label: "Tiempo de Resolución", description: "Días promedio y su distribución por tipo de caso y jurisdicción" },
-        { label: "Especialización", description: "Índice Herfindahl-Hirschman por materia — qué tan concentrado está el juez" },
+        { label: "Especialización", description: "Índice Herfindahl-Hirschman por materia, que mide la concentración del magistrado" },
         { label: "Tendencia Temporal", description: "Ventanas móviles de seis meses con regresión lineal sobre la tasa favorable" },
         { label: "Consistencia", description: "Varianza en decisiones sobre temas similares, con su etiqueta" },
         { label: "Deriva", description: "Alerta cuando el patrón reciente se aparta del histórico del magistrado" },
@@ -659,9 +655,9 @@ export const translations = {
     },
     forFirms: {
       sectionTitle: "For your firm",
-      title: "Four moments where this changes your day",
+      title: "The system at four moments of practice",
       subtitle:
-        "We do not sell hours saved: how many depends on your volume and we have not measured it. We sell exactly what the system does at the four moments where a firm has something at stake.",
+        "Hours saved depend on each firm's volume and have not been measured, so they are not presented as a figure. What follows describes the system's function at four concrete moments of practice.",
       items: [
         {
           moment: "The opinion you sign",
@@ -672,7 +668,7 @@ export const translations = {
         {
           moment: "The contract due back today",
           body:
-            "Risk-clause analysis against your firm's playbook, proposed redlines and a version ready for review. No document the AI produces is issued without partner approval: sign-off is part of the flow, not a promise.",
+            "Risk-clause analysis against your firm's playbook, proposed redlines and a version ready for review. No document generated by the system is issued without partner approval. Sign-off is built into the workflow.",
           gain: "Review with the house standard, not a generic one",
         },
         {
@@ -710,7 +706,7 @@ export const translations = {
         {
           name: "API queries",
           body:
-            "Your system asks whether a rule exists, when it was issued and what the search actually covered; up to fifty obligations per call, with service credentials you issue and revoke from the admin panel.",
+            "Your system asks whether a rule exists, when it was issued and what the search actually covered; up to fifty obligations per call. Access is enabled on contracting, with service credentials your institution manages and revokes from the admin panel.",
           gain: "Your report can state \"it was not issued\", not merely \"we could not find it\"",
         },
       ],
@@ -754,13 +750,13 @@ export const translations = {
         },
         {
           title: "Contract Analysis",
-          description: "Multi-agent analysis of risk clauses, comparison against the firm's negotiation playbook, automatic redlines, AI editor, and a review queue with partner sign-off.",
+          description: "Multi-agent analysis of risk clauses, comparison against the firm's negotiation playbook, automatic redlines, assisted editor, and a review queue with partner sign-off.",
           icon: "FileCheck",
           purpose: "So the contract goes back marked up today, with the house standard",
         },
         {
           title: "Due Diligence",
-          description: "Automatic document classification, findings registry, and AI executive synthesis per project, with multidimensional risk assessment.",
+          description: "Automatic document classification, findings registry, and executive synthesis drafted over the project documents, with multidimensional risk assessment.",
           icon: "Search",
           purpose: "So you know what is in the data room before closing",
         },
@@ -813,59 +809,55 @@ export const translations = {
     },
     ipHighlight: {
       sectionTitle: "Unique Differentiator",
-      title: "Walk into the hearing knowing how that court rules",
-      subtitle: "How it has ruled on that subject matter, how long it takes and what it leans on. Computed on published rulings, not on hallway impressions.",
+      title: "How that court has ruled on that subject matter",
+      subtitle: "Judge and attorney profiles built on the published rulings in the corpus, with entity resolution and actual resolution times.",
       metrics: [
-        { value: "30", label: "minimum rulings before we show you a judge's profile", color: "green" },
-        { value: "0", label: "accuracy rates published: we have measured none and will not invent one", color: "gold" },
-        { value: "6 months", label: "rolling window used to compute the trend", color: "gold" },
+        { statement: "A judge profile is published from thirty rulings in the corpus onward. Below that threshold the platform states that it lacks sufficient basis." },
+        { statement: "No prediction accuracy rate is published because it has not been measured. An unmeasured figure is not quoted." },
+        { statement: "The decision trend is computed over six-month rolling windows with linear regression." },
       ],
       features: [
-        "How it rules by subject: favorable, partial and unfavorable",
-        "How long it takes to resolve, in days, by case type",
-        "Which legal grounds it leans on most often",
-        "What kind of evidence weighs most in its decisions",
-        "Whether its recent pattern departs from its own history",
-        "Your firm's record against that attorney and that opposing party",
+        "Outcomes by subject matter: favorable, partial and unfavorable",
+        "Resolution time, in days, by case type",
+        "Most frequently cited legal grounds",
+        "Evidentiary preference observed in its decisions",
+        "Deviation of the recent pattern from the historical one",
+        "The firm's record against that attorney and that opposing party",
       ],
-      tech: "Over the 130,906 published rulings in the corpus · meas. Aug 2026",
+      tech: "Computed over the 130,906 published rulings in the corpus · meas. Aug 2026",
       cta: "Learn More",
-      disclaimer: "It does not predict your case's outcome: it describes how a court has ruled. Support for professional judgment, not a substitute.",
+      disclaimer: "The tool describes a court's historical behavior. It does not predict the outcome of a specific case, nor does it replace professional judgment.",
     },
     transparency: {
       sectionTitle: "Declared limits",
-      title: "Where you should not rely on us",
+      title: "Where the platform stops",
       subtitle:
-        "Before you commit your professional judgment to a tool, you should know where it stops. This is not in a contract annex: it is here, and it is inside the product when it matters.",
+        "Before committing professional judgment to a tool, it is worth knowing where it stops. This information does not live in a contract annex. It is published here, and it also appears inside the product where it applies.",
       items: [
         {
-          value: "Through 2020",
-          title: "Decrees: the real gap",
+          title: "Decrees issued before 2021 are not in the corpus",
           description:
-            "The corpus holds 596 decrees and not one between 1885 and 2020. From 2021 coverage is still partial: of the 708 decrees issued in 2024 we have 16. If your case depends on a decree, check the Gaceta. For statutes you can rely on us.",
+            "The repository holds 596 decrees and none between 1885 and 2020. From 2021 coverage is partial: of the 708 decrees issued in 2024 the corpus holds 16. A case that turns on a decree requires verification in the Gaceta Oficial. For statutes, coverage does support the query.",
         },
         {
-          value: "52",
-          title: "Partial annulments not yet loaded",
+          title: "The force-of-law engine operates at whole-rule level",
           description:
-            "The engine answers at whole-rule level, not per article. If what decides your case is whether a specific article was annulled, that check is still yours.",
+            "It does not answer whether a specific article was annulled by the Constitutional Court. There are 52 partial annulments identified and pending load, so that verification remains with the user.",
         },
         {
-          value: "179",
-          title: "Rules repealed without evidence",
+          title: "179 rules are recorded as repealed without documentary evidence",
           description:
-            "They are recorded as repealed with no date and no repealing rule. Rather than show them to you as sound, we filter them out of search and declare them publicly.",
+            "They appear repealed with no date and no repealing rule. Product search filters them out rather than presenting them as reliable, and the programmatic query returns them flagged.",
         },
         {
-          value: "No profile",
-          title: "Judges with few published rulings",
+          title: "A judge with few published rulings receives no profile",
           description:
-            "We do not show a profile the sample cannot support. We would rather tell you we do not know than have you walk into a hearing with an invented statistic.",
+            "Below the sample threshold, the platform states that it lacks sufficient basis rather than issuing a statistic the data does not support.",
         },
       ],
-      footerTitle: "The same discipline we apply to what we hand you",
+      footerTitle: "Published figures carry their measurement date",
       footerText:
-        "The full platform status —corpus, reconciliation against the official source, quality and what remains open— is public and dated figure by figure. If something has gone more than thirty days without being measured, we say so instead of quoting it.",
+        "The platform status is public and updated with the date of each figure: corpus, reconciliation against the official source, quality and open matters. A figure that has gone more than thirty days without measurement is declared as such rather than quoted.",
       cta: "See the platform status",
     },
     trust: {
@@ -1002,7 +994,7 @@ export const translations = {
     modulesPage: {
       title: "Legal Intelligence Modules",
       subtitle: "25 live modules across four families, designed on the Dominican normative and case-law corpus.",
-      agentes: "AI agents",
+      agentes: "specialized agents",
       endpoints: "endpoints",
       tabs: {
         core: "Core Modules",
@@ -1012,10 +1004,10 @@ export const translations = {
       modules: [
         {
           title: "Matter Management",
-          description: "Unified operations center for every legal matter: litigation, corporate transactions, due diligence and compliance live in the same record. The standalone \"Litigation Management\" module was retired on 14 July 2026 and consolidated here.",
+          description: "Unified operations center for every legal matter. Contentious proceedings, corporate transactions, due diligence and regulatory compliance are managed on the same record, with the same phases and the same deadlines.",
           stats: "11 matter types | 7 litigation + 4 non-litigation",
           impact: "Litigation stopped being a separate module",
-          capabilities: ["Configurable phases with completion criteria", "AI documents and analysis per phase", "Deadlines with clear days under Law 139-97", "ZapSign e-signature (email and WhatsApp)", "Tasks, regulatory alerts and adversary history"],
+          capabilities: ["Configurable phases with completion criteria", "Document generation and per-phase analysis over the corpus", "Deadlines with clear days under Law 139-97", "ZapSign e-signature (email and WhatsApp)", "Tasks, regulatory alerts and adversary history"],
         },
         {
           title: "Citation Verification",
@@ -1026,8 +1018,8 @@ export const translations = {
         },
         {
           title: "Contract Analysis",
-          description: "Multi-agent AI contract analysis: clause extraction, tiered risk assessment, comparison against the firm's negotiation playbook, and redline generation.",
-          stats: "Firm playbooks | AI editor | review queue",
+          description: "Multi-agent contract analysis. Clause extraction, tiered risk assessment, comparison against the firm's negotiation playbook, and redline generation.",
+          stats: "Firm playbooks · assisted editor · review queue",
           impact: "Partner sign-off before it leaves",
           capabilities: ["Automatic clause extraction", "Low/Medium/High/Critical risk assessment", "Comparison against firm playbook", "Automatic redline generation", "Versioning with comparison and restore"],
         },
@@ -1040,10 +1032,10 @@ export const translations = {
         },
         {
           title: "Due Diligence",
-          description: "End-to-end due diligence project management with automatic document classification, findings registry, and AI executive synthesis.",
+          description: "End-to-end due diligence project management with automatic document classification, findings registry, and executive synthesis drafted over the project documents.",
           stats: "Financial, legal and operational analysis",
           impact: "Automated executive synthesis",
-          capabilities: ["Automatic document classification", "Findings registry and tracking", "AI executive synthesis", "Multidimensional risk assessment", "Regulatory DD packages for funds"],
+          capabilities: ["Automatic document classification", "Findings registry and tracking", "Executive synthesis over the uploaded documents", "Multidimensional risk assessment", "Regulatory DD packages for funds"],
         },
         {
           title: "eDiscovery",
@@ -1062,7 +1054,7 @@ export const translations = {
         {
           title: "Virtual Legal Assistant",
           description: "24/7 chatbot on a verified knowledge base, with intent classification, intake triage, and escalation to a real person.",
-          stats: "RAG over a verified base | AI triage",
+          stats: "Verified knowledge base · intake triage",
           impact: "Escalations that actually reach someone",
           capabilities: ["Assistant with RAG and citations", "Intent classification and triage", "Escalation to a real owner", "Conversation history", "Contextual assistant with Ctrl+J"],
         },
@@ -1078,18 +1070,18 @@ export const translations = {
           description: "Intelligent legal document generation with templates and dynamic variables, versioning, and multi-format export with an approval workflow.",
           stats: "Versioning | PDF/DOCX export | approvals",
           impact: "View, compare and restore versions",
-          capabilities: ["Intelligent AI templates", "Injected dynamic variables", "Versioning with comparison and restore", "PDF/DOCX export", "Partner sign-off before issuing"],
+          capabilities: ["Templates with variables resolved by the model", "Injected dynamic variables", "Versioning with comparison and restore", "PDF/DOCX export", "Partner sign-off before issuing"],
         },
       ],
     },
     ipPage: {
       title: "Procedural Intelligence",
       subtitle: "Judge and attorney profiles built on the 130,906 rulings in the corpus, with entity resolution. The profile is measured; the prediction has its ceiling declared.",
-      profileTitle: "Judge Profile — Available Metrics",
+      profileTitle: "Judge profile: available metrics",
       profileMetrics: [
         { label: "Outcome Rates", description: "Favorable, partially favorable and unfavorable, by judge and subject matter, derived from the ruling's disposition" },
         { label: "Resolution Time", description: "Average days and distribution by case type and jurisdiction" },
-        { label: "Specialization", description: "Herfindahl-Hirschman index by subject — how concentrated the judge is" },
+        { label: "Specialization", description: "Herfindahl-Hirschman index by subject, measuring how concentrated the judge is" },
         { label: "Temporal Trend", description: "Six-month rolling windows with linear regression on the favorable rate" },
         { label: "Consistency", description: "Variance in decisions on similar topics, with its label" },
         { label: "Drift", description: "Alert when the recent pattern departs from the judge's historical one" },

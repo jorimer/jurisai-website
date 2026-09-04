@@ -114,9 +114,10 @@ export default function Hero() {
             </div>
 
             <p className="mt-7 text-sm text-primary-300 leading-relaxed max-w-lg">
-              Publicamos cada cifra con su fecha de medición y los límites que aún tiene el motor.{" "}
+              Cada cifra se publica con su fecha de medición, junto con los límites que la
+              plataforma aún tiene.{" "}
               <Link href="/estado" className="text-accent-400 hover:text-accent-300 underline underline-offset-4 decoration-accent-400/40">
-                Léelos antes de comprar.
+                Estado de la plataforma
               </Link>
             </p>
           </div>
