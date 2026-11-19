@@ -261,7 +261,7 @@ export const translations = {
         { title: "Tus Datos No Entrenan Modelos", description: "Los datos de tus clientes nunca se usan para entrenar modelos. La retención de consultas IA está declarada en los términos v2.1.", icon: "ShieldCheck" },
         { title: "Marco ABA 512", description: "Escrito contra la Opinión Formal 512 de la ABA: competencia, confidencialidad, supervisión humana y transparencia en honorarios.", icon: "Award" },
         { title: "Auditoría Completa", description: "Registro detallado de cada acción, consulta y resultado para trazabilidad total, exportable desde el panel de control de IA.", icon: "ClipboardCheck" },
-        { title: "Infraestructura Gestionada", description: "Alojamiento cloud con respaldos y una suite de 7.395 pruebas automatizadas que corre en verde antes de cada despliegue.", icon: "Server" },
+        { title: "Infraestructura Gestionada", description: "Alojamiento cloud con respaldos y una suite de 26.448 pruebas automatizadas que corre en verde antes de cada despliegue.", icon: "Server" },
       ],
     },
     pricing: {
@@ -562,7 +562,7 @@ export const translations = {
           title: "Motor de vigencia",
           rows: [
             { label: "Reglas formales de inferencia en ejecución", value: "5 de 6", date: "20-09-2026", tone: "neutral", indent: false },
-            { label: "Estados de vigencia (anulada ≠ derogada)", value: "8", date: "18-08-2026", tone: "neutral", indent: false },
+            { label: "Estados de vigencia (anulada ≠ derogada)", value: "8", date: "19-11-2026", tone: "neutral", indent: false },
             { label: "Estado de vigencia a una fecha", value: "en producción", date: "18-08-2026", tone: "ok", indent: false },
             { label: "Anulaciones del Tribunal Constitucional cargadas", value: "74 · 70 parciales", date: "06-09-2026", tone: "ok", indent: false },
             { label: "Redacción de un artículo a una fecha pasada", value: "no disponible", date: "20-09-2026", tone: "warn", indent: false },
@@ -572,14 +572,14 @@ export const translations = {
         {
           title: "Calidad y producto",
           rows: [
-            { label: "Pruebas de backend en el stack de CI", value: "7.395 · 0 fallos", date: "01-09-2026", tone: "ok", indent: false },
+            { label: "Pruebas de backend en el stack de CI", value: "26.448 · 0 fallos", date: "19-11-2026", tone: "ok", indent: false },
             { label: "Módulos vivos en el registro", value: "25 de 26", date: "25-08-2026", tone: "neutral", indent: false },
             { label: "Redactor legislativo, instrumentos completados", value: "152 de 176", date: "19-11-2026", tone: "neutral", indent: false },
             { label: "Evaluador legislativo, dictámenes completados", value: "98 de 104", date: "19-11-2026", tone: "neutral", indent: false },
             { label: "Verificador de citas: corrige, no solo advierte", value: "desde 22-08", date: "22-08-2026", tone: "ok", indent: false },
             { label: "Cobertura de pruebas del frontend", value: "< 2 %", date: "13-07-2026", tone: "warn", indent: false },
           ],
-          note: "Pruebas, módulos y cobertura del frontend llevan más de treinta días sin medirse. Las dejamos visibles con su fecha en vez de retirarlas.",
+          note: "Módulos y cobertura del frontend llevan más de treinta días sin medirse. Los dejamos visibles con su fecha en vez de retirarlos.",
         },
         {
           title: "Inteligencia procesal",
@@ -892,7 +892,7 @@ export const translations = {
         { title: "Your Data Does Not Train Models", description: "Your clients' data is never used to train models. AI query retention is declared in the v2.1 terms.", icon: "ShieldCheck" },
         { title: "ABA 512 Framework", description: "Written against ABA Formal Opinion 512: competence, confidentiality, human supervision, and fee transparency.", icon: "Award" },
         { title: "Full Audit Trail", description: "Detailed record of every action, query and result for complete traceability, exportable from the AI control panel.", icon: "ClipboardCheck" },
-        { title: "Managed Infrastructure", description: "Cloud hosting with backups and a suite of 7,395 automated tests that runs green before every deployment.", icon: "Server" },
+        { title: "Managed Infrastructure", description: "Cloud hosting with backups and a suite of 26,448 automated tests that runs green before every deployment.", icon: "Server" },
       ],
     },
     pricing: {
@@ -1193,7 +1193,7 @@ export const translations = {
           title: "Force-of-law engine",
           rows: [
             { label: "Formal inference rules running", value: "5 of 6", date: "2026-09-20", tone: "neutral", indent: false },
-            { label: "Status states (annulled ≠ repealed)", value: "8", date: "2026-08-18", tone: "neutral", indent: false },
+            { label: "Status states (annulled ≠ repealed)", value: "8", date: "2026-11-19", tone: "neutral", indent: false },
             { label: "Force-of-law status on a given date", value: "in production", date: "2026-08-18", tone: "ok", indent: false },
             { label: "Constitutional Court annulments loaded", value: "74 · 70 partial", date: "2026-09-06", tone: "ok", indent: false },
             { label: "Wording of an article on a past date", value: "not available", date: "2026-09-20", tone: "warn", indent: false },
@@ -1203,14 +1203,14 @@ export const translations = {
         {
           title: "Quality and product",
           rows: [
-            { label: "Backend tests on the CI stack", value: "7,395 · 0 failures", date: "2026-09-01", tone: "ok", indent: false },
+            { label: "Backend tests on the CI stack", value: "26,448 · 0 failures", date: "2026-11-19", tone: "ok", indent: false },
             { label: "Live modules in the registry", value: "25 of 26", date: "2026-08-25", tone: "neutral", indent: false },
             { label: "Legislative drafter, instruments completed", value: "152 of 176", date: "2026-11-19", tone: "neutral", indent: false },
             { label: "Legislative evaluator, opinions completed", value: "98 of 104", date: "2026-11-19", tone: "neutral", indent: false },
             { label: "Citation verifier: corrects, not just warns", value: "since 08-22", date: "2026-08-22", tone: "ok", indent: false },
             { label: "Frontend test coverage", value: "< 2%", date: "2026-07-13", tone: "warn", indent: false },
           ],
-          note: "Tests, modules and frontend coverage have gone more than thirty days without being measured. We leave them visible with their date instead of removing them.",
+          note: "Modules and frontend coverage have gone more than thirty days without being measured. We leave them visible with their date instead of removing them.",
         },
         {
           title: "Procedural intelligence",
