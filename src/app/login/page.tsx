@@ -42,7 +42,7 @@ export default function LoginPage() {
               <div className="text-sm text-primary-300">Sentencias en el corpus</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">
-              <div className="text-2xl font-bold text-accent-400">202.444</div>
+              <div className="text-2xl font-bold text-accent-400">557.901</div>
               <div className="text-sm text-primary-300">Componentes normativos</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">

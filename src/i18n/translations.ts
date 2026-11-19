@@ -130,7 +130,7 @@ export const translations = {
         },
         {
           title: "Repositorio Normativo",
-          description: "202.444 componentes normativos embebidos al 100 %, 22.580 relaciones en el grafo y estado de vigencia a cualquier fecha, con consultas en lenguaje natural.",
+          description: "557.901 componentes normativos embebidos, el 100 % de los que tienen texto, 44.510 relaciones en el grafo y estado de vigencia a cualquier fecha, con consultas en lenguaje natural.",
           icon: "BookOpen",
           purpose: "Para encontrar la norma aplicable sin abrir cinco portales",
         },
@@ -237,7 +237,7 @@ export const translations = {
             "El motor responde si una norma regía en una fecha y con qué fundamento, y muestra artículo por artículo las anulaciones del Tribunal Constitucional que tiene cargadas. Lo que no devuelve es el texto que tenía un artículo en una fecha pasada: devuelve el vigente. Para la redacción histórica, la Gaceta Oficial.",
         },
         {
-          title: "179 normas constan derogadas sin evidencia documental",
+          title: "67 normas constan derogadas sin evidencia documental",
           description:
             "Figuran derogadas sin fecha y sin norma derogante. La búsqueda del producto las filtra en lugar de presentarlas como confiables, y la consulta programática las devuelve marcadas.",
         },
@@ -506,7 +506,7 @@ export const translations = {
         { quarter: "Q1 2026", status: "Completado", description: "Piloto interno. Revisión de contratos, asistente legal e investigación jurisprudencial sobre el corpus." },
         { quarter: "Q2 2026", status: "Completado", description: "Repositorio normativo con grafo de relaciones y estado de vigencia a fecha. Evaluador de impacto legislativo. Perfilamiento judicial sobre el corpus completo." },
         { quarter: "Q3 2026", status: "Completado", description: "Gestión de asuntos unificada, con los litigios adentro. Verificación de citas que corrige. Redactor legislativo en producción. Estado de vigencia a fecha, anulaciones del Tribunal Constitucional por artículo y API de verificación normativa." },
-        { quarter: "Q4 2026", status: "En Progreso", description: "Fundamentación por precedentes en el dictamen. Cierre de las 179 normas que constan derogadas sin respaldo. Firmas piloto." },
+        { quarter: "Q4 2026", status: "En Progreso", description: "Fundamentación por precedentes en el dictamen. Cierre de las 67 normas que constan derogadas sin respaldo. Firmas piloto." },
       ],
       teamTitle: "El Equipo",
       teamDesc: "SDQ Consulting Group reúne experiencia en tecnología, derecho y consultoría empresarial para crear soluciones que entienden las necesidades reales del mercado legal dominicano.",
@@ -542,8 +542,8 @@ export const translations = {
             { label: "Leyes", value: "7.369", date: "19-11-2026", tone: "neutral", indent: true },
             { label: "Decretos", value: "13.265", date: "19-11-2026", tone: "neutral", indent: true },
             { label: "Resoluciones", value: "4.582", date: "19-11-2026", tone: "neutral", indent: true },
-            { label: "Componentes normativos embebidos", value: "202.444 · 100 %", date: "22-08-2026", tone: "ok", indent: false },
-            { label: "Relaciones en el grafo normativo", value: "22.580", date: "20-09-2026", tone: "neutral", indent: false },
+            { label: "Componentes normativos embebidos", value: "557.901 · 100 % de los que tienen texto", date: "19-11-2026", tone: "ok", indent: false },
+            { label: "Relaciones en el grafo normativo", value: "44.510", date: "19-11-2026", tone: "neutral", indent: false },
           ],
           note: "Las cifras de agosto de sentencias, leyes y decretos eran ciertas en su fecha y hoy están superadas. Cifras retiradas que aún circulan y no deben reusarse: 810.818, ~152.000, 11.000+ y 103.833.",
         },
@@ -604,7 +604,7 @@ export const translations = {
       openSubtitle: "Lo que sabemos que no está resuelto",
       openItems: [
         {
-          title: "179 normas derogadas sin evidencia",
+          title: "67 normas derogadas sin evidencia",
           description:
             "Sin fecha, sin norma derogante y sin pasaje. La consulta programática las devuelve marcadas como no confiables; la búsqueda del producto las filtra. Cerrarlas requiere fuentes de 1960–2010 que están fuera del corpus.",
         },
@@ -761,7 +761,7 @@ export const translations = {
         },
         {
           title: "Normative Repository",
-          description: "202,444 normative components embedded at 100%, 22,580 relations in the graph, and force-of-law status on any date, with natural-language queries.",
+          description: "557,901 normative components embedded, 100% of those with text, 44,510 relations in the graph, and force-of-law status on any date, with natural-language queries.",
           icon: "BookOpen",
           purpose: "So you find the applicable rule without opening five portals",
         },
@@ -868,7 +868,7 @@ export const translations = {
             "The engine answers whether a rule was in force on a date and on what basis, and shows article by article the Constitutional Court annulments it has loaded. What it does not return is the text an article had on a past date: it returns the current one. For historical wording, the Gaceta Oficial.",
         },
         {
-          title: "179 rules are recorded as repealed without documentary evidence",
+          title: "67 rules are recorded as repealed without documentary evidence",
           description:
             "They appear repealed with no date and no repealing rule. Product search filters them out rather than presenting them as reliable, and the programmatic query returns them flagged.",
         },
@@ -1137,7 +1137,7 @@ export const translations = {
         { quarter: "Q1 2026", status: "Completed", description: "Internal pilot. Contract review, legal assistant, and case-law research over the corpus." },
         { quarter: "Q2 2026", status: "Completed", description: "Normative repository with relationship graph and force-of-law status by date. Legislative impact evaluator. Judicial profiling across the full corpus." },
         { quarter: "Q3 2026", status: "Completed", description: "Unified matter management, with litigation inside. Citation verification that corrects. Legislative drafter in production. Force-of-law status by date, Constitutional Court annulments by article, and the normative verification API." },
-        { quarter: "Q4 2026", status: "In Progress", description: "Precedent-based grounding in the bill opinion. Closing the 179 rules recorded as repealed without support. Pilot firms." },
+        { quarter: "Q4 2026", status: "In Progress", description: "Precedent-based grounding in the bill opinion. Closing the 67 rules recorded as repealed without support. Pilot firms." },
       ],
       teamTitle: "The Team",
       teamDesc: "SDQ Consulting Group brings together expertise in technology, law, and business consulting to create solutions that understand the real needs of the Dominican legal market.",
@@ -1173,8 +1173,8 @@ export const translations = {
             { label: "Statutes", value: "7,369", date: "2026-11-19", tone: "neutral", indent: true },
             { label: "Decrees", value: "13,265", date: "2026-11-19", tone: "neutral", indent: true },
             { label: "Resolutions", value: "4,582", date: "2026-11-19", tone: "neutral", indent: true },
-            { label: "Normative components embedded", value: "202,444 · 100%", date: "2026-08-22", tone: "ok", indent: false },
-            { label: "Relations in the normative graph", value: "22,580", date: "2026-09-20", tone: "neutral", indent: false },
+            { label: "Normative components embedded", value: "557,901 · 100% of those with text", date: "2026-11-19", tone: "ok", indent: false },
+            { label: "Relations in the normative graph", value: "44,510", date: "2026-11-19", tone: "neutral", indent: false },
           ],
           note: "The August figures for rulings, statutes and decrees were true on their date and are now superseded. Retired figures still in circulation that must not be reused: 810,818, ~152,000, 11,000+ and 103,833.",
         },
@@ -1235,7 +1235,7 @@ export const translations = {
       openSubtitle: "What we know is unresolved",
       openItems: [
         {
-          title: "179 rules repealed without evidence",
+          title: "67 rules repealed without evidence",
           description:
             "No date, no repealing rule, and no passage. The programmatic query returns them flagged as unreliable; the product search filters them out. Closing them requires 1960–2010 sources outside the corpus.",
         },

@@ -53,15 +53,15 @@
     },
     {
       "id": "componentes-embebidos",
-      "value": "202.444",
-      "measuredOn": "2026-08-22",
+      "value": "557.901",
+      "measuredOn": "2026-11-19",
       "source": "estado",
       "estadoRow": "Componentes normativos embebidos"
     },
     {
       "id": "relaciones-grafo",
-      "value": "22.580",
-      "measuredOn": "2026-09-20",
+      "value": "44.510",
+      "measuredOn": "2026-11-19",
       "source": "estado",
       "estadoRow": "Relaciones en el grafo normativo"
     },
@@ -211,11 +211,10 @@
     },
     {
       "id": "normas-derogadas-sin-respaldo",
-      "value": "179",
-      "measuredOn": "2026-08-19",
-      "source": "auditoria",
-      "ref": "docs/audits/derogadas-sin-respaldo-contra-la-lectura-integra-2026-08-19.md",
-      "nota": "ESTADO lo registra en «Abiertos», sin fila de tabla. La auditoría documenta 180: reconciliar antes de citar cualquiera de los dos."
+      "value": "67",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Normas `derogada` sin fecha y sin arista de derogación"
     },
     {
       "id": "umbral-perfil-fiable",
