@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | JurisAI",
   },
   description:
-    "IA legal sobre el corpus dominicano: 145.494 sentencias y 202.444 componentes normativos. Gestión de asuntos, verificación de citas y vigencia a una fecha.",
+    "IA legal sobre el corpus dominicano: 145.494 sentencias (nov 2026) y 202.444 componentes normativos (ago 2026). Gestión de asuntos, verificación de citas y vigencia a una fecha.",
   keywords: [
     "JurisAI",
     "inteligencia artificial legal",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "JurisAI — IA Legal para República Dominicana",
     description:
-      "145.494 sentencias y el 100 % del corpus normativo embebido. Verificación de citas contra el texto original y vigencia a una fecha.",
+      "145.494 sentencias (nov 2026) y el 100 % del corpus normativo embebido. Verificación de citas contra el texto original y vigencia a una fecha.",
   },
   robots: { index: true, follow: true },
   alternates: {
