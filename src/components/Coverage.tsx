@@ -11,7 +11,7 @@ export default function Coverage() {
     <section className="bg-white border-b border-rule py-14 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="kicker text-accent-600 mb-8">{t.coverage.title}</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {t.coverage.items.map((item, i) => (
             <div key={i} className="border-t-2 border-primary-800 pt-4">
               <p className="text-[15px] leading-relaxed text-primary-700">{item.claim}</p>

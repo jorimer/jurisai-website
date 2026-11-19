@@ -327,6 +327,41 @@
       "measuredOn": "2026-11-19",
       "source": "estado_abiertos",
       "ref": "ESTADO.md §Abiertos, «Cobertura de extracción de referencias»"
+    },
+    {
+      "id": "articulos-con-historia",
+      "value": "3.036",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Artículos con su historia de modificaciones (registro de enmiendas, `jurisai_normative_enmiendas`)"
+    },
+    {
+      "id": "normas-con-historia",
+      "value": "1.268",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Artículos con su historia de modificaciones (registro de enmiendas, `jurisai_normative_enmiendas`)"
+    },
+    {
+      "id": "redaccion-completa",
+      "value": "843",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Artículos con su historia de modificaciones (registro de enmiendas, `jurisai_normative_enmiendas`)"
+    },
+    {
+      "id": "parte-citada-literal",
+      "value": "1.633",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Artículos con su historia de modificaciones (registro de enmiendas, `jurisai_normative_enmiendas`)"
+    },
+    {
+      "id": "solo-norma-y-fecha",
+      "value": "559",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Artículos con su historia de modificaciones (registro de enmiendas, `jurisai_normative_enmiendas`)"
     }
   ],
   "ignorar": [
