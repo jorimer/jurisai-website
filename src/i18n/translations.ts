@@ -35,6 +35,10 @@ export const translations = {
           proof: "Estado de vigencia a una fecha · en producción desde ago 2026",
         },
         {
+          claim: "Cada artículo, con la norma que lo modificó. JurisAI entrega el artículo tal como se publicó en la Gaceta Oficial y cita, junto a él, la norma que lo modificó y desde qué fecha. Si la modificación reemplaza el artículo, cita también la nueva redacción; si cambia solo una parte, cita esa parte literal, atribuida a la norma que la dicta. Los dos textos van separados: usted ve qué decía la ley y quién la cambió. Si consulta una fecha, solo cuentan las modificaciones que regían ese día.",
+          proof: "3.036 artículos con su historia de modificaciones · med. nov 2026",
+        },
+        {
           claim: "Qué norma derogó a cuál, y qué anuló el Tribunal Constitucional. No es lo mismo y tiene consecuencias distintas para su caso.",
           proof: "Ocho estados de vigencia sobre el grafo normativo",
         },
@@ -232,9 +236,9 @@ export const translations = {
             "El cotejo contra el portal oficial cubre diecisiete años de leyes y quince de decretos y reglamentos, y en esos años el corpus tiene todo lo que la fuente registra; en resoluciones cuadran 13 de 17 años. Fuera de lo cotejado hay unos 4.300 decretos y 6.800 leyes que tenemos y no hemos comparado con la fuente. Un caso que dependa de una de ellas requiere verificación en la Gaceta Oficial. Este cotejo cuenta documentos: no dice si la norma sigue vigente.",
         },
         {
-          title: "La redacción de un artículo no se versiona por fecha",
+          title: "Cuando el registro no tiene el texto de la modificación",
           description:
-            "El motor responde si una norma regía en una fecha y con qué fundamento, y muestra artículo por artículo las anulaciones del Tribunal Constitucional que tiene cargadas. Lo que no devuelve es el texto que tenía un artículo en una fecha pasada: devuelve el vigente. Para la redacción histórica, la Gaceta Oficial.",
+            "La plataforma cita la norma que modificó el artículo y su fecha, para que lea el cambio en su fuente: hoy, 559 de los 3.036 artículos con historia registrada.",
         },
         {
           title: "67 normas constan derogadas sin evidencia documental",
@@ -564,9 +568,12 @@ export const translations = {
             { label: "Estados de vigencia (anulada ≠ derogada)", value: "8", date: "19-11-2026", tone: "neutral", indent: false },
             { label: "Estado de vigencia a una fecha", value: "disponible por API (as_of)", date: "19-11-2026", tone: "ok", indent: false },
             { label: "Anulaciones del Tribunal Constitucional cargadas", value: "107 · 72 parciales", date: "19-11-2026", tone: "ok", indent: false },
-            { label: "Redacción de un artículo a una fecha pasada", value: "no disponible", date: "19-11-2026", tone: "warn", indent: false },
+            { label: "Artículos con su historia de modificaciones", value: "3.036 de 1.268 normas", date: "19-11-2026", tone: "ok", indent: false },
+            { label: "con la nueva redacción completa", value: "843", date: "19-11-2026", tone: "neutral", indent: true },
+            { label: "con la parte modificada, citada literal", value: "1.633", date: "19-11-2026", tone: "neutral", indent: true },
+            { label: "con la norma modificadora y su fecha", value: "559", date: "19-11-2026", tone: "neutral", indent: true },
           ],
-          note: "El motor responde si una norma regía en una fecha y con qué fundamento, y la pantalla de vigencia muestra las anulaciones artículo por artículo. No devuelve el texto que un artículo tenía en esa fecha: devuelve el vigente.",
+          note: "El motor responde si una norma regía en una fecha y con qué fundamento, y la pantalla de vigencia muestra las anulaciones artículo por artículo. Cada artículo sale con su texto publicado y, al lado, la norma que lo modificó y lo que esa norma dice; los dos textos nunca se mezclan.",
         },
         {
           title: "Calidad y producto",
@@ -663,6 +670,10 @@ export const translations = {
         {
           claim: "The law in force on the day of the events, not today's. You can check a rule's status on any past date.",
           proof: "Force-of-law status on a date · in production since Aug 2026",
+        },
+        {
+          claim: "Every article, with the rule that amended it. JurisAI returns the article as published in the Gaceta Oficial and cites, next to it, the rule that amended it and from what date. If the amendment replaces the article, it also cites the new wording; if it changes only part, it quotes that part verbatim, attributed to the rule that enacts it. The two texts stay separate: you see what the law said and who changed it. If you query a date, only the amendments in force that day count.",
+          proof: "3,036 articles with their amendment history · meas. Nov 2026",
         },
         {
           claim: "Which rule repealed which, and what the Constitutional Court annulled. They are not the same, and they carry different consequences for your case.",
@@ -862,9 +873,9 @@ export const translations = {
             "The check against the official portal covers seventeen years of statutes and fifteen of decrees and regulations, and in those years the corpus holds everything the source records; for resolutions, 13 of 17 years match. Outside what was checked there are some 4,300 decrees and 6,800 statutes that we hold and have not compared with the source. A case that turns on one of them requires verification in the Gaceta Oficial. This check counts documents: it does not say whether the rule is still in force.",
         },
         {
-          title: "An article's wording is not versioned by date",
+          title: "When the registry lacks the text of the amendment",
           description:
-            "The engine answers whether a rule was in force on a date and on what basis, and shows article by article the Constitutional Court annulments it has loaded. What it does not return is the text an article had on a past date: it returns the current one. For historical wording, the Gaceta Oficial.",
+            "The platform cites the rule that amended the article and its date, so you can read the change at its source: today, 559 of the 3,036 articles with a recorded history.",
         },
         {
           title: "67 rules are recorded as repealed without documentary evidence",
@@ -1194,9 +1205,12 @@ export const translations = {
             { label: "Status states (annulled ≠ repealed)", value: "8", date: "2026-11-19", tone: "neutral", indent: false },
             { label: "Force-of-law status on a given date", value: "available via API (as_of)", date: "2026-11-19", tone: "ok", indent: false },
             { label: "Constitutional Court annulments loaded", value: "107 · 72 partial", date: "2026-11-19", tone: "ok", indent: false },
-            { label: "Wording of an article on a past date", value: "not available", date: "2026-11-19", tone: "warn", indent: false },
+            { label: "Articles with their amendment history", value: "3,036 of 1,268 rules", date: "2026-11-19", tone: "ok", indent: false },
+            { label: "with the full new wording", value: "843", date: "2026-11-19", tone: "neutral", indent: true },
+            { label: "with the amended part, quoted verbatim", value: "1,633", date: "2026-11-19", tone: "neutral", indent: true },
+            { label: "with the amending rule and its date", value: "559", date: "2026-11-19", tone: "neutral", indent: true },
           ],
-          note: "The engine answers whether a rule was in force on a date and on what basis, and the force-of-law screen shows annulments article by article. It does not return the text an article had on that date: it returns the current one.",
+          note: "The engine answers whether a rule was in force on a date and on what basis, and the force-of-law screen shows annulments article by article. Every article comes with its published text and, next to it, the rule that amended it and what that rule says; the two texts are never merged.",
         },
         {
           title: "Quality and product",
