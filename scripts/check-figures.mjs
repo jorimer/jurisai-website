@@ -12,8 +12,8 @@
  *
  * Salidas: 0 todo bien · 1 hay divergencia · 2 no se pudo verificar.
  */
-import { readFileSync, existsSync } from "node:fs";
-import { resolve, dirname } from "node:path";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
+import { resolve, dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -25,14 +25,28 @@ const HOY = new Date();
 const DIAS_FRESCURA = 30;
 
 const registro = JSON.parse(readFileSync(resolve(raiz, "src/data/figures.json"), "utf8"));
-const copy = readFileSync(resolve(raiz, "src/i18n/translations.ts"), "utf8");
+const traducciones = readFileSync(resolve(raiz, "src/i18n/translations.ts"), "utf8");
+
+// Las páginas también publican cifras escritas a mano en el JSX (login, registro,
+// panel, metadatos). Hasta el 19-nov-2026 este script no las leía, y «130.906»
+// sobrevivió en siete de ellas tres meses después de superarse.
+const tsx = [];
+const recorrer = (dir) => {
+  for (const e of readdirSync(dir, { withFileTypes: true })) {
+    const p = join(dir, e.name);
+    if (e.isDirectory()) recorrer(p);
+    else if (e.name.endsWith(".tsx")) tsx.push({ ruta: relative(raiz, p), texto: readFileSync(p, "utf8") });
+  }
+};
+recorrer(resolve(raiz, "src"));
+const copy = traducciones + "\n" + tsx.map((f) => f.texto).join("\n");
 
 // ── Literales de prosa del sitio, sin clases de Tailwind, rutas ni claves ──
 const esClaseTailwind = (s) => /^[a-z0-9:/[\]().,%-]+(?:\s+[a-z0-9:/[\]().,%-]+)*$/.test(s);
 // Sin salto de línea dentro del literal y sin mínimo de longitud: exigir 4+
 // caracteres dejaba sueltos los cortos como "Key", y su comilla emparejaba con
 // la siguiente, desincronizando el resto del archivo.
-const literales = [...copy.matchAll(/"((?:[^"\\\n]|\\.)*)"/g)]
+const literales = [...traducciones.matchAll(/"((?:[^"\\\n]|\\.)*)"/g)]
   .map((m) => m[1])
   .filter((s) => s.length >= 4)
   .filter((s) => /\s/.test(s) && !s.startsWith("/") && !s.startsWith("#") && !s.startsWith("http"))
@@ -54,7 +68,7 @@ const avisos = [];
 for (const f of registro.figuras) {
   if (!copy.includes(f.value)) {
     errores.push(
-      `El registro declara «${f.value}» (${f.id}) pero no aparece en translations.ts. ` +
+      `El registro declara «${f.value}» (${f.id}) pero no aparece en translations.ts ni en ningún .tsx. ` +
         `O la cifra se cambió en el sitio sin actualizar el registro, o sobra del registro.`
     );
   }
@@ -73,6 +87,26 @@ for (const m of prosa.matchAll(FORMA)) {
   if (/^(1[89]\d{2}|20[0-4]\d)$/.test(t)) continue; // años
   const ctx = prosa.slice(Math.max(0, m.index - 45), m.index + 45).replace(/\n/g, " ");
   if (!sinDeclarar.has(t)) sinDeclarar.set(t, ctx.trim());
+}
+// En el JSX no se separa prosa de clases y rutas, así que ahí solo se buscan las
+// cifras con separador de miles, que no aparecen en clases de Tailwind ni en SVG.
+// ⚠️ Límite: porcentajes y cifras cortas (596, 85, 52) escritos en el JSX NO se
+// detectan. Las cifras del producto van en translations.ts, que sí se lee entero.
+const MILES = /\b\d{1,3}(?:[.,]\d{3})+\b/g;
+// Fuera del análisis: trazados SVG, colores y URLs, que son números sin ser cifras.
+const sinGeometria = (t) =>
+  t
+    .replace(/\bd=\{?["'][^"']*["']/g, "")
+    .replace(/["']M-?\d[-\d .,a-zA-Z]*["']/g, "")
+    .replace(/rgba?\([^)]*\)/g, "")
+    .replace(/https?:\/\/[^"'\s]+/g, "");
+for (const f of tsx) {
+  for (const m of sinGeometria(f.texto).matchAll(MILES)) {
+    const t = canon(m[0]);
+    if (declarados.has(t) || ignorados.has(t)) continue;
+    const ctx = sinGeometria(f.texto).slice(Math.max(0, m.index - 45), m.index + 45).replace(/\s+/g, " ");
+    if (!sinDeclarar.has(t)) sinDeclarar.set(t, `${f.ruta}: ${ctx.trim()}`);
+  }
 }
 for (const [t, ctx] of sinDeclarar) {
   errores.push(

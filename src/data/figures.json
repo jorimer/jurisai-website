@@ -10,32 +10,46 @@
   ],
   "figuras": [
     {
-      "id": "sentencias-texto-integro",
-      "value": "130.906",
-      "measuredOn": "2026-08-25",
+      "id": "sentencias-corpus",
+      "value": "145.494",
+      "measuredOn": "2026-11-19",
       "source": "estado",
-      "estadoRow": "Sentencias con texto íntegro"
+      "estadoRow": "Documentos de sentencia (padres, `parent_document_id IS NULL`, todos `source_type = sentencia`)"
+    },
+    {
+      "id": "sentencias-texto-integro",
+      "value": "136.671",
+      "measuredOn": "2026-09-20",
+      "source": "estado",
+      "estadoRow": "Sentencias con texto íntegro (documentos padre con `content`)"
     },
     {
       "id": "sentencias-scj",
-      "value": "94.025",
-      "measuredOn": "2026-08-01",
+      "value": "96.199",
+      "measuredOn": "2026-09-20",
       "source": "estado",
       "estadoRow": "de la Suprema Corte de Justicia"
     },
     {
       "id": "sentencias-tc",
-      "value": "10.457",
-      "measuredOn": "2026-08-01",
+      "value": "11.353",
+      "measuredOn": "2026-09-20",
       "source": "estado",
       "estadoRow": "del Tribunal Constitucional"
     },
     {
       "id": "sentencias-tsa",
-      "value": "2.479",
-      "measuredOn": "2026-08-01",
+      "value": "3.690",
+      "measuredOn": "2026-09-20",
       "source": "estado",
       "estadoRow": "del Tribunal Superior Administrativo"
+    },
+    {
+      "id": "sentencias-instancia",
+      "value": "25.429",
+      "measuredOn": "2026-09-20",
+      "source": "estado",
+      "estadoRow": "de instancia y apelación (`court_tier = other`)"
     },
     {
       "id": "componentes-embebidos",
@@ -46,31 +60,140 @@
     },
     {
       "id": "relaciones-grafo",
-      "value": "22.146",
-      "measuredOn": "2026-08-17",
+      "value": "22.580",
+      "measuredOn": "2026-09-20",
       "source": "estado",
       "estadoRow": "Relaciones en el grafo normativo"
     },
     {
-      "id": "leyes-corpus",
-      "value": "6.680",
-      "measuredOn": "2026-08-17",
+      "id": "normas-corpus",
+      "value": "25.360",
+      "measuredOn": "2026-11-19",
       "source": "estado",
-      "estadoRow": "Leyes en el corpus"
+      "estadoRow": "Documentos normativos, todos los tipos"
+    },
+    {
+      "id": "leyes-corpus",
+      "value": "7.369",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Leyes (`ley_ordinaria`)"
     },
     {
       "id": "decretos-corpus",
-      "value": "596",
-      "measuredOn": "2026-08-17",
+      "value": "13.265",
+      "measuredOn": "2026-11-19",
       "source": "estado",
-      "estadoRow": "Decretos en el corpus"
+      "estadoRow": "Decretos"
     },
     {
-      "id": "reconciliacion-leyes",
-      "value": "99,5",
-      "measuredOn": "2026-08-17",
+      "id": "resoluciones-corpus",
+      "value": "4.582",
+      "measuredOn": "2026-11-19",
       "source": "estado",
-      "estadoRow": "Leyes 2010–2025 contra el portal oficial"
+      "estadoRow": "Resoluciones"
+    },
+    {
+      "id": "cobertura-decretos-ventana",
+      "value": "8.981",
+      "measuredOn": "2026-11-15",
+      "source": "estado",
+      "estadoRow": "Cobertura de ingesta de la Gaceta contra `consultoria.gov.do` (`jurisai_corpus_coverage`, 64 filas)"
+    },
+    {
+      "id": "cobertura-leyes-ventana",
+      "value": "587",
+      "measuredOn": "2026-11-15",
+      "source": "estado",
+      "estadoRow": "Cobertura de ingesta de la Gaceta contra `consultoria.gov.do` (`jurisai_corpus_coverage`, 64 filas)"
+    },
+    {
+      "id": "cobertura-resoluciones-ventana",
+      "value": "4.429",
+      "measuredOn": "2026-11-15",
+      "source": "estado",
+      "estadoRow": "Cobertura de ingesta de la Gaceta contra `consultoria.gov.do` (`jurisai_corpus_coverage`, 64 filas)",
+      "nota": "4.429 de 4.433; 13 de 17 años completos"
+    },
+    {
+      "id": "resoluciones-ventana-fuente",
+      "value": "4.433",
+      "measuredOn": "2026-11-15",
+      "source": "estado",
+      "estadoRow": "Cobertura de ingesta de la Gaceta contra `consultoria.gov.do` (`jurisai_corpus_coverage`, 64 filas)"
+    },
+    {
+      "id": "decretos-fuera-ventana",
+      "value": "4.300",
+      "measuredOn": "2026-11-19",
+      "source": "derivada",
+      "nota": "13.265 decretos del corpus menos los 8.981 de la ventana medida = 4.284. Aproximada, y así se publica."
+    },
+    {
+      "id": "leyes-fuera-ventana",
+      "value": "6.800",
+      "measuredOn": "2026-11-19",
+      "source": "derivada",
+      "nota": "7.369 leyes del corpus menos las 587 de la ventana medida = 6.782. Aproximada, y así se publica."
+    },
+    {
+      "id": "reglas-en-ejecucion",
+      "value": "5",
+      "measuredOn": "2026-09-20",
+      "source": "estado",
+      "estadoRow": "Reglas formales de inferencia"
+    },
+    {
+      "id": "anulaciones-tc-cargadas",
+      "value": "74",
+      "measuredOn": "2026-09-06",
+      "source": "estado_abiertos",
+      "ref": "ESTADO.md §Motor de vigencia (fila «Anulaciones del TC CARGADAS en producción») y §Abiertos, límite 3",
+      "nota": "La fila de ESTADO lleva en la celda de fecha una nota larga y no se coteja automáticamente."
+    },
+    {
+      "id": "entregables-redactor",
+      "value": "152",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Redactor legislativo, entregables en producción",
+      "nota": "Se publican los completed (152) de 176 corridas; las 24 failed no son entregables."
+    },
+    {
+      "id": "corridas-redactor",
+      "value": "176",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Redactor legislativo, entregables en producción"
+    },
+    {
+      "id": "dictamenes-evaluador",
+      "value": "104",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Evaluador legislativo, dictámenes producidos",
+      "nota": "98 completed de 104"
+    },
+    {
+      "id": "participaciones-juez",
+      "value": "92.959",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Predictor judicial: casos etiquetados disponibles"
+    },
+    {
+      "id": "participaciones-etiquetadas",
+      "value": "29.977",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Predictor judicial: casos etiquetados disponibles"
+    },
+    {
+      "id": "cobertura-extraccion-referencias",
+      "value": "29,5",
+      "measuredOn": "2026-09-07",
+      "source": "estado_abiertos",
+      "ref": "ESTADO.md §Abiertos, «Cobertura de extracción de referencias»"
     },
     {
       "id": "pruebas-backend",
@@ -80,25 +203,11 @@
       "estadoRow": "Pruebas de backend en el stack de CI"
     },
     {
-      "id": "anulaciones-parciales",
-      "value": "52",
-      "measuredOn": "2026-08-24",
-      "source": "estado",
-      "estadoRow": "Anulaciones parciales identificadas y no cargadas"
-    },
-    {
       "id": "modulos-registro",
       "value": "26",
       "measuredOn": "2026-08-25",
       "source": "estado",
       "estadoRow": "Módulos en el registro"
-    },
-    {
-      "id": "entregables-redactor",
-      "value": "85",
-      "measuredOn": "2026-08-14",
-      "source": "estado",
-      "estadoRow": "Redactor legislativo, entregables en producción"
     },
     {
       "id": "normas-derogadas-sin-respaldo",
@@ -107,28 +216,6 @@
       "source": "auditoria",
       "ref": "docs/audits/derogadas-sin-respaldo-contra-la-lectura-integra-2026-08-19.md",
       "nota": "ESTADO lo registra en «Abiertos», sin fila de tabla. La auditoría documenta 180: reconciliar antes de citar cualquiera de los dos."
-    },
-    {
-      "id": "decretos-2024-en-corpus",
-      "value": "16",
-      "measuredOn": "2026-08-17",
-      "source": "auditoria",
-      "ref": "docs/audits/api-verificacion-normativa-sdq-2026-08-17.md",
-      "nota": "16 de 708. EN REVISIÓN: el bloque de producto del brand kit (26-ago) afirma cobertura reconciliada al 100% para decretos, lo que contradice esta auditoría."
-    },
-    {
-      "id": "decretos-2024-en-fuente",
-      "value": "708",
-      "measuredOn": "2026-08-17",
-      "source": "auditoria",
-      "ref": "docs/audits/api-verificacion-normativa-sdq-2026-08-17.md"
-    },
-    {
-      "id": "leyes-anteriores-2010",
-      "value": "6.100",
-      "measuredOn": "2026-08-17",
-      "source": "derivada",
-      "nota": "6.680 leyes del corpus menos las 582 de la ventana 2010–2026. Aproximada, y así se publica."
     },
     {
       "id": "umbral-perfil-fiable",
@@ -223,14 +310,6 @@
       "nota": "Se publica como «< 2 %». Lleva más de treinta días sin medirse y el sitio lo declara así."
     },
     {
-      "id": "cobertura-extraccion-referencias",
-      "value": "21,1",
-      "measuredOn": "2026-04-28",
-      "source": "estado_abiertos",
-      "ref": "ESTADO.md §Abiertos",
-      "nota": "Último dato existente. Las campañas de agosto ampliaron el denominador sin correr extracción, así que pudo bajar; el sitio lo publica con esa salvedad."
-    },
-    {
       "id": "descuento-anual",
       "value": "20",
       "measuredOn": "2026-08-26",
@@ -254,10 +333,6 @@
     {
       "token": "2025",
       "porque": "año de la ventana reconciliada"
-    },
-    {
-      "token": "2021",
-      "porque": "año de inicio de cobertura de decretos"
     },
     {
       "token": "1885",
@@ -306,10 +381,6 @@
     {
       "token": "25",
       "porque": "módulos vivos, derivado de modulos-registro (25 de 26)"
-    },
-    {
-      "token": "582",
-      "porque": "leyes de la ventana reconciliada, interno del cálculo"
     },
     {
       "token": "810.818",

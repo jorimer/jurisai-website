@@ -41,15 +41,15 @@ export default function RegisterPage() {
           {/* Stats */}
           <div className="mt-12 grid grid-cols-2 gap-4">
             <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">
-              <div className="text-2xl font-bold text-accent-400">130.906</div>
-              <div className="text-sm text-primary-300">Sentencias con texto íntegro</div>
+              <div className="text-2xl font-bold text-accent-400">145.494</div>
+              <div className="text-sm text-primary-300">Sentencias en el corpus</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">
-              <div className="text-2xl font-bold text-accent-400">99,5%</div>
-              <div className="text-sm text-primary-300">Leyes 2010–2025 reconciliadas</div>
+              <div className="text-2xl font-bold text-accent-400">8.981 de 8.981</div>
+              <div className="text-sm text-primary-300">Decretos cotejados contra el portal oficial</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">
-              <div className="text-2xl font-bold text-accent-400">22.146</div>
+              <div className="text-2xl font-bold text-accent-400">22.580</div>
               <div className="text-sm text-primary-300">Relaciones en el grafo normativo</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">

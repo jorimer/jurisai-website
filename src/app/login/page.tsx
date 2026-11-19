@@ -38,8 +38,8 @@ export default function LoginPage() {
           </p>
           <div className="mt-12 grid grid-cols-3 gap-4">
             <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">
-              <div className="text-2xl font-bold text-accent-400">130.906</div>
-              <div className="text-sm text-primary-300">Sentencias con texto íntegro</div>
+              <div className="text-2xl font-bold text-accent-400">145.494</div>
+              <div className="text-sm text-primary-300">Sentencias en el corpus</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">
               <div className="text-2xl font-bold text-accent-400">202.444</div>
