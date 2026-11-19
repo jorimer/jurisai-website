@@ -27,20 +27,20 @@ export const translations = {
       title: "Qué cubre",
       items: [
         {
-          claim: "Toda la jurisprudencia publicada de la Suprema Corte, el Tribunal Constitucional y el Tribunal Superior Administrativo, con el texto íntegro de cada sentencia.",
-          proof: "130.906 sentencias · med. ago 2026",
+          claim: "La jurisprudencia publicada de la Suprema Corte, el Tribunal Constitucional, el Tribunal Superior Administrativo y los tribunales de instancia y apelación.",
+          proof: "145.494 sentencias · med. nov 2026",
         },
         {
           claim: "La ley que regía el día de los hechos, no la de hoy. Puede consultar el estado de una norma en cualquier fecha pasada.",
-          proof: "Motor de vigencia point-in-time · en producción desde ago 2026",
+          proof: "Estado de vigencia a una fecha · en producción desde ago 2026",
         },
         {
           claim: "Qué norma derogó a cuál, y qué anuló el Tribunal Constitucional. No es lo mismo y tiene consecuencias distintas para su caso.",
           proof: "Ocho estados de vigencia sobre el grafo normativo",
         },
         {
-          claim: "6.680 leyes en el corpus, desde la Constitución de 1844. Las de 2010 a 2025 están cotejadas una a una contra el portal oficial y los dieciséis años cierran en cero diferencias.",
-          proof: "6.680 leyes · 99,5 % en la ventana reconciliada · med. ago 2026",
+          claim: "7.369 leyes y 13.265 decretos en el corpus, desde la Constitución de 1844. En los años cotejados contra el portal oficial —diecisiete de leyes, quince de decretos—, el corpus tiene todas las leyes y todos los decretos que la fuente registra.",
+          proof: "587 de 587 leyes · 8.981 de 8.981 decretos en los años cotejados · med. nov 2026",
         },
       ],
       cta: "Ver el detalle de cada cifra",
@@ -81,12 +81,12 @@ export const translations = {
       sectionTitle: "Para instituciones",
       title: "Si su trabajo es producir norma, no aplicarla",
       subtitle:
-        "Ministerios, congreso y direcciones jurídicas de grandes corporativos usan una parte distinta de la plataforma: la que redacta, dictamina y responde consultas a otro sistema.",
+        "Para ministerios, congreso y direcciones jurídicas de grandes corporativos hay una parte distinta de la plataforma: la que redacta, dictamina y responde consultas a otro sistema.",
       items: [
         {
           name: "Redactor legislativo",
           body:
-            "Propone la reforma de ley, el reglamento de aplicación o la norma administrativa fundada únicamente en el corpus. Entrega dos piezas: el articulado y el memo de motivación que explica por qué cada decisión está ahí, incluida la de qué pasa con los órganos que ya hacen ese trabajo. Ochenta y cinco instrumentos entregados en producción entre julio y agosto de 2026.",
+            "Propone la reforma de ley, el reglamento de aplicación o la norma administrativa fundada únicamente en el corpus. Entrega dos piezas: el articulado y el memo de motivación que explica por qué cada decisión está ahí, incluida la de qué pasa con los órganos que ya hacen ese trabajo. 152 instrumentos completados en producción hasta octubre de 2026.",
           gain: "A la mesa llega un instrumento que ya viene motivado, no un borrador que alguien tendrá que justificar después",
         },
         {
@@ -130,13 +130,13 @@ export const translations = {
         },
         {
           title: "Repositorio Normativo",
-          description: "202.444 componentes normativos embebidos al 100 %, 22.146 relaciones en el grafo y versionado temporal artículo por artículo, con consultas en lenguaje natural.",
+          description: "202.444 componentes normativos embebidos al 100 %, 22.580 relaciones en el grafo y estado de vigencia a cualquier fecha, con consultas en lenguaje natural.",
           icon: "BookOpen",
           purpose: "Para encontrar la norma aplicable sin abrir cinco portales",
         },
         {
           title: "Redactor Legislativo IA",
-          description: "Reformas de ley, reglamentos de aplicación y normas administrativas fundadas solo en el corpus. Entrega el instrumento y su memo de motivación. 85 entregables en producción entre julio y agosto de 2026.",
+          description: "Reformas de ley, reglamentos de aplicación y normas administrativas fundadas solo en el corpus. Entrega el instrumento y su memo de motivación. 152 instrumentos completados en producción hasta octubre de 2026.",
           icon: "FileText",
           purpose: "Para entregar el borrador y su motivación el mismo día",
         },
@@ -184,7 +184,7 @@ export const translations = {
         },
       ],
       normativeTitle: "Ecosistema Normativo",
-      normativeSubtitle: "Once productos de inteligencia sobre el corpus legislativo dominicano, con grafo de relaciones y versionado temporal.",
+      normativeSubtitle: "Once productos de inteligencia sobre el corpus legislativo dominicano, con grafo de relaciones y estado de vigencia a fecha.",
       normativeItems: [
         "Búsqueda Legal Inteligente",
         "Monitor de Vigencia",
@@ -216,7 +216,7 @@ export const translations = {
         "Desviación del patrón reciente respecto del histórico",
         "Historial de la firma frente a ese abogado y esa contraparte",
       ],
-      tech: "Calculado sobre las 130.906 sentencias publicadas del corpus · med. ago 2026",
+      tech: "Calculado sobre 92.959 participaciones de juez en el corpus, 29.977 con resultado clasificable · med. nov 2026",
       cta: "Conocer Más",
       disclaimer: "La herramienta describe el comportamiento histórico de un tribunal. No predice el resultado de un caso concreto ni sustituye el criterio profesional.",
     },
@@ -227,14 +227,14 @@ export const translations = {
         "Antes de comprometer el criterio profesional con una herramienta conviene saber dónde se detiene. Esta información no vive en un anexo del contrato. Está publicada aquí, y aparece también dentro del producto cuando corresponde.",
       items: [
         {
-          title: "Los decretos anteriores a 2021 no están en el corpus",
+          title: "Unos 4.300 decretos y 6.800 leyes están sin cotejar",
           description:
-            "El repositorio contiene 596 decretos y ninguno entre 1885 y 2020. Desde 2021 la cobertura es parcial: de los 708 decretos dictados en 2024 el corpus tiene 16. Un caso que dependa de un decreto requiere verificación en la Gaceta Oficial. Para leyes la cobertura sí sostiene la consulta.",
+            "El cotejo contra el portal oficial cubre diecisiete años de leyes y quince de decretos y reglamentos, y en esos años el corpus tiene todo lo que la fuente registra; en resoluciones cuadran 13 de 17 años. Fuera de lo cotejado hay unos 4.300 decretos y 6.800 leyes que tenemos y no hemos comparado con la fuente. Un caso que dependa de una de ellas requiere verificación en la Gaceta Oficial. Este cotejo cuenta documentos: no dice si la norma sigue vigente.",
         },
         {
-          title: "El motor de vigencia opera sobre la norma completa",
+          title: "La redacción de un artículo no se versiona por fecha",
           description:
-            "No responde si un artículo concreto fue anulado por el Tribunal Constitucional. Hay 52 anulaciones parciales identificadas y pendientes de carga, de modo que esa verificación corresponde al usuario.",
+            "El motor responde si una norma regía en una fecha y con qué fundamento, y muestra artículo por artículo las anulaciones del Tribunal Constitucional que tiene cargadas. Lo que no devuelve es el texto que tenía un artículo en una fecha pasada: devuelve el vigente. Para la redacción histórica, la Gaceta Oficial.",
         },
         {
           title: "179 normas constan derogadas sin evidencia documental",
@@ -439,7 +439,7 @@ export const translations = {
         {
           title: "Investigación Legal",
           description: "Búsqueda semántica sobre jurisprudencia dominicana, leyes y doctrina, con generación automática de memorandos CREAC y verificación de las citas que produce.",
-          stats: "130.906 sentencias con texto íntegro · ago 2026",
+          stats: "136.671 sentencias con texto íntegro · sep 2026",
           impact: "El texto de la ley lo inserta el sistema, no el modelo",
           capabilities: ["Búsqueda semántica sobre el corpus completo", "Memorandos CREAC automáticos", "Verificación de citas normativas y jurisprudenciales", "Vacíos legales declarados en el memorando", "Jurisprudencia de SCJ, TC y TSA"],
         },
@@ -452,8 +452,8 @@ export const translations = {
         },
         {
           title: "Analítica Predictiva",
-          description: "Predicción de resultados basada en datos históricos, con casos similares reales del corpus. Por debajo de 200 casos etiquetados por materia el sistema responde en modo heurístico y lo declara.",
-          stats: "Modelo entrenado desde n = 200 | heurístico por debajo",
+          description: "Predicción de resultados basada en datos históricos, con casos similares reales del corpus. Hoy no hay un modelo entrenado: el sistema responde en modo heurístico y lo declara.",
+          stats: "Modo heurístico declarado | modelo sin entrenar",
           impact: "El techo del modelo va declarado en la respuesta",
           capabilities: ["Casos similares reales del corpus", "Perfiles de jueces y estimación de daños", "Modo heurístico declarado bajo el umbral", "Narrativa explicativa en el plan superior", "Análisis de tendencias por materia"],
         },
@@ -468,7 +468,7 @@ export const translations = {
     },
     ipPage: {
       title: "Inteligencia Procesal",
-      subtitle: "Perfiles de jueces y abogados construidos sobre las 130.906 sentencias del corpus, con resolución de entidades. El perfil está medido; la predicción tiene su techo declarado.",
+      subtitle: "Perfiles de jueces y abogados construidos sobre las 145.494 sentencias del corpus, con resolución de entidades. El perfil está medido; la predicción tiene su techo declarado.",
       profileTitle: "Perfil de juez: métricas disponibles",
       profileMetrics: [
         { label: "Tasas de Resultado", description: "Favorable, parcialmente favorable y desfavorable, por juez y por materia, derivadas del sentido del fallo" },
@@ -486,8 +486,8 @@ export const translations = {
         "Menos de 10 sentencias: no se publica perfil",
         "Entre 10 y 29: usable, pero marcado como limitado",
         "Desde 30: perfil fiable, con del orden de ±18 % al 95 % de confianza",
-        "Desde 200 casos etiquetados por materia: recién ahí entrena el modelo",
-        "Por debajo de ese umbral la respuesta es heurística y va marcada",
+        "Desde 200 casos etiquetados el modelo puede entrenarse; hoy no hay ninguno entrenado",
+        "Mientras no lo haya, la respuesta es heurística y va marcada",
         "Límite por plan: 50 / 500 / 5.000 consultas al mes",
       ],
       ethicsTitle: "Dónde se Detiene esta Herramienta",
@@ -504,9 +504,9 @@ export const translations = {
       roadmapTitle: "Roadmap 2026",
       roadmap: [
         { quarter: "Q1 2026", status: "Completado", description: "Piloto interno. Revisión de contratos, asistente legal e investigación jurisprudencial sobre el corpus." },
-        { quarter: "Q2 2026", status: "Completado", description: "Repositorio normativo con grafo de relaciones y versionado temporal. Evaluador de impacto legislativo. Perfilamiento judicial sobre el corpus completo." },
-        { quarter: "Q3 2026", status: "En Progreso", description: "Gestión de asuntos unificada, con los litigios adentro. Verificación de citas que corrige. Redactor legislativo: 85 entregables. Consulta point-in-time y API de verificación normativa." },
-        { quarter: "Q4 2026", status: "Planificado", description: "Carga de las 52 anulaciones parciales del Tribunal Constitucional. Fundamentación por precedentes en el dictamen. Cierre de las 179 normas que constan derogadas sin respaldo." },
+        { quarter: "Q2 2026", status: "Completado", description: "Repositorio normativo con grafo de relaciones y estado de vigencia a fecha. Evaluador de impacto legislativo. Perfilamiento judicial sobre el corpus completo." },
+        { quarter: "Q3 2026", status: "Completado", description: "Gestión de asuntos unificada, con los litigios adentro. Verificación de citas que corrige. Redactor legislativo en producción. Estado de vigencia a fecha, anulaciones del Tribunal Constitucional por artículo y API de verificación normativa." },
+        { quarter: "Q4 2026", status: "En Progreso", description: "Fundamentación por precedentes en el dictamen. Cierre de las 179 normas que constan derogadas sin respaldo. Firmas piloto." },
       ],
       teamTitle: "El Equipo",
       teamDesc: "SDQ Consulting Group reúne experiencia en tecnología, derecho y consultoría empresarial para crear soluciones que entienden las necesidades reales del mercado legal dominicano.",
@@ -527,54 +527,77 @@ export const translations = {
       intro:
         "Cada fila lleva su fecha de medición. Una cifra sin fecha es una mentira futura: este producto arrastró durante cuatro meses una cobertura medida en abril como si fuera del día. Si el dato que busca no está, o lleva más de treinta días sin medirse, lo decimos en vez de citarlo.",
       lastReviewLabel: "Última revisión general",
-      lastReview: "03-09-2026",
+      lastReview: "19-11-2026",
       sections: [
         {
           title: "Corpus",
           rows: [
-            { label: "Sentencias con texto íntegro", value: "130.906", date: "25-08-2026", tone: "ok", indent: false },
-            { label: "Suprema Corte de Justicia", value: "94.025", date: "01-08-2026", tone: "neutral", indent: true },
-            { label: "Tribunal Constitucional", value: "10.457", date: "01-08-2026", tone: "neutral", indent: true },
-            { label: "Tribunal Superior Administrativo", value: "2.479", date: "01-08-2026", tone: "neutral", indent: true },
+            { label: "Sentencias en el corpus", value: "145.494", date: "19-11-2026", tone: "ok", indent: false },
+            { label: "Sentencias con texto íntegro", value: "136.671", date: "20-09-2026", tone: "ok", indent: false },
+            { label: "Suprema Corte de Justicia", value: "96.199", date: "20-09-2026", tone: "neutral", indent: true },
+            { label: "Tribunal Constitucional", value: "11.353", date: "20-09-2026", tone: "neutral", indent: true },
+            { label: "Tribunal Superior Administrativo", value: "3.690", date: "20-09-2026", tone: "neutral", indent: true },
+            { label: "Instancia y apelación", value: "25.429", date: "20-09-2026", tone: "neutral", indent: true },
+            { label: "Normas en el corpus", value: "25.360", date: "19-11-2026", tone: "ok", indent: false },
+            { label: "Leyes", value: "7.369", date: "19-11-2026", tone: "neutral", indent: true },
+            { label: "Decretos", value: "13.265", date: "19-11-2026", tone: "neutral", indent: true },
+            { label: "Resoluciones", value: "4.582", date: "19-11-2026", tone: "neutral", indent: true },
             { label: "Componentes normativos embebidos", value: "202.444 · 100 %", date: "22-08-2026", tone: "ok", indent: false },
-            { label: "Relaciones en el grafo normativo", value: "22.146", date: "17-08-2026", tone: "neutral", indent: false },
-            { label: "Leyes en el corpus", value: "6.680", date: "17-08-2026", tone: "ok", indent: false },
-            { label: "Decretos en el corpus", value: "596", date: "17-08-2026", tone: "warn", indent: false },
+            { label: "Relaciones en el grafo normativo", value: "22.580", date: "20-09-2026", tone: "neutral", indent: false },
           ],
-          note: "Cifras retiradas que aún circulan y no deben reusarse: 810.818, ~152.000, 11.000+ y 103.833.",
+          note: "Las cifras de agosto de sentencias, leyes y decretos eran ciertas en su fecha y hoy están superadas. Cifras retiradas que aún circulan y no deben reusarse: 810.818, ~152.000, 11.000+ y 103.833.",
         },
         {
           title: "Reconciliación contra fuente oficial",
           rows: [
-            { label: "Leyes 2010–2025 contra el portal oficial", value: "99,5 %", date: "17-08-2026", tone: "ok", indent: false },
-            { label: "años que cierran en cero diferencias", value: "16", date: "17-08-2026", tone: "neutral", indent: true },
-            { label: "Leyes anteriores a 2010, en el corpus", value: "~6.100 · sin reconciliar", date: "17-08-2026", tone: "warn", indent: false },
-            { label: "Decretos entre 1885 y 2020", value: "cero", date: "17-08-2026", tone: "alert", indent: false },
-            { label: "Decretos desde 2021", value: "parcial", date: "17-08-2026", tone: "alert", indent: true },
-            { label: "Decretos de 2024 que sí tenemos", value: "16 de 708", date: "17-08-2026", tone: "alert", indent: true },
+            { label: "Decretos cotejados contra el portal oficial", value: "8.981 de 8.981", date: "15-11-2026", tone: "ok", indent: false },
+            { label: "Leyes cotejadas contra el portal oficial", value: "587 de 587", date: "15-11-2026", tone: "ok", indent: false },
+            { label: "Resoluciones cotejadas contra el portal oficial", value: "4.429 de 4.433", date: "15-11-2026", tone: "warn", indent: false },
+            { label: "Decretos sin cotejar", value: "~4.300 · sin cotejar", date: "19-11-2026", tone: "warn", indent: false },
+            { label: "Leyes sin cotejar", value: "~6.800 · sin cotejar", date: "19-11-2026", tone: "warn", indent: false },
           ],
-          note: "El portal oficial solo publica de 2010 en adelante, así que la ventana reconciliada es esa. Las más de seis mil leyes anteriores están en el corpus, pero no hay fuente pública contra la cual cotejarlas: las tenemos, no las hemos medido, y son dos cosas distintas.",
+          note: "El portal oficial publica de 2010 en adelante. El cotejo cubre diecisiete años de leyes y de resoluciones y quince de decretos y reglamentos, y cuenta documentos por tipo y año contra la fuente: dice que la norma está, no que siga vigente. Lo que queda sin cotejar lo tenemos y no lo hemos medido, y son dos cosas distintas.",
         },
         {
           title: "Motor de vigencia",
           rows: [
-            { label: "Reglas formales de inferencia", value: "6", date: "18-08-2026", tone: "neutral", indent: false },
+            { label: "Reglas formales de inferencia en ejecución", value: "5 de 6", date: "20-09-2026", tone: "neutral", indent: false },
             { label: "Estados de vigencia (anulada ≠ derogada)", value: "8", date: "18-08-2026", tone: "neutral", indent: false },
-            { label: "Consulta point-in-time", value: "en producción", date: "18-08-2026", tone: "ok", indent: false },
-            { label: "Anulaciones parciales identificadas, sin cargar", value: "52 de 55", date: "24-08-2026", tone: "alert", indent: false },
+            { label: "Estado de vigencia a una fecha", value: "en producción", date: "18-08-2026", tone: "ok", indent: false },
+            { label: "Anulaciones del Tribunal Constitucional cargadas", value: "74 · 70 parciales", date: "06-09-2026", tone: "ok", indent: false },
+            { label: "Redacción de un artículo a una fecha pasada", value: "no disponible", date: "20-09-2026", tone: "warn", indent: false },
           ],
-          note: "Hoy el motor no responde si un artículo concreto fue anulado por el Tribunal Constitucional: opera a nivel de norma entera.",
+          note: "El motor responde si una norma regía en una fecha y con qué fundamento, y la pantalla de vigencia muestra las anulaciones artículo por artículo. No devuelve el texto que un artículo tenía en esa fecha: devuelve el vigente.",
         },
         {
           title: "Calidad y producto",
           rows: [
             { label: "Pruebas de backend en el stack de CI", value: "7.395 · 0 fallos", date: "01-09-2026", tone: "ok", indent: false },
             { label: "Módulos vivos en el registro", value: "25 de 26", date: "25-08-2026", tone: "neutral", indent: false },
-            { label: "Redactor legislativo, entregables en producción", value: "85", date: "14-08-2026", tone: "neutral", indent: false },
+            { label: "Redactor legislativo, instrumentos completados", value: "152 de 176", date: "19-11-2026", tone: "neutral", indent: false },
+            { label: "Evaluador legislativo, dictámenes completados", value: "98 de 104", date: "19-11-2026", tone: "neutral", indent: false },
             { label: "Verificador de citas: corrige, no solo advierte", value: "desde 22-08", date: "22-08-2026", tone: "ok", indent: false },
             { label: "Cobertura de pruebas del frontend", value: "< 2 %", date: "13-07-2026", tone: "warn", indent: false },
           ],
-          note: "La última fila lleva más de treinta días sin medirse. La dejamos visible con su fecha en vez de retirarla.",
+          note: "Pruebas, módulos y cobertura del frontend llevan más de treinta días sin medirse. Las dejamos visibles con su fecha en vez de retirarlas.",
+        },
+        {
+          title: "Inteligencia procesal",
+          rows: [
+            { label: "Participaciones de juez con resultado clasificable", value: "29.977 de 92.959", date: "19-11-2026", tone: "neutral", indent: false },
+            { label: "Modelo predictivo entrenado", value: "ninguno · modo heurístico", date: "19-11-2026", tone: "warn", indent: false },
+          ],
+          note: "El dato supera el mínimo de 200 casos etiquetados que exige el entrenamiento, y el modelo no se ha entrenado. Mientras tanto la predicción es heurística y lo dice en la respuesta.",
+        },
+        {
+          title: "Estado comercial",
+          rows: [
+            { label: "Firmas en la plataforma", value: "2 · ambas internas", date: "19-11-2026", tone: "neutral", indent: false },
+            { label: "Firmas cliente externas", value: "ninguna", date: "19-11-2026", tone: "neutral", indent: false },
+            { label: "Facturación emitida", value: "ninguna", date: "19-11-2026", tone: "neutral", indent: false },
+            { label: "Pilotos con instituciones públicas", value: "ninguno", date: "19-11-2026", tone: "neutral", indent: false },
+          ],
+          note: "Las dos firmas son la cuenta de demostración y SDQ Consulting Group, que usa la plataforma en su propio trabajo. Lo publicamos porque quien evalúa la compra lo va a preguntar.",
         },
       ],
       openTitle: "Abiertos",
@@ -588,7 +611,7 @@ export const translations = {
         {
           title: "Cobertura de extracción de referencias",
           description:
-            "No se mide desde el 28-04-2026. El 21,1 % de esa fecha es el último dato existente y las campañas de agosto ampliaron el denominador, así que pudo bajar. No lo citamos como vigente.",
+            "29,5 % al 07-09-2026, y el agregado engaña: lo ingresado antes de agosto está extraído casi entero, y de la carga de agosto no se ha extraído nada. No lo citamos como cobertura del corpus.",
         },
         {
           title: "Dictamen: fundamentación por precedentes",
@@ -635,20 +658,20 @@ export const translations = {
       title: "What it covers",
       items: [
         {
-          claim: "Every published ruling of the Supreme Court, the Constitutional Court and the Superior Administrative Court, with the full text of each one.",
-          proof: "130,906 rulings · meas. Aug 2026",
+          claim: "The published case law of the Supreme Court, the Constitutional Court, the Superior Administrative Court and the first-instance and appellate courts.",
+          proof: "145,494 rulings · meas. Nov 2026",
         },
         {
           claim: "The law in force on the day of the events, not today's. You can check a rule's status on any past date.",
-          proof: "Point-in-time engine · in production since Aug 2026",
+          proof: "Force-of-law status on a date · in production since Aug 2026",
         },
         {
           claim: "Which rule repealed which, and what the Constitutional Court annulled. They are not the same, and they carry different consequences for your case.",
           proof: "Eight status states over the normative graph",
         },
         {
-          claim: "6,680 statutes in the corpus, going back to the 1844 Constitution. Those from 2010 to 2025 are reconciled one by one against the official portal, and all sixteen years close at zero.",
-          proof: "6,680 statutes · 99.5% in the reconciled window · meas. Aug 2026",
+          claim: "7,369 statutes and 13,265 decrees in the corpus, going back to the 1844 Constitution. For the years reconciled against the official portal —seventeen for statutes, fifteen for decrees— the corpus holds every statute and every decree the source records.",
+          proof: "587 of 587 statutes · 8,981 of 8,981 decrees in the reconciled years · meas. Nov 2026",
         },
       ],
       cta: "See the figure behind each claim",
@@ -689,12 +712,12 @@ export const translations = {
       sectionTitle: "For institutions",
       title: "If your job is producing rules, not applying them",
       subtitle:
-        "Ministries, congress and legal departments of large corporates use a different part of the platform: the one that drafts, issues opinions, and answers queries from another system.",
+        "For ministries, congress and legal departments of large corporates there is a different part of the platform: the one that drafts, issues opinions, and answers queries from another system.",
       items: [
         {
           name: "Legislative drafter",
           body:
-            "Proposes the statutory reform, implementing regulation or administrative rule grounded solely in the corpus. It delivers two pieces: the articles and the explanatory memorandum saying why each decision is there, including what happens to the bodies already doing that work. Eighty-five instruments delivered in production between July and August 2026.",
+            "Proposes the statutory reform, implementing regulation or administrative rule grounded solely in the corpus. It delivers two pieces: the articles and the explanatory memorandum saying why each decision is there, including what happens to the bodies already doing that work. 152 instruments completed in production through October 2026.",
           gain: "What reaches the table is an instrument that already carries its reasoning, not a draft someone will have to justify later",
         },
         {
@@ -738,13 +761,13 @@ export const translations = {
         },
         {
           title: "Normative Repository",
-          description: "202,444 normative components embedded at 100%, 22,146 relations in the graph, and article-by-article temporal versioning, with natural-language queries.",
+          description: "202,444 normative components embedded at 100%, 22,580 relations in the graph, and force-of-law status on any date, with natural-language queries.",
           icon: "BookOpen",
           purpose: "So you find the applicable rule without opening five portals",
         },
         {
           title: "AI Legislative Drafter",
-          description: "Statutory reforms, implementing regulations and administrative rules grounded solely in the corpus. Delivers the instrument and its explanatory memorandum. 85 deliverables in production between July and August 2026.",
+          description: "Statutory reforms, implementing regulations and administrative rules grounded solely in the corpus. Delivers the instrument and its explanatory memorandum. 152 instruments completed in production through October 2026.",
           icon: "FileText",
           purpose: "So the draft and its reasoning leave on the same day",
         },
@@ -792,7 +815,7 @@ export const translations = {
         },
       ],
       normativeTitle: "Normative Ecosystem",
-      normativeSubtitle: "Eleven intelligence products over the Dominican legislative corpus, with a relationship graph and temporal versioning.",
+      normativeSubtitle: "Eleven intelligence products over the Dominican legislative corpus, with a relationship graph and force-of-law status by date.",
       normativeItems: [
         "Smart Legal Search",
         "Force-of-Law Monitor",
@@ -824,7 +847,7 @@ export const translations = {
         "Deviation of the recent pattern from the historical one",
         "The firm's record against that attorney and that opposing party",
       ],
-      tech: "Computed over the 130,906 published rulings in the corpus · meas. Aug 2026",
+      tech: "Computed over 92,959 judge participations in the corpus, 29,977 with a classifiable outcome · meas. Nov 2026",
       cta: "Learn More",
       disclaimer: "The tool describes a court's historical behavior. It does not predict the outcome of a specific case, nor does it replace professional judgment.",
     },
@@ -835,14 +858,14 @@ export const translations = {
         "Before committing professional judgment to a tool, it is worth knowing where it stops. This information does not live in a contract annex. It is published here, and it also appears inside the product where it applies.",
       items: [
         {
-          title: "Decrees issued before 2021 are not in the corpus",
+          title: "Some 4,300 decrees and 6,800 statutes are unreconciled",
           description:
-            "The repository holds 596 decrees and none between 1885 and 2020. From 2021 coverage is partial: of the 708 decrees issued in 2024 the corpus holds 16. A case that turns on a decree requires verification in the Gaceta Oficial. For statutes, coverage does support the query.",
+            "The check against the official portal covers seventeen years of statutes and fifteen of decrees and regulations, and in those years the corpus holds everything the source records; for resolutions, 13 of 17 years match. Outside what was checked there are some 4,300 decrees and 6,800 statutes that we hold and have not compared with the source. A case that turns on one of them requires verification in the Gaceta Oficial. This check counts documents: it does not say whether the rule is still in force.",
         },
         {
-          title: "The force-of-law engine operates at whole-rule level",
+          title: "An article's wording is not versioned by date",
           description:
-            "It does not answer whether a specific article was annulled by the Constitutional Court. There are 52 partial annulments identified and pending load, so that verification remains with the user.",
+            "The engine answers whether a rule was in force on a date and on what basis, and shows article by article the Constitutional Court annulments it has loaded. What it does not return is the text an article had on a past date: it returns the current one. For historical wording, the Gaceta Oficial.",
         },
         {
           title: "179 rules are recorded as repealed without documentary evidence",
@@ -1047,7 +1070,7 @@ export const translations = {
         {
           title: "Legal Research",
           description: "Semantic search across Dominican case law, statutes and doctrine, with automatic CREAC memoranda and verification of the citations it produces.",
-          stats: "130,906 rulings with full text · Aug 2026",
+          stats: "136,671 rulings with full text · Sep 2026",
           impact: "The statute text is inserted by the system, not the model",
           capabilities: ["Semantic search across the full corpus", "Automatic CREAC memoranda", "Normative and case-law citation verification", "Legal gaps declared in the memorandum", "Case law from SCJ, TC and TSA"],
         },
@@ -1060,8 +1083,8 @@ export const translations = {
         },
         {
           title: "Predictive Analytics",
-          description: "Outcome prediction from historical data, with real similar cases from the corpus. Below 200 labeled cases per subject matter the system answers in heuristic mode and says so.",
-          stats: "Trained model from n = 200 | heuristic below",
+          description: "Outcome prediction from historical data, with real similar cases from the corpus. There is no trained model today: the system answers in heuristic mode and says so.",
+          stats: "Declared heuristic mode | model not trained",
           impact: "The model ceiling is declared in the response",
           capabilities: ["Real similar cases from the corpus", "Judge profiles and damages estimation", "Heuristic mode declared below threshold", "Explanation narrative on the top plan", "Trend analysis by subject matter"],
         },
@@ -1076,7 +1099,7 @@ export const translations = {
     },
     ipPage: {
       title: "Procedural Intelligence",
-      subtitle: "Judge and attorney profiles built on the 130,906 rulings in the corpus, with entity resolution. The profile is measured; the prediction has its ceiling declared.",
+      subtitle: "Judge and attorney profiles built on the 145,494 rulings in the corpus, with entity resolution. The profile is measured; the prediction has its ceiling declared.",
       profileTitle: "Judge profile: available metrics",
       profileMetrics: [
         { label: "Outcome Rates", description: "Favorable, partially favorable and unfavorable, by judge and subject matter, derived from the ruling's disposition" },
@@ -1094,8 +1117,8 @@ export const translations = {
         "Fewer than 10 rulings: no profile is published",
         "Between 10 and 29: usable, but flagged as limited",
         "From 30: reliable profile, with roughly ±18% at 95% confidence",
-        "From 200 labeled cases per subject: only then does the model train",
-        "Below that threshold the answer is heuristic and is flagged",
+        "From 200 labeled cases the model can be trained; none is trained today",
+        "Until one is, the answer is heuristic and is flagged",
         "Plan limits: 50 / 500 / 5,000 queries per month",
       ],
       ethicsTitle: "Where This Tool Stops",
@@ -1112,9 +1135,9 @@ export const translations = {
       roadmapTitle: "2026 Roadmap",
       roadmap: [
         { quarter: "Q1 2026", status: "Completed", description: "Internal pilot. Contract review, legal assistant, and case-law research over the corpus." },
-        { quarter: "Q2 2026", status: "Completed", description: "Normative repository with relationship graph and temporal versioning. Legislative impact evaluator. Judicial profiling across the full corpus." },
-        { quarter: "Q3 2026", status: "In Progress", description: "Unified matter management, with litigation inside. Citation verification that corrects. Legislative drafter: 85 deliverables. Point-in-time queries and the normative verification API." },
-        { quarter: "Q4 2026", status: "Planned", description: "Loading the 52 partial annulments from the Constitutional Court. Precedent-based grounding in the bill opinion. Closing the 179 rules recorded as repealed without support." },
+        { quarter: "Q2 2026", status: "Completed", description: "Normative repository with relationship graph and force-of-law status by date. Legislative impact evaluator. Judicial profiling across the full corpus." },
+        { quarter: "Q3 2026", status: "Completed", description: "Unified matter management, with litigation inside. Citation verification that corrects. Legislative drafter in production. Force-of-law status by date, Constitutional Court annulments by article, and the normative verification API." },
+        { quarter: "Q4 2026", status: "In Progress", description: "Precedent-based grounding in the bill opinion. Closing the 179 rules recorded as repealed without support. Pilot firms." },
       ],
       teamTitle: "The Team",
       teamDesc: "SDQ Consulting Group brings together expertise in technology, law, and business consulting to create solutions that understand the real needs of the Dominican legal market.",
@@ -1135,54 +1158,77 @@ export const translations = {
       intro:
         "Every row carries its measurement date. A figure without a date is a future lie: this product carried a coverage number measured in April as if it were current for four months. If the figure you need is not here, or has gone more than thirty days without being measured, we say so instead of quoting it.",
       lastReviewLabel: "Last general review",
-      lastReview: "2026-09-03",
+      lastReview: "2026-11-19",
       sections: [
         {
           title: "Corpus",
           rows: [
-            { label: "Rulings with full text", value: "130,906", date: "2026-08-25", tone: "ok", indent: false },
-            { label: "Supreme Court of Justice", value: "94,025", date: "2026-08-01", tone: "neutral", indent: true },
-            { label: "Constitutional Court", value: "10,457", date: "2026-08-01", tone: "neutral", indent: true },
-            { label: "Superior Administrative Court", value: "2,479", date: "2026-08-01", tone: "neutral", indent: true },
+            { label: "Rulings in the corpus", value: "145,494", date: "2026-11-19", tone: "ok", indent: false },
+            { label: "Rulings with full text", value: "136,671", date: "2026-09-20", tone: "ok", indent: false },
+            { label: "Supreme Court of Justice", value: "96,199", date: "2026-09-20", tone: "neutral", indent: true },
+            { label: "Constitutional Court", value: "11,353", date: "2026-09-20", tone: "neutral", indent: true },
+            { label: "Superior Administrative Court", value: "3,690", date: "2026-09-20", tone: "neutral", indent: true },
+            { label: "First instance and appeals", value: "25,429", date: "2026-09-20", tone: "neutral", indent: true },
+            { label: "Rules in the corpus", value: "25,360", date: "2026-11-19", tone: "ok", indent: false },
+            { label: "Statutes", value: "7,369", date: "2026-11-19", tone: "neutral", indent: true },
+            { label: "Decrees", value: "13,265", date: "2026-11-19", tone: "neutral", indent: true },
+            { label: "Resolutions", value: "4,582", date: "2026-11-19", tone: "neutral", indent: true },
             { label: "Normative components embedded", value: "202,444 · 100%", date: "2026-08-22", tone: "ok", indent: false },
-            { label: "Relations in the normative graph", value: "22,146", date: "2026-08-17", tone: "neutral", indent: false },
-            { label: "Statutes in the corpus", value: "6,680", date: "2026-08-17", tone: "ok", indent: false },
-            { label: "Decrees in the corpus", value: "596", date: "2026-08-17", tone: "warn", indent: false },
+            { label: "Relations in the normative graph", value: "22,580", date: "2026-09-20", tone: "neutral", indent: false },
           ],
-          note: "Retired figures still in circulation that must not be reused: 810,818, ~152,000, 11,000+ and 103,833.",
+          note: "The August figures for rulings, statutes and decrees were true on their date and are now superseded. Retired figures still in circulation that must not be reused: 810,818, ~152,000, 11,000+ and 103,833.",
         },
         {
           title: "Reconciliation against the official source",
           rows: [
-            { label: "2010–2025 statutes against the official portal", value: "99.5%", date: "2026-08-17", tone: "ok", indent: false },
-            { label: "years closing at zero differences", value: "16", date: "2026-08-17", tone: "neutral", indent: true },
-            { label: "Pre-2010 statutes, in the corpus", value: "~6,100 · unreconciled", date: "2026-08-17", tone: "warn", indent: false },
-            { label: "Decrees between 1885 and 2020", value: "zero", date: "2026-08-17", tone: "alert", indent: false },
-            { label: "Decrees from 2021", value: "partial", date: "2026-08-17", tone: "alert", indent: true },
-            { label: "Decrees from 2024 we do hold", value: "16 of 708", date: "2026-08-17", tone: "alert", indent: true },
+            { label: "Decrees reconciled against the official portal", value: "8,981 of 8,981", date: "2026-11-15", tone: "ok", indent: false },
+            { label: "Statutes reconciled against the official portal", value: "587 of 587", date: "2026-11-15", tone: "ok", indent: false },
+            { label: "Resolutions reconciled against the official portal", value: "4,429 of 4,433", date: "2026-11-15", tone: "warn", indent: false },
+            { label: "Decrees not reconciled", value: "~4,300 · unreconciled", date: "2026-11-19", tone: "warn", indent: false },
+            { label: "Statutes not reconciled", value: "~6,800 · unreconciled", date: "2026-11-19", tone: "warn", indent: false },
           ],
-          note: "The official portal only publishes from 2010 onward, so that is the reconciled window. The six thousand-plus earlier statutes are in the corpus, but there is no public source to check them against: we hold them, we have not measured them, and those are two different things.",
+          note: "The official portal publishes from 2010 onward. The check covers seventeen years of statutes and resolutions and fifteen of decrees and regulations, and counts documents by type and year against the source: it says the rule is there, not that it is still in force. What remains unreconciled we hold and have not measured, and those are two different things.",
         },
         {
           title: "Force-of-law engine",
           rows: [
-            { label: "Formal inference rules", value: "6", date: "2026-08-18", tone: "neutral", indent: false },
+            { label: "Formal inference rules running", value: "5 of 6", date: "2026-09-20", tone: "neutral", indent: false },
             { label: "Status states (annulled ≠ repealed)", value: "8", date: "2026-08-18", tone: "neutral", indent: false },
-            { label: "Point-in-time query", value: "in production", date: "2026-08-18", tone: "ok", indent: false },
-            { label: "Partial annulments identified, not loaded", value: "52 of 55", date: "2026-08-24", tone: "alert", indent: false },
+            { label: "Force-of-law status on a given date", value: "in production", date: "2026-08-18", tone: "ok", indent: false },
+            { label: "Constitutional Court annulments loaded", value: "74 · 70 partial", date: "2026-09-06", tone: "ok", indent: false },
+            { label: "Wording of an article on a past date", value: "not available", date: "2026-09-20", tone: "warn", indent: false },
           ],
-          note: "Today the engine cannot answer whether a specific article was annulled by the Constitutional Court: it operates at whole-rule level.",
+          note: "The engine answers whether a rule was in force on a date and on what basis, and the force-of-law screen shows annulments article by article. It does not return the text an article had on that date: it returns the current one.",
         },
         {
           title: "Quality and product",
           rows: [
             { label: "Backend tests on the CI stack", value: "7,395 · 0 failures", date: "2026-09-01", tone: "ok", indent: false },
             { label: "Live modules in the registry", value: "25 of 26", date: "2026-08-25", tone: "neutral", indent: false },
-            { label: "Legislative drafter, deliverables in production", value: "85", date: "2026-08-14", tone: "neutral", indent: false },
+            { label: "Legislative drafter, instruments completed", value: "152 of 176", date: "2026-11-19", tone: "neutral", indent: false },
+            { label: "Legislative evaluator, opinions completed", value: "98 of 104", date: "2026-11-19", tone: "neutral", indent: false },
             { label: "Citation verifier: corrects, not just warns", value: "since 08-22", date: "2026-08-22", tone: "ok", indent: false },
             { label: "Frontend test coverage", value: "< 2%", date: "2026-07-13", tone: "warn", indent: false },
           ],
-          note: "The last row has gone more than thirty days without being measured. We leave it visible with its date instead of removing it.",
+          note: "Tests, modules and frontend coverage have gone more than thirty days without being measured. We leave them visible with their date instead of removing them.",
+        },
+        {
+          title: "Procedural intelligence",
+          rows: [
+            { label: "Judge participations with a classifiable outcome", value: "29,977 of 92,959", date: "2026-11-19", tone: "neutral", indent: false },
+            { label: "Trained predictive model", value: "none · heuristic mode", date: "2026-11-19", tone: "warn", indent: false },
+          ],
+          note: "The data exceeds the 200 labeled cases that training requires, and the model has not been trained. Until it is, prediction is heuristic and the answer says so.",
+        },
+        {
+          title: "Commercial status",
+          rows: [
+            { label: "Firms on the platform", value: "2 · both internal", date: "2026-11-19", tone: "neutral", indent: false },
+            { label: "External client firms", value: "none", date: "2026-11-19", tone: "neutral", indent: false },
+            { label: "Invoices issued", value: "none", date: "2026-11-19", tone: "neutral", indent: false },
+            { label: "Pilots with public institutions", value: "none", date: "2026-11-19", tone: "neutral", indent: false },
+          ],
+          note: "The two firms are the demo account and SDQ Consulting Group, which uses the platform in its own work. We publish it because whoever evaluates the purchase will ask.",
         },
       ],
       openTitle: "Open",
@@ -1196,7 +1242,7 @@ export const translations = {
         {
           title: "Reference extraction coverage",
           description:
-            "Not measured since 2026-04-28. The 21.1% from that date is the last existing figure, and the August campaigns widened the denominator, so it may have dropped. We do not quote it as current.",
+            "29.5% as of 2026-09-07, and the aggregate misleads: what came in before August is almost fully extracted, and nothing from the August load has been extracted. We do not quote it as corpus coverage.",
         },
         {
           title: "Bill opinion: precedent-based grounding",
