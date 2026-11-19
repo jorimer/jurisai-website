@@ -11,43 +11,43 @@
   "figuras": [
     {
       "id": "sentencias-corpus",
-      "value": "145.494",
+      "value": "145.511",
       "measuredOn": "2026-11-19",
       "source": "estado",
       "estadoRow": "Documentos de sentencia (padres, `parent_document_id IS NULL`, todos `source_type = sentencia`)"
     },
     {
       "id": "sentencias-texto-integro",
-      "value": "136.671",
-      "measuredOn": "2026-09-20",
+      "value": "145.511",
+      "measuredOn": "2026-11-19",
       "source": "estado",
       "estadoRow": "Sentencias con texto íntegro (documentos padre con `content`)"
     },
     {
       "id": "sentencias-scj",
-      "value": "96.199",
-      "measuredOn": "2026-09-20",
+      "value": "96.805",
+      "measuredOn": "2026-11-19",
       "source": "estado",
       "estadoRow": "de la Suprema Corte de Justicia"
     },
     {
       "id": "sentencias-tc",
-      "value": "11.353",
-      "measuredOn": "2026-09-20",
+      "value": "11.570",
+      "measuredOn": "2026-11-19",
       "source": "estado",
       "estadoRow": "del Tribunal Constitucional"
     },
     {
       "id": "sentencias-tsa",
-      "value": "3.690",
-      "measuredOn": "2026-09-20",
+      "value": "4.435",
+      "measuredOn": "2026-11-19",
       "source": "estado",
       "estadoRow": "del Tribunal Superior Administrativo"
     },
     {
       "id": "sentencias-instancia",
-      "value": "25.429",
-      "measuredOn": "2026-09-20",
+      "value": "32.701",
+      "measuredOn": "2026-11-19",
       "source": "estado",
       "estadoRow": "de instancia y apelación (`court_tier = other`)"
     },
@@ -139,17 +139,16 @@
     {
       "id": "reglas-en-ejecucion",
       "value": "5",
-      "measuredOn": "2026-09-20",
+      "measuredOn": "2026-11-19",
       "source": "estado",
       "estadoRow": "Reglas formales de inferencia"
     },
     {
       "id": "anulaciones-tc-cargadas",
-      "value": "74",
-      "measuredOn": "2026-09-06",
-      "source": "estado_abiertos",
-      "ref": "ESTADO.md §Motor de vigencia (fila «Anulaciones del TC CARGADAS en producción») y §Abiertos, límite 3",
-      "nota": "La fila de ESTADO lleva en la celda de fecha una nota larga y no se coteja automáticamente."
+      "value": "107",
+      "measuredOn": "2026-11-19",
+      "source": "derivada",
+      "nota": "108 filas de jurisai_anulaciones menos 1 descartada (ESTADO.md, fila «Anulaciones del TC CARGADAS en producción»). 72 parciales."
     },
     {
       "id": "entregables-redactor",
@@ -190,8 +189,8 @@
     },
     {
       "id": "cobertura-extraccion-referencias",
-      "value": "29,5",
-      "measuredOn": "2026-09-07",
+      "value": "41,1",
+      "measuredOn": "2026-11-19",
       "source": "estado_abiertos",
       "ref": "ESTADO.md §Abiertos, «Cobertura de extracción de referencias»"
     },
@@ -204,8 +203,8 @@
     },
     {
       "id": "modulos-registro",
-      "value": "26",
-      "measuredOn": "2026-08-25",
+      "value": "25",
+      "measuredOn": "2026-11-19",
       "source": "estado",
       "estadoRow": "Módulos en el registro"
     },
@@ -219,65 +218,65 @@
     {
       "id": "umbral-perfil-fiable",
       "value": "30",
-      "measuredOn": "2026-09-03",
+      "measuredOn": "2026-11-19",
       "source": "codigo",
-      "ref": "app/services/profile_calculator.py:MIN_CASES_PER_JUDGE"
+      "ref": "app/services/profile_calculator.py:MIN_CASES_PER_JUDGE — releído en main @ 542a194e"
     },
     {
       "id": "umbral-perfil-usable",
       "value": "10",
-      "measuredOn": "2026-09-03",
+      "measuredOn": "2026-11-19",
       "source": "codigo",
-      "ref": "app/services/profile_calculator.py:MIN_CASES_USABLE"
+      "ref": "app/services/profile_calculator.py:MIN_CASES_USABLE — releído en main @ 542a194e"
     },
     {
       "id": "umbral-entrenamiento",
       "value": "200",
-      "measuredOn": "2026-09-03",
+      "measuredOn": "2026-11-19",
       "source": "codigo",
-      "ref": "app/services/judicial_predictor.py:MIN_TRAINING_SAMPLES"
+      "ref": "app/services/judicial_predictor.py:MIN_TRAINING_SAMPLES — releído en main @ 542a194e"
     },
     {
       "id": "intervalo-a-n30",
       "value": "18",
-      "measuredOn": "2026-09-03",
+      "measuredOn": "2026-11-19",
       "source": "codigo",
-      "ref": "app/services/profile_calculator.py, comentario del umbral (n≥30 → ~±18% al 95%)"
+      "ref": "app/services/profile_calculator.py, comentario del umbral (n≥30 → ~±18% al 95%) — releído en main @ 542a194e"
     },
     {
       "id": "tipos-de-asunto",
       "value": "11",
-      "measuredOn": "2026-09-03",
+      "measuredOn": "2026-11-19",
       "source": "codigo",
-      "ref": "app/services/matter_type_seeds.py — 7 litigation + 4 no litigiosos"
+      "ref": "app/services/matter_type_seeds.py — 7 litigation + 4 no litigiosos — releído en main @ 542a194e"
     },
     {
       "id": "limite-consultas-asesor",
       "value": "50",
-      "measuredOn": "2026-09-03",
+      "measuredOn": "2026-11-19",
       "source": "codigo",
-      "ref": "app/middleware/plan_gate.py:RATE_LIMITS"
+      "ref": "app/middleware/plan_gate.py:RATE_LIMITS — releído en main @ 542a194e"
     },
     {
       "id": "limite-consultas-firma",
       "value": "500",
-      "measuredOn": "2026-09-03",
+      "measuredOn": "2026-11-19",
       "source": "codigo",
-      "ref": "app/middleware/plan_gate.py:RATE_LIMITS"
+      "ref": "app/middleware/plan_gate.py:RATE_LIMITS — releído en main @ 542a194e"
     },
     {
       "id": "limite-consultas-consorcio",
       "value": "5.000",
-      "measuredOn": "2026-09-03",
+      "measuredOn": "2026-11-19",
       "source": "codigo",
-      "ref": "app/middleware/plan_gate.py:RATE_LIMITS"
+      "ref": "app/middleware/plan_gate.py:RATE_LIMITS — releído en main @ 542a194e"
     },
     {
       "id": "lote-api-normas",
       "value": "50",
-      "measuredOn": "2026-09-03",
+      "measuredOn": "2026-11-19",
       "source": "codigo",
-      "ref": "app/api/router_normas.py:TOPE_LOTE"
+      "ref": "app/api/router_normas.py:TOPE_LOTE — releído en main @ 542a194e"
     },
     {
       "id": "precio-asesor",
@@ -302,11 +301,11 @@
     },
     {
       "id": "cobertura-pruebas-frontend",
-      "value": "2",
-      "measuredOn": "2026-07-13",
+      "value": "26,46",
+      "measuredOn": "2026-11-19",
       "source": "estado",
       "estadoRow": "Cobertura de pruebas del frontend",
-      "nota": "Se publica como «< 2 %». Lleva más de treinta días sin medirse y el sitio lo declara así."
+      "nota": "vitest run --coverage (v8) sobre main @ 542a194e; líneas ejecutables, 516 ficheros en el denominador."
     },
     {
       "id": "descuento-anual",
@@ -314,6 +313,20 @@
       "measuredOn": "2026-08-26",
       "source": "comercial",
       "nota": "Descuento del plan anual. Decisión comercial, no medición."
+    },
+    {
+      "id": "ficheros-frontend",
+      "value": "516",
+      "measuredOn": "2026-11-19",
+      "source": "estado",
+      "estadoRow": "Cobertura de pruebas del frontend"
+    },
+    {
+      "id": "extraccion-desde-agosto",
+      "value": "17,4",
+      "measuredOn": "2026-11-19",
+      "source": "estado_abiertos",
+      "ref": "ESTADO.md §Abiertos, «Cobertura de extracción de referencias»"
     }
   ],
   "ignorar": [
@@ -379,7 +392,7 @@
     },
     {
       "token": "25",
-      "porque": "módulos vivos, derivado de modulos-registro (25 de 26)"
+      "porque": "módulos vivos, derivado de modulos-registro (25 de 25)"
     },
     {
       "token": "810.818",
@@ -396,6 +409,10 @@
     {
       "token": "103.833",
       "porque": "ídem, cifra retirada"
+    },
+    {
+      "token": "2",
+      "porque": "«< 2 %» de julio, que el sitio cita solo para decir que no es comparable"
     }
   ]
 }

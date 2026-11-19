@@ -92,46 +92,46 @@ export default function InteligenciaProcesalPage() {
                 <div>
                   <div className="flex justify-between items-baseline mb-3">
                     <p className="text-sm font-semibold text-primary-600">Suprema Corte de Justicia</p>
-                    <p className="text-2xl font-bold text-primary-800">70,4%</p>
+                    <p className="text-2xl font-bold text-primary-800">66,5%</p>
                   </div>
                   <div className="w-full h-3 bg-paper-warm rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-primary-700 to-primary-600 rounded-full transition-all duration-500" style={{ width: '70.4%' }}></div>
+                    <div className="h-full bg-gradient-to-r from-primary-700 to-primary-600 rounded-full transition-all duration-500" style={{ width: '66.5%' }}></div>
                   </div>
-                  <p className="text-xs text-primary-400 mt-2">96.199 sentencias con texto íntegro · med. 20-sep-2026</p>
+                  <p className="text-xs text-primary-400 mt-2">96.805 sentencias con texto íntegro · med. 19-nov-2026</p>
                 </div>
 
                 {/* Tribunal Constitucional */}
                 <div>
                   <div className="flex justify-between items-baseline mb-3">
                     <p className="text-sm font-semibold text-primary-600">Tribunal Constitucional</p>
-                    <p className="text-2xl font-bold text-accent-600">8,3%</p>
+                    <p className="text-2xl font-bold text-accent-600">8,0%</p>
                   </div>
                   <div className="w-full h-3 bg-paper-warm rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-accent-500 to-accent-400 rounded-full transition-all duration-500" style={{ width: '8.3%' }}></div>
+                    <div className="h-full bg-gradient-to-r from-accent-500 to-accent-400 rounded-full transition-all duration-500" style={{ width: '8.0%' }}></div>
                   </div>
-                  <p className="text-xs text-primary-400 mt-2">11.353 sentencias con texto íntegro · med. 20-sep-2026</p>
+                  <p className="text-xs text-primary-400 mt-2">11.570 sentencias con texto íntegro · med. 19-nov-2026</p>
                 </div>
 
                 {/* Tribunal Superior Administrativo */}
                 <div>
                   <div className="flex justify-between items-baseline mb-3">
                     <p className="text-sm font-semibold text-primary-600">Tribunal Superior Administrativo</p>
-                    <p className="text-2xl font-bold text-primary-500">2,7%</p>
+                    <p className="text-2xl font-bold text-primary-500">3,0%</p>
                   </div>
                   <div className="w-full h-3 bg-paper-warm rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-primary-400 to-primary-300 rounded-full transition-all duration-500" style={{ width: '2.7%' }}></div>
+                    <div className="h-full bg-gradient-to-r from-primary-400 to-primary-300 rounded-full transition-all duration-500" style={{ width: '3.0%' }}></div>
                   </div>
-                  <p className="text-xs text-primary-400 mt-2">3.690 sentencias con texto íntegro · med. 20-sep-2026</p>
+                  <p className="text-xs text-primary-400 mt-2">4.435 sentencias con texto íntegro · med. 19-nov-2026</p>
                 </div>
                 <div>
                   <div className="flex justify-between items-baseline mb-3">
                     <p className="text-sm font-semibold text-primary-600">Instancia y apelación</p>
-                    <p className="text-2xl font-bold text-primary-500">18,6%</p>
+                    <p className="text-2xl font-bold text-primary-500">22,5%</p>
                   </div>
                   <div className="w-full h-3 bg-paper-warm rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-primary-300 to-primary-200 rounded-full transition-all duration-500" style={{ width: '18.6%' }}></div>
+                    <div className="h-full bg-gradient-to-r from-primary-300 to-primary-200 rounded-full transition-all duration-500" style={{ width: '22.5%' }}></div>
                   </div>
-                  <p className="text-xs text-primary-400 mt-2">25.429 sentencias con texto íntegro · med. 20-sep-2026</p>
+                  <p className="text-xs text-primary-400 mt-2">32.701 sentencias con texto íntegro · med. 19-nov-2026</p>
                 </div>
               </div>
 
@@ -141,7 +141,7 @@ export default function InteligenciaProcesalPage() {
                   Nota
                 </p>
                 <p className="text-xs text-primary-600 leading-relaxed">
-                  Las cuatro cifras se midieron el 20-sep-2026 y suman 136.671, las sentencias con texto íntegro. El 19-nov-2026 el corpus tenía 145.494 sentencias, y el desglose por tribunal no se ha vuelto a medir. Preferimos declarar la diferencia a cuadrar el número.
+                  Las cuatro cifras se midieron el 19-nov-2026 y suman 145.511: todas las sentencias del corpus, cada una con su texto íntegro.
                 </p>
               </div>
             </div>
@@ -220,12 +220,12 @@ export default function InteligenciaProcesalPage() {
             <div>
               <h3 className="text-2xl text-primary-950 mb-4">¿Cómo Funciona?</h3>
               <p className="text-primary-600 mb-6 leading-relaxed">
-                La Inteligencia Procesal construye perfiles sobre las 145.494 sentencias del corpus, con resolución de entidades y duración real de resolución. La predicción considera juez, materia, abogado, jurisdicción y monto. Hoy no hay modelo entrenado: opera en modo heurístico y lo declara en la respuesta.
+                La Inteligencia Procesal construye perfiles sobre las 145.511 sentencias del corpus, con resolución de entidades y duración real de resolución. La predicción considera juez, materia, abogado, jurisdicción y monto. Hoy no hay modelo entrenado: opera en modo heurístico y lo declara en la respuesta.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent-400 mt-2 flex-shrink-0"></span>
-                  <span className="text-primary-600">145.494 sentencias en el corpus · med. 19-nov-2026</span>
+                  <span className="text-primary-600">145.511 sentencias en el corpus · med. 19-nov-2026</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent-400 mt-2 flex-shrink-0"></span>
