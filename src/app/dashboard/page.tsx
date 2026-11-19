@@ -84,7 +84,7 @@ export default function DashboardPage() {
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           {[
-            { label: locale === "es" ? "Sentencias en el corpus" : "Rulings in the corpus", value: locale === "es" ? "145.494" : "145,494", change: locale === "es" ? "med. nov 2026" : "meas. Nov 2026" },
+            { label: locale === "es" ? "Sentencias en el corpus" : "Rulings in the corpus", value: locale === "es" ? "145.511" : "145,511", change: locale === "es" ? "med. nov 2026" : "meas. Nov 2026" },
             { label: locale === "es" ? "Corpus normativo embebido" : "Normative corpus embedded", value: "100%", change: locale === "es" ? "557.901 componentes" : "557,901 components" },
             { label: locale === "es" ? "Relaciones en el grafo" : "Relations in the graph", value: locale === "es" ? "44.510" : "44,510", change: locale === "es" ? "med. nov 2026" : "meas. Nov 2026" },
             { label: locale === "es" ? "Módulos disponibles" : "Available modules", value: "25", change: locale === "es" ? "med. ago 2026" : "meas. Aug 2026" },

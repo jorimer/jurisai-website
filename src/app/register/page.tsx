@@ -41,7 +41,7 @@ export default function RegisterPage() {
           {/* Stats */}
           <div className="mt-12 grid grid-cols-2 gap-4">
             <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">
-              <div className="text-2xl font-bold text-accent-400">145.494</div>
+              <div className="text-2xl font-bold text-accent-400">145.511</div>
               <div className="text-sm text-primary-300">Sentencias en el corpus</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-edge p-4">

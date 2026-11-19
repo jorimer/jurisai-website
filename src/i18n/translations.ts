@@ -28,7 +28,7 @@ export const translations = {
       items: [
         {
           claim: "La jurisprudencia publicada de la Suprema Corte, el Tribunal Constitucional, el Tribunal Superior Administrativo y los tribunales de instancia y apelación.",
-          proof: "145.494 sentencias · med. nov 2026",
+          proof: "145.511 sentencias · med. nov 2026",
         },
         {
           claim: "La ley que regía el día de los hechos, no la de hoy. Puede consultar el estado de una norma en cualquier fecha pasada.",
@@ -439,7 +439,7 @@ export const translations = {
         {
           title: "Investigación Legal",
           description: "Búsqueda semántica sobre jurisprudencia dominicana, leyes y doctrina, con generación automática de memorandos CREAC y verificación de las citas que produce.",
-          stats: "136.671 sentencias con texto íntegro · sep 2026",
+          stats: "145.511 sentencias con texto íntegro · nov 2026",
           impact: "El texto de la ley lo inserta el sistema, no el modelo",
           capabilities: ["Búsqueda semántica sobre el corpus completo", "Memorandos CREAC automáticos", "Verificación de citas normativas y jurisprudenciales", "Vacíos legales declarados en el memorando", "Jurisprudencia de SCJ, TC y TSA"],
         },
@@ -468,7 +468,7 @@ export const translations = {
     },
     ipPage: {
       title: "Inteligencia Procesal",
-      subtitle: "Perfiles de jueces y abogados construidos sobre las 145.494 sentencias del corpus, con resolución de entidades. El perfil está medido; la predicción tiene su techo declarado.",
+      subtitle: "Perfiles de jueces y abogados construidos sobre las 145.511 sentencias del corpus, con resolución de entidades. El perfil está medido; la predicción tiene su techo declarado.",
       profileTitle: "Perfil de juez: métricas disponibles",
       profileMetrics: [
         { label: "Tasas de Resultado", description: "Favorable, parcialmente favorable y desfavorable, por juez y por materia, derivadas del sentido del fallo" },
@@ -532,12 +532,11 @@ export const translations = {
         {
           title: "Corpus",
           rows: [
-            { label: "Sentencias en el corpus", value: "145.494", date: "19-11-2026", tone: "ok", indent: false },
-            { label: "Sentencias con texto íntegro", value: "136.671", date: "20-09-2026", tone: "ok", indent: false },
-            { label: "Suprema Corte de Justicia", value: "96.199", date: "20-09-2026", tone: "neutral", indent: true },
-            { label: "Tribunal Constitucional", value: "11.353", date: "20-09-2026", tone: "neutral", indent: true },
-            { label: "Tribunal Superior Administrativo", value: "3.690", date: "20-09-2026", tone: "neutral", indent: true },
-            { label: "Instancia y apelación", value: "25.429", date: "20-09-2026", tone: "neutral", indent: true },
+            { label: "Sentencias en el corpus, todas con texto íntegro", value: "145.511", date: "19-11-2026", tone: "ok", indent: false },
+            { label: "Suprema Corte de Justicia", value: "96.805", date: "19-11-2026", tone: "neutral", indent: true },
+            { label: "Tribunal Constitucional", value: "11.570", date: "19-11-2026", tone: "neutral", indent: true },
+            { label: "Tribunal Superior Administrativo", value: "4.435", date: "19-11-2026", tone: "neutral", indent: true },
+            { label: "Instancia y apelación", value: "32.701", date: "19-11-2026", tone: "neutral", indent: true },
             { label: "Normas en el corpus", value: "25.360", date: "19-11-2026", tone: "ok", indent: false },
             { label: "Leyes", value: "7.369", date: "19-11-2026", tone: "neutral", indent: true },
             { label: "Decretos", value: "13.265", date: "19-11-2026", tone: "neutral", indent: true },
@@ -561,11 +560,11 @@ export const translations = {
         {
           title: "Motor de vigencia",
           rows: [
-            { label: "Reglas formales de inferencia en ejecución", value: "5 de 6", date: "20-09-2026", tone: "neutral", indent: false },
+            { label: "Reglas formales de inferencia en ejecución", value: "5 de 5", date: "19-11-2026", tone: "neutral", indent: false },
             { label: "Estados de vigencia (anulada ≠ derogada)", value: "8", date: "19-11-2026", tone: "neutral", indent: false },
-            { label: "Estado de vigencia a una fecha", value: "en producción", date: "18-08-2026", tone: "ok", indent: false },
-            { label: "Anulaciones del Tribunal Constitucional cargadas", value: "74 · 70 parciales", date: "06-09-2026", tone: "ok", indent: false },
-            { label: "Redacción de un artículo a una fecha pasada", value: "no disponible", date: "20-09-2026", tone: "warn", indent: false },
+            { label: "Estado de vigencia a una fecha", value: "disponible por API (as_of)", date: "19-11-2026", tone: "ok", indent: false },
+            { label: "Anulaciones del Tribunal Constitucional cargadas", value: "107 · 72 parciales", date: "19-11-2026", tone: "ok", indent: false },
+            { label: "Redacción de un artículo a una fecha pasada", value: "no disponible", date: "19-11-2026", tone: "warn", indent: false },
           ],
           note: "El motor responde si una norma regía en una fecha y con qué fundamento, y la pantalla de vigencia muestra las anulaciones artículo por artículo. No devuelve el texto que un artículo tenía en esa fecha: devuelve el vigente.",
         },
@@ -573,13 +572,13 @@ export const translations = {
           title: "Calidad y producto",
           rows: [
             { label: "Pruebas de backend en el stack de CI", value: "26.448 · 0 fallos", date: "19-11-2026", tone: "ok", indent: false },
-            { label: "Módulos vivos en el registro", value: "25 de 26", date: "25-08-2026", tone: "neutral", indent: false },
+            { label: "Módulos vivos en el registro", value: "25 de 25", date: "19-11-2026", tone: "neutral", indent: false },
             { label: "Redactor legislativo, instrumentos completados", value: "152 de 176", date: "19-11-2026", tone: "neutral", indent: false },
             { label: "Evaluador legislativo, dictámenes completados", value: "98 de 104", date: "19-11-2026", tone: "neutral", indent: false },
             { label: "Verificador de citas: corrige, no solo advierte", value: "desde 22-08", date: "22-08-2026", tone: "ok", indent: false },
-            { label: "Cobertura de pruebas del frontend", value: "< 2 %", date: "13-07-2026", tone: "warn", indent: false },
+            { label: "Cobertura de pruebas del frontend", value: "26,46 % de las líneas", date: "19-11-2026", tone: "neutral", indent: false },
           ],
-          note: "Módulos y cobertura del frontend llevan más de treinta días sin medirse. Los dejamos visibles con su fecha en vez de retirarlos.",
+          note: "La cobertura del frontend cuenta los 516 ficheros del código, también los que no tienen ninguna prueba. No es comparable con el «< 2 %» que publicábamos en julio, que contaba otra unidad.",
         },
         {
           title: "Inteligencia procesal",
@@ -611,7 +610,7 @@ export const translations = {
         {
           title: "Cobertura de extracción de referencias",
           description:
-            "29,5 % al 07-09-2026, y el agregado engaña: lo ingresado antes de agosto está extraído casi entero, y de la carga de agosto no se ha extraído nada. No lo citamos como cobertura del corpus.",
+            "41,1 % al 19-11-2026, y el agregado promedia dos mitades: lo ingresado antes de agosto está extraído entero, y de la carga de agosto en adelante, el 17,4 %. No lo citamos como cobertura del corpus.",
         },
         {
           title: "Dictamen: fundamentación por precedentes",
@@ -659,7 +658,7 @@ export const translations = {
       items: [
         {
           claim: "The published case law of the Supreme Court, the Constitutional Court, the Superior Administrative Court and the first-instance and appellate courts.",
-          proof: "145,494 rulings · meas. Nov 2026",
+          proof: "145,511 rulings · meas. Nov 2026",
         },
         {
           claim: "The law in force on the day of the events, not today's. You can check a rule's status on any past date.",
@@ -1070,7 +1069,7 @@ export const translations = {
         {
           title: "Legal Research",
           description: "Semantic search across Dominican case law, statutes and doctrine, with automatic CREAC memoranda and verification of the citations it produces.",
-          stats: "136,671 rulings with full text · Sep 2026",
+          stats: "145,511 rulings with full text · Nov 2026",
           impact: "The statute text is inserted by the system, not the model",
           capabilities: ["Semantic search across the full corpus", "Automatic CREAC memoranda", "Normative and case-law citation verification", "Legal gaps declared in the memorandum", "Case law from SCJ, TC and TSA"],
         },
@@ -1099,7 +1098,7 @@ export const translations = {
     },
     ipPage: {
       title: "Procedural Intelligence",
-      subtitle: "Judge and attorney profiles built on the 145,494 rulings in the corpus, with entity resolution. The profile is measured; the prediction has its ceiling declared.",
+      subtitle: "Judge and attorney profiles built on the 145,511 rulings in the corpus, with entity resolution. The profile is measured; the prediction has its ceiling declared.",
       profileTitle: "Judge profile: available metrics",
       profileMetrics: [
         { label: "Outcome Rates", description: "Favorable, partially favorable and unfavorable, by judge and subject matter, derived from the ruling's disposition" },
@@ -1163,12 +1162,11 @@ export const translations = {
         {
           title: "Corpus",
           rows: [
-            { label: "Rulings in the corpus", value: "145,494", date: "2026-11-19", tone: "ok", indent: false },
-            { label: "Rulings with full text", value: "136,671", date: "2026-09-20", tone: "ok", indent: false },
-            { label: "Supreme Court of Justice", value: "96,199", date: "2026-09-20", tone: "neutral", indent: true },
-            { label: "Constitutional Court", value: "11,353", date: "2026-09-20", tone: "neutral", indent: true },
-            { label: "Superior Administrative Court", value: "3,690", date: "2026-09-20", tone: "neutral", indent: true },
-            { label: "First instance and appeals", value: "25,429", date: "2026-09-20", tone: "neutral", indent: true },
+            { label: "Rulings in the corpus, all with full text", value: "145,511", date: "2026-11-19", tone: "ok", indent: false },
+            { label: "Supreme Court of Justice", value: "96,805", date: "2026-11-19", tone: "neutral", indent: true },
+            { label: "Constitutional Court", value: "11,570", date: "2026-11-19", tone: "neutral", indent: true },
+            { label: "Superior Administrative Court", value: "4,435", date: "2026-11-19", tone: "neutral", indent: true },
+            { label: "First instance and appeals", value: "32,701", date: "2026-11-19", tone: "neutral", indent: true },
             { label: "Rules in the corpus", value: "25,360", date: "2026-11-19", tone: "ok", indent: false },
             { label: "Statutes", value: "7,369", date: "2026-11-19", tone: "neutral", indent: true },
             { label: "Decrees", value: "13,265", date: "2026-11-19", tone: "neutral", indent: true },
@@ -1192,11 +1190,11 @@ export const translations = {
         {
           title: "Force-of-law engine",
           rows: [
-            { label: "Formal inference rules running", value: "5 of 6", date: "2026-09-20", tone: "neutral", indent: false },
+            { label: "Formal inference rules running", value: "5 of 5", date: "2026-11-19", tone: "neutral", indent: false },
             { label: "Status states (annulled ≠ repealed)", value: "8", date: "2026-11-19", tone: "neutral", indent: false },
-            { label: "Force-of-law status on a given date", value: "in production", date: "2026-08-18", tone: "ok", indent: false },
-            { label: "Constitutional Court annulments loaded", value: "74 · 70 partial", date: "2026-09-06", tone: "ok", indent: false },
-            { label: "Wording of an article on a past date", value: "not available", date: "2026-09-20", tone: "warn", indent: false },
+            { label: "Force-of-law status on a given date", value: "available via API (as_of)", date: "2026-11-19", tone: "ok", indent: false },
+            { label: "Constitutional Court annulments loaded", value: "107 · 72 partial", date: "2026-11-19", tone: "ok", indent: false },
+            { label: "Wording of an article on a past date", value: "not available", date: "2026-11-19", tone: "warn", indent: false },
           ],
           note: "The engine answers whether a rule was in force on a date and on what basis, and the force-of-law screen shows annulments article by article. It does not return the text an article had on that date: it returns the current one.",
         },
@@ -1204,13 +1202,13 @@ export const translations = {
           title: "Quality and product",
           rows: [
             { label: "Backend tests on the CI stack", value: "26,448 · 0 failures", date: "2026-11-19", tone: "ok", indent: false },
-            { label: "Live modules in the registry", value: "25 of 26", date: "2026-08-25", tone: "neutral", indent: false },
+            { label: "Live modules in the registry", value: "25 of 25", date: "2026-11-19", tone: "neutral", indent: false },
             { label: "Legislative drafter, instruments completed", value: "152 of 176", date: "2026-11-19", tone: "neutral", indent: false },
             { label: "Legislative evaluator, opinions completed", value: "98 of 104", date: "2026-11-19", tone: "neutral", indent: false },
             { label: "Citation verifier: corrects, not just warns", value: "since 08-22", date: "2026-08-22", tone: "ok", indent: false },
-            { label: "Frontend test coverage", value: "< 2%", date: "2026-07-13", tone: "warn", indent: false },
+            { label: "Frontend test coverage", value: "26.46% of lines", date: "2026-11-19", tone: "neutral", indent: false },
           ],
-          note: "Modules and frontend coverage have gone more than thirty days without being measured. We leave them visible with their date instead of removing them.",
+          note: "Frontend coverage counts all 516 source files, including those with no test at all. It is not comparable with the “< 2%” we published in July, which counted a different unit.",
         },
         {
           title: "Procedural intelligence",
@@ -1242,7 +1240,7 @@ export const translations = {
         {
           title: "Reference extraction coverage",
           description:
-            "29.5% as of 2026-09-07, and the aggregate misleads: what came in before August is almost fully extracted, and nothing from the August load has been extracted. We do not quote it as corpus coverage.",
+            "41.1% as of 2026-11-19, and the aggregate averages two halves: what came in before August is fully extracted, and of what came in from August on, 17.4%. We do not quote it as corpus coverage.",
         },
         {
           title: "Bill opinion: precedent-based grounding",
